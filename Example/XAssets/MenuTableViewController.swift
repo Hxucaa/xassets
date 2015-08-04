@@ -11,22 +11,24 @@ import UIKit
 
 final class MenuTableViewController : UITableViewController {
     
-    /// A collection of items for table view. The name of item to be displayed and the segue identifier for navigating to the next controller.
-    private let tableItems: [(name: String, segue: String)] = [
-        ("Logo", "ToLogo")
-    ]
+    /**
+    YOU DO NOT HAVE TO CHANGE ANYTHING HERE.
+    */
     
+    private let menuItems = MenuItems()
+    
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableItems.count
+        return menuItems.items.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        cell.textLabel?.text = tableItems[indexPath.row].name
+        cell.textLabel?.text = menuItems.items[indexPath.row].name
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier(tableItems[indexPath.row].segue, sender: self)
+        performSegueWithIdentifier(menuItems.items[indexPath.row].segue, sender: self)
     }
 }

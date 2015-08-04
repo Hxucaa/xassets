@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LogoViewController.swift
 //  XAssets
 //
 //  Created by Lance Zhu on 06/24/2015.

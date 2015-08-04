@@ -21,7 +21,8 @@ public final class MenuItems {
     */
     
     
-    /// A collection of items for table view. The name of item to be displayed and the segue identifier for navigating to the next controller.
+    /// A collection of items for table view. 
+    /// The name of item to be displayed and the segue identifier for navigating to the next controller.
     private let _items: [Entry] = [
         ("Logo", "ToLogo")
     ]

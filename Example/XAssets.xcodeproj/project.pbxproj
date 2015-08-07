@@ -52,12 +52,12 @@
 		6B6141AAF07C072511700F94 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XAssets_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BE606CA7121D9F2D3BB968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B308F9911B74809800072909 /* MaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaleIconViewController.swift; path = "Male Icon/MaleIconViewController.swift"; sourceTree = "<group>"; };
-		B308F9931B7480AE00072909 /* MaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaleIconView.swift; path = "Male Icon/MaleIconView.swift"; sourceTree = "<group>"; };
-		B3AF81D71B7490D700489954 /* FemaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FemaleIconView.swift; path = "Female Icon/FemaleIconView.swift"; sourceTree = "<group>"; };
-		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FemaleIconViewController.swift; path = "Female Icon/FemaleIconViewController.swift"; sourceTree = "<group>"; };
-		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CakeIconViewController.swift; path = "Cake Icon/CakeIconViewController.swift"; sourceTree = "<group>"; };
-		B3AF81DE1B74933000489954 /* CakeIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CakeIconView.swift; path = "Cake Icon/CakeIconView.swift"; sourceTree = "<group>"; };
+		B308F9911B74809800072909 /* MaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconViewController.swift; sourceTree = "<group>"; };
+		B308F9931B7480AE00072909 /* MaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconView.swift; sourceTree = "<group>"; };
+		B3AF81D71B7490D700489954 /* FemaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconView.swift; sourceTree = "<group>"; };
+		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
+		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
+		B3AF81DE1B74933000489954 /* CakeIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconView.swift; sourceTree = "<group>"; };
 		B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKsc-Bold.otf"; sourceTree = "<group>"; };
 		B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		B4DFA97A1B4396CF00DB4941 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 				B308F9911B74809800072909 /* MaleIconViewController.swift */,
 				B308F9931B7480AE00072909 /* MaleIconView.swift */,
 			);
-			name = "Male Icon";
+			path = "Male Icon";
 			sourceTree = "<group>";
 		};
 		B3AF81D61B7490C000489954 /* Female Icon */ = {
@@ -191,7 +191,7 @@
 				B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */,
 				B3AF81D71B7490D700489954 /* FemaleIconView.swift */,
 			);
-			name = "Female Icon";
+			path = "Female Icon";
 			sourceTree = "<group>";
 		};
 		B3AF81DB1B74930500489954 /* Cake Icon */ = {
@@ -200,7 +200,7 @@
 				B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */,
 				B3AF81DE1B74933000489954 /* CakeIconView.swift */,
 			);
-			name = "Cake Icon";
+			path = "Cake Icon";
 			sourceTree = "<group>";
 		};
 		B44D2CDC1B3CBA34008E14DA /* Logo */ = {

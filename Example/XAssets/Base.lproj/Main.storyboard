@@ -28,6 +28,9 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="bMP-at-bh1"/>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="show" identifier="ToLogo" id="tpX-M0-hUZ"/>
+                        <segue destination="PDD-bd-RwE" kind="show" identifier="ToMaleIcon" id="yf5-M0-PlG"/>
+                        <segue destination="6MC-Dc-z4a" kind="show" identifier="ToFemaleIcon" id="ONb-uh-Xze"/>
+                        <segue destination="VAH-N4-pK3" kind="show" identifier="ToCakeIcon" id="dTq-zO-F6X"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,6 +52,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4h-NQ-m0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1600" y="417"/>
+        </scene>
+        <!--Cake Icon-->
+        <scene sceneID="VxU-kf-SSz">
+            <objects>
+                <viewController id="VAH-N4-pK3" userLabel="Cake Icon" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uga-Kk-crp"/>
+                        <viewControllerLayoutGuide type="bottom" id="EKg-zr-ew1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZGU-P2-O2m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6F-Vd-EUv" userLabel="Cake Icon" customClass="CakeIconView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="278" y="242" width="45" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="OSO-WC-PLJ"/>
+                                    <constraint firstAttribute="height" constant="36" id="dDt-3h-QZE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a6F-Vd-EUv" firstAttribute="top" secondItem="uga-Kk-crp" secondAttribute="bottom" constant="178" id="pn6-ak-1Am"/>
+                            <constraint firstAttribute="centerX" secondItem="a6F-Vd-EUv" secondAttribute="centerX" id="pqc-Jz-cHx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4V-P5-XpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1376" y="1164"/>
         </scene>
         <!--Logo-->
         <scene sceneID="ufC-wZ-h7g">
@@ -81,6 +116,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="26" y="410"/>
+        </scene>
+        <!--Female Icon-->
+        <scene sceneID="HOf-MA-Huh">
+            <objects>
+                <viewController id="6MC-Dc-z4a" userLabel="Female Icon" customClass="FemaleIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="15F-Ll-18X"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Bc-RU-oQY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wcS-wF-1K6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2D-rE-Tfk" userLabel="Female Icon" customClass="FemaleIconView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="284" y="199" width="33" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="mVL-i6-gyn"/>
+                                    <constraint firstAttribute="width" constant="33" id="oCY-Xc-bJJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m2D-rE-Tfk" firstAttribute="top" secondItem="15F-Ll-18X" secondAttribute="bottom" constant="135" id="HGR-VF-KPR"/>
+                            <constraint firstAttribute="centerX" secondItem="m2D-rE-Tfk" secondAttribute="centerX" id="czP-wP-0fA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vct-BK-1l3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="1114"/>
+        </scene>
+        <!--Male Icon-->
+        <scene sceneID="RTh-NN-saV">
+            <objects>
+                <viewController id="PDD-bd-RwE" userLabel="Male Icon" customClass="MaleIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dLu-kE-XOd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lmn-ng-Rr8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xVw-oi-7WT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-Ak-MBM" userLabel="Male Icon" customClass="MaleIconView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="282" y="197" width="37" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="bzV-19-tJ9"/>
+                                    <constraint firstAttribute="width" constant="37" id="sgR-Rl-HvI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="aA8-Ak-MBM" secondAttribute="centerX" id="RF2-9r-x6A"/>
+                            <constraint firstItem="aA8-Ak-MBM" firstAttribute="top" secondItem="dLu-kE-XOd" secondAttribute="bottom" constant="133" id="rIO-3a-V6J"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIz-Pp-V3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="1114"/>
         </scene>
     </scenes>
 </document>

@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		4829512017AE0469FE4F3C79 /* Pods_XAssets_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAA7EE3F24C68F34E8D30E /* Pods_XAssets_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* LogoViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308F9911B74809800072909 /* MaleIconViewController.swift */; };
 		B308F9941B7480AE00072909 /* MaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308F9931B7480AE00072909 /* MaleIconView.swift */; };
+		B35680C01B7A104500B44BB9 /* FlameIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680BF1B7A104500B44BB9 /* FlameIconViewController.swift */; };
+		B35680C21B7A104E00B44BB9 /* FlameIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680C11B7A104E00B44BB9 /* FlameIconView.swift */; };
 		B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D71B7490D700489954 /* FemaleIconView.swift */; };
 		B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */; };
 		B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */; };
 		B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DE1B74933000489954 /* CakeIconView.swift */; };
 		B44D2CD91B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */; };
 		B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */; };
-		B4DFA97B1B4396CF00DB4941 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFA97A1B4396CF00DB4941 /* LogoView.swift */; };
 		B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */; };
 		F256F599FBA6BE212FE35FF2 /* Pods_XAssets_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -42,7 +42,6 @@
 		607FACD01AFB9204008FA782 /* XAssets_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XAssets_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -54,13 +53,14 @@
 		74BE606CA7121D9F2D3BB968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B308F9911B74809800072909 /* MaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconViewController.swift; sourceTree = "<group>"; };
 		B308F9931B7480AE00072909 /* MaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconView.swift; sourceTree = "<group>"; };
+		B35680BF1B7A104500B44BB9 /* FlameIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconViewController.swift; sourceTree = "<group>"; };
+		B35680C11B7A104E00B44BB9 /* FlameIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconView.swift; sourceTree = "<group>"; };
 		B3AF81D71B7490D700489954 /* FemaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconView.swift; sourceTree = "<group>"; };
 		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DE1B74933000489954 /* CakeIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconView.swift; sourceTree = "<group>"; };
 		B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKsc-Bold.otf"; sourceTree = "<group>"; };
 		B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		B4DFA97A1B4396CF00DB4941 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
 		C3C2433053AC905DE0B151A8 /* XAssets.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XAssets.podspec; path = ../XAssets.podspec; sourceTree = "<group>"; };
 		CA42FDD364B34FB641670D95 /* Pods-XAssets_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XAssets_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XAssets_Example/Pods-XAssets_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,10 +113,10 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B35680BE1B7A101300B44BB9 /* Flame Icon */,
 				B3AF81DB1B74930500489954 /* Cake Icon */,
 				B3AF81D61B7490C000489954 /* Female Icon */,
 				B308F9901B74804100072909 /* Male Icon */,
-				B44D2CDC1B3CBA34008E14DA /* Logo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */,
 				B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */,
@@ -185,6 +185,15 @@
 			path = "Male Icon";
 			sourceTree = "<group>";
 		};
+		B35680BE1B7A101300B44BB9 /* Flame Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B35680BF1B7A104500B44BB9 /* FlameIconViewController.swift */,
+				B35680C11B7A104E00B44BB9 /* FlameIconView.swift */,
+			);
+			name = "Flame Icon";
+			sourceTree = "<group>";
+		};
 		B3AF81D61B7490C000489954 /* Female Icon */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,15 +210,6 @@
 				B3AF81DE1B74933000489954 /* CakeIconView.swift */,
 			);
 			path = "Cake Icon";
-			sourceTree = "<group>";
-		};
-		B44D2CDC1B3CBA34008E14DA /* Logo */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD71AFB9204008FA782 /* LogoViewController.swift */,
-				B4DFA97A1B4396CF00DB4941 /* LogoView.swift */,
-			);
-			path = Logo;
 			sourceTree = "<group>";
 		};
 		BAD703D6C1662D7418EFCFA1 /* Frameworks */ = {
@@ -423,13 +423,13 @@
 			files = (
 				B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */,
 				B308F9941B7480AE00072909 /* MaleIconView.swift in Sources */,
+				B35680C21B7A104E00B44BB9 /* FlameIconView.swift in Sources */,
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
 				B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */,
-				B4DFA97B1B4396CF00DB4941 /* LogoView.swift in Sources */,
 				B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */,
 				B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */,
 				B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */,
-				607FACD81AFB9204008FA782 /* LogoViewController.swift in Sources */,
+				B35680C01B7A104500B44BB9 /* FlameIconViewController.swift in Sources */,
 				B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

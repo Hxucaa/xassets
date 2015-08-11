@@ -17,82 +17,30 @@ public class AssetsKit : NSObject {
     //// Cache
 
     private struct Cache {
-        static var primaryColor: UIColor = UIColor(red: 0.212, green: 0.663, blue: 0.647, alpha: 1.000)
         static var femaleIconFill: UIColor = UIColor(red: 1.000, green: 0.384, blue: 0.659, alpha: 1.000)
         static var maleIconFill: UIColor = UIColor(red: 0.157, green: 0.302, blue: 0.608, alpha: 1.000)
         static var iconUntapped: UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000)
+        static var themeColor: UIColor = UIColor(red: 0.000, green: 0.698, blue: 0.675, alpha: 1.000)
+        static var flameColor: UIColor = UIColor(red: 0.973, green: 0.278, blue: 0.059, alpha: 1.000)
         static var imageOfFemaleIcon: UIImage?
         static var femaleIconTargets: [AnyObject]?
         static var imageOfMaleIcon: UIImage?
         static var maleIconTargets: [AnyObject]?
         static var imageOfCakeIcon: UIImage?
         static var cakeIconTargets: [AnyObject]?
+        static var imageOfFlameIcon: UIImage?
+        static var flameIconTargets: [AnyObject]?
     }
 
     //// Colors
 
-    public class var primaryColor: UIColor { return Cache.primaryColor }
     public class var femaleIconFill: UIColor { return Cache.femaleIconFill }
     public class var maleIconFill: UIColor { return Cache.maleIconFill }
     public class var iconUntapped: UIColor { return Cache.iconUntapped }
+    public class var themeColor: UIColor { return Cache.themeColor }
+    public class var flameColor: UIColor { return Cache.flameColor }
 
     //// Drawing Methods
-
-    public class func drawLandingIcon(#scale: CGFloat) {
-        //// General Declarations
-        let context = UIGraphicsGetCurrentContext()
-
-        //// Color Declarations
-        let iconFillColor = AssetsKit.primaryColor.colorWithAlpha(0.7)
-
-        //// Group
-        //// Polygon Drawing
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 15, 8)
-        CGContextScaleCTM(context, scale, scale)
-
-        var polygonPath = UIBezierPath()
-        polygonPath.moveToPoint(CGPointMake(131.6, 288.52))
-        polygonPath.addLineToPoint(CGPointMake(260.27, 217.86))
-        polygonPath.addLineToPoint(CGPointMake(260.27, 71.64))
-        polygonPath.addLineToPoint(CGPointMake(131.6, 0))
-        polygonPath.addLineToPoint(CGPointMake(0, 71.64))
-        polygonPath.addLineToPoint(CGPointMake(0, 217.86))
-        polygonPath.addLineToPoint(CGPointMake(131.6, 288.52))
-        polygonPath.closePath()
-        polygonPath.lineCapStyle = kCGLineCapSquare;
-
-        polygonPath.lineJoinStyle = kCGLineJoinBevel;
-
-        iconFillColor.setFill()
-        polygonPath.fill()
-        iconFillColor.setStroke()
-        polygonPath.lineWidth = 10
-        polygonPath.stroke()
-
-        CGContextRestoreGState(context)
-
-
-        //// Text Drawing
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 14, 7)
-        CGContextScaleCTM(context, scale, scale)
-
-        let textRect = CGRectMake(0, 0, 260.27, 288.52)
-        var textTextContent = NSString(string: "来")
-        let textStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-        textStyle.alignment = NSTextAlignment.Center
-
-        let textFontAttributes = [NSFontAttributeName: UIFont(name: "Helvetica-Bold", size: 180)!, NSForegroundColorAttributeName: UIColor.whiteColor(), NSParagraphStyleAttributeName: textStyle]
-
-        let textTextHeight: CGFloat = textTextContent.boundingRectWithSize(CGSizeMake(textRect.width, CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: textFontAttributes, context: nil).size.height
-        CGContextSaveGState(context)
-        CGContextClipToRect(context, textRect);
-        textTextContent.drawInRect(CGRectMake(textRect.minX, textRect.minY + (textRect.height - textTextHeight) / 2, textRect.width, textTextHeight), withAttributes: textFontAttributes)
-        CGContextRestoreGState(context)
-
-        CGContextRestoreGState(context)
-    }
 
     public class func drawFemaleIcon() {
 
@@ -365,42 +313,38 @@ public class AssetsKit : NSObject {
         bezierPath.fill()
     }
 
-    public class func drawFlameIcon() {
-        //// Color Declarations
-        let flameColor = UIColor(red: 0.973, green: 0.278, blue: 0.059, alpha: 1.000)
+    public class func drawFlameIcon(#scale: CGFloat) {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()
 
         //// Group
         //// Bezier Drawing
+        CGContextSaveGState(context)
+        CGContextTranslateCTM(context, -0, 0.4)
+        CGContextScaleCTM(context, scale, scale)
+
         var bezierPath = UIBezierPath()
-        bezierPath.moveToPoint(CGPointMake(100.11, 410))
-        bezierPath.addCurveToPoint(CGPointMake(108.34, 289.98), controlPoint1: CGPointMake(72.82, 353.2), controlPoint2: CGPointMake(87.36, 320.65))
-        bezierPath.addCurveToPoint(CGPointMake(137.23, 223.16), controlPoint1: CGPointMake(131.31, 256.4), controlPoint2: CGPointMake(137.23, 223.16))
-        bezierPath.addCurveToPoint(CGPointMake(148.07, 283.36), controlPoint1: CGPointMake(137.23, 223.16), controlPoint2: CGPointMake(155.29, 246.64))
-        bezierPath.addCurveToPoint(CGPointMake(181.18, 169.58), controlPoint1: CGPointMake(179.98, 247.84), controlPoint2: CGPointMake(186, 191.25))
-        bezierPath.addCurveToPoint(CGPointMake(242.59, 410), controlPoint1: CGPointMake(253.31, 219.98), controlPoint2: CGPointMake(284.13, 329.12))
-        bezierPath.addCurveToPoint(CGPointMake(268.65, 76.86), controlPoint1: CGPointMake(463.54, 284.99), controlPoint2: CGPointMake(297.55, 97.93))
-        bezierPath.addCurveToPoint(CGPointMake(260.65, 150.91), controlPoint1: CGPointMake(278.29, 97.93), controlPoint2: CGPointMake(280.11, 133.6))
-        bezierPath.addCurveToPoint(CGPointMake(146.26, 0.4), controlPoint1: CGPointMake(227.71, 26), controlPoint2: CGPointMake(146.26, 0.4))
-        bezierPath.addCurveToPoint(CGPointMake(68.39, 187.89), controlPoint1: CGPointMake(155.9, 64.82), controlPoint2: CGPointMake(111.34, 135.26))
-        bezierPath.addCurveToPoint(CGPointMake(51.77, 119.9), controlPoint1: CGPointMake(66.88, 162.2), controlPoint2: CGPointMake(65.27, 144.48))
-        bezierPath.addCurveToPoint(CGPointMake(3.41, 251.35), controlPoint1: CGPointMake(48.73, 166.56), controlPoint2: CGPointMake(13.07, 204.6))
-        bezierPath.addCurveToPoint(CGPointMake(100.11, 410), controlPoint1: CGPointMake(-9.66, 314.67), controlPoint2: CGPointMake(13.22, 361.02))
+        bezierPath.moveToPoint(CGPointMake(100.11, 409.6))
+        bezierPath.addCurveToPoint(CGPointMake(108.34, 289.58), controlPoint1: CGPointMake(72.82, 352.8), controlPoint2: CGPointMake(87.36, 320.25))
+        bezierPath.addCurveToPoint(CGPointMake(137.23, 222.76), controlPoint1: CGPointMake(131.31, 256), controlPoint2: CGPointMake(137.23, 222.76))
+        bezierPath.addCurveToPoint(CGPointMake(148.07, 282.96), controlPoint1: CGPointMake(137.23, 222.76), controlPoint2: CGPointMake(155.29, 246.24))
+        bezierPath.addCurveToPoint(CGPointMake(181.18, 169.18), controlPoint1: CGPointMake(179.98, 247.44), controlPoint2: CGPointMake(186, 190.85))
+        bezierPath.addCurveToPoint(CGPointMake(242.59, 409.6), controlPoint1: CGPointMake(253.31, 219.58), controlPoint2: CGPointMake(284.13, 328.72))
+        bezierPath.addCurveToPoint(CGPointMake(268.65, 76.46), controlPoint1: CGPointMake(463.54, 284.59), controlPoint2: CGPointMake(297.55, 97.53))
+        bezierPath.addCurveToPoint(CGPointMake(260.65, 150.51), controlPoint1: CGPointMake(278.29, 97.53), controlPoint2: CGPointMake(280.11, 133.2))
+        bezierPath.addCurveToPoint(CGPointMake(146.26, 0), controlPoint1: CGPointMake(227.71, 25.6), controlPoint2: CGPointMake(146.26, 0))
+        bezierPath.addCurveToPoint(CGPointMake(68.39, 187.49), controlPoint1: CGPointMake(155.9, 64.42), controlPoint2: CGPointMake(111.34, 134.86))
+        bezierPath.addCurveToPoint(CGPointMake(51.77, 119.5), controlPoint1: CGPointMake(66.88, 161.81), controlPoint2: CGPointMake(65.27, 144.08))
+        bezierPath.addCurveToPoint(CGPointMake(3.41, 250.95), controlPoint1: CGPointMake(48.73, 166.16), controlPoint2: CGPointMake(13.07, 204.2))
+        bezierPath.addCurveToPoint(CGPointMake(100.11, 409.6), controlPoint1: CGPointMake(-9.66, 314.27), controlPoint2: CGPointMake(13.22, 360.62))
         bezierPath.closePath()
-        flameColor.setFill()
+        AssetsKit.flameColor.setFill()
         bezierPath.fill()
+
+        CGContextRestoreGState(context)
     }
 
     //// Generated Images
-
-    public class func imageOfLandingIcon(#scale: CGFloat) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(160, 160), false, 0)
-            AssetsKit.drawLandingIcon(scale: scale)
-
-        let imageOfLandingIcon = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-
-        return imageOfLandingIcon
-    }
 
     public class var imageOfFemaleIcon: UIImage {
         if Cache.imageOfFemaleIcon != nil {
@@ -476,41 +420,6 @@ public class AssetsKit : NSObject {
         }
     }
 
-}
-
-
-
-extension UIColor {
-    func colorWithHue(newHue: CGFloat) -> UIColor {
-        var saturation: CGFloat = 1.0, brightness: CGFloat = 1.0, alpha: CGFloat = 1.0
-        self.getHue(nil, saturation: &saturation, brightness: &brightness, alpha: &alpha)
-        return UIColor(hue: newHue, saturation: saturation, brightness: brightness, alpha: alpha)
-    }
-    func colorWithSaturation(newSaturation: CGFloat) -> UIColor {
-        var hue: CGFloat = 1.0, brightness: CGFloat = 1.0, alpha: CGFloat = 1.0
-        self.getHue(&hue, saturation: nil, brightness: &brightness, alpha: &alpha)
-        return UIColor(hue: hue, saturation: newSaturation, brightness: brightness, alpha: alpha)
-    }
-    func colorWithBrightness(newBrightness: CGFloat) -> UIColor {
-        var hue: CGFloat = 1.0, saturation: CGFloat = 1.0, alpha: CGFloat = 1.0
-        self.getHue(&hue, saturation: &saturation, brightness: nil, alpha: &alpha)
-        return UIColor(hue: hue, saturation: saturation, brightness: newBrightness, alpha: alpha)
-    }
-    func colorWithAlpha(newAlpha: CGFloat) -> UIColor {
-        var hue: CGFloat = 1.0, saturation: CGFloat = 1.0, brightness: CGFloat = 1.0
-        self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: nil)
-        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: newAlpha)
-    }
-    func colorWithHighlight(highlight: CGFloat) -> UIColor {
-        var red: CGFloat = 1.0, green: CGFloat = 1.0, blue: CGFloat = 1.0, alpha: CGFloat = 1.0
-        self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return UIColor(red: red * (1-highlight) + highlight, green: green * (1-highlight) + highlight, blue: blue * (1-highlight) + highlight, alpha: alpha * (1-highlight) + highlight)
-    }
-    func colorWithShadow(shadow: CGFloat) -> UIColor {
-        var red: CGFloat = 1.0, green: CGFloat = 1.0, blue: CGFloat = 1.0, alpha: CGFloat = 1.0
-        self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return UIColor(red: red * (1-shadow), green: green * (1-shadow), blue: blue * (1-shadow), alpha: alpha * (1-shadow) + shadow)
-    }
 }
 
 @objc protocol StyleKitSettableImage {

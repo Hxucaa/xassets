@@ -27,10 +27,10 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="bMP-at-bh1"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="show" identifier="ToLogo" id="tpX-M0-hUZ"/>
                         <segue destination="PDD-bd-RwE" kind="show" identifier="ToMaleIcon" id="yf5-M0-PlG"/>
                         <segue destination="6MC-Dc-z4a" kind="show" identifier="ToFemaleIcon" id="ONb-uh-Xze"/>
                         <segue destination="VAH-N4-pK3" kind="show" identifier="ToCakeIcon" id="dTq-zO-F6X"/>
+                        <segue destination="wIj-ty-CkU" kind="show" identifier="ToFlameIcon" id="RvT-CB-HGm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -56,7 +56,7 @@
         <!--Cake Icon-->
         <scene sceneID="VxU-kf-SSz">
             <objects>
-                <viewController id="VAH-N4-pK3" userLabel="Cake Icon" sceneMemberID="viewController">
+                <viewController id="VAH-N4-pK3" userLabel="Cake Icon" customClass="CakeIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uga-Kk-crp"/>
                         <viewControllerLayoutGuide type="bottom" id="EKg-zr-ew1"/>
@@ -83,39 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4V-P5-XpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1376" y="1164"/>
-        </scene>
-        <!--Logo-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController title="Logo" id="vXZ-lx-hvc" customClass="LogoViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mr7-2E-6hq" userLabel="Logo" customClass="LogoView" customModule="XAssets_Example" customModuleProvider="target">
-                                <rect key="frame" x="220" y="82" width="160" height="160"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="EKo-2n-zOX"/>
-                                    <constraint firstAttribute="height" constant="160" id="oar-En-jn0"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="mr7-2E-6hq" secondAttribute="centerX" id="O1V-OO-9jJ"/>
-                            <constraint firstItem="mr7-2E-6hq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="UCy-lS-g8Z"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="26" y="410"/>
+            <point key="canvasLocation" x="-662" y="1106"/>
         </scene>
         <!--Female Icon-->
         <scene sceneID="HOf-MA-Huh">
@@ -147,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vct-BK-1l3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-644" y="1114"/>
+            <point key="canvasLocation" x="-38" y="417"/>
         </scene>
         <!--Male Icon-->
         <scene sceneID="RTh-NN-saV">
@@ -179,7 +147,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIz-Pp-V3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="1114"/>
+            <point key="canvasLocation" x="-38" y="1106"/>
+        </scene>
+        <!--Flame Icon-->
+        <scene sceneID="tp3-ud-lAD">
+            <objects>
+                <viewController id="wIj-ty-CkU" userLabel="Flame Icon" customClass="FlameIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T9y-Hg-s6g"/>
+                        <viewControllerLayoutGuide type="bottom" id="nvS-aV-mkt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XiK-lT-0g0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ld-77-RBN" userLabel="Flame Icon" customClass="FlameIconView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="284" y="199" width="33" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="8rm-G2-w28"/>
+                                    <constraint firstAttribute="width" constant="33" id="CC2-lF-agQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7ld-77-RBN" secondAttribute="centerX" id="b3F-cw-epm"/>
+                            <constraint firstItem="7ld-77-RBN" firstAttribute="top" secondItem="T9y-Hg-s6g" secondAttribute="bottom" constant="135" id="pqn-lt-Jlu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbX-8p-B1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1308" y="1106"/>
         </scene>
     </scenes>
 </document>

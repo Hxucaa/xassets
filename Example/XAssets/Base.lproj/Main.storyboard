@@ -31,6 +31,7 @@
                         <segue destination="6MC-Dc-z4a" kind="show" identifier="ToFemaleIcon" id="ONb-uh-Xze"/>
                         <segue destination="VAH-N4-pK3" kind="show" identifier="ToCakeIcon" id="dTq-zO-F6X"/>
                         <segue destination="wIj-ty-CkU" kind="show" identifier="ToFlameIcon" id="RvT-CB-HGm"/>
+                        <segue destination="7Hm-qb-UY4" kind="show" identifier="ToCarIcon" id="eww-9R-JrP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -179,7 +180,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbX-8p-B1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1308" y="1106"/>
+            <point key="canvasLocation" x="-1270" y="1106"/>
+        </scene>
+        <!--Car Icon-->
+        <scene sceneID="8GS-ib-JWU">
+            <objects>
+                <viewController id="7Hm-qb-UY4" userLabel="Car Icon" customClass="CarIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fws-Q5-36t"/>
+                        <viewControllerLayoutGuide type="bottom" id="vdd-jq-D4v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FHi-pC-2XO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMR-iE-2De" userLabel="Flame Icon" customClass="CarIconView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="284" y="199" width="33" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="gT3-w5-tKp"/>
+                                    <constraint firstAttribute="width" constant="33" id="kDf-Lm-VSb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="MMR-iE-2De" secondAttribute="centerX" id="URJ-vm-1zK"/>
+                            <constraint firstItem="MMR-iE-2De" firstAttribute="top" secondItem="Fws-Q5-36t" secondAttribute="bottom" constant="135" id="ZJe-Ii-LOg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Es-of-CVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1880" y="1106"/>
         </scene>
     </scenes>
 </document>

@@ -15,8 +15,10 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308F9911B74809800072909 /* MaleIconViewController.swift */; };
 		B308F9941B7480AE00072909 /* MaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308F9931B7480AE00072909 /* MaleIconView.swift */; };
-		B35680C01B7A104500B44BB9 /* FlameIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680BF1B7A104500B44BB9 /* FlameIconViewController.swift */; };
-		B35680C21B7A104E00B44BB9 /* FlameIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680C11B7A104E00B44BB9 /* FlameIconView.swift */; };
+		B35680CD1B7A197700B44BB9 /* FlameIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680CB1B7A197700B44BB9 /* FlameIconView.swift */; };
+		B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */; };
+		B35680D21B7A19F200B44BB9 /* CarIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */; };
+		B35680D41B7A19F900B44BB9 /* CarIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D31B7A19F900B44BB9 /* CarIconView.swift */; };
 		B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D71B7490D700489954 /* FemaleIconView.swift */; };
 		B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */; };
 		B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */; };
@@ -53,8 +55,10 @@
 		74BE606CA7121D9F2D3BB968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B308F9911B74809800072909 /* MaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconViewController.swift; sourceTree = "<group>"; };
 		B308F9931B7480AE00072909 /* MaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconView.swift; sourceTree = "<group>"; };
-		B35680BF1B7A104500B44BB9 /* FlameIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconViewController.swift; sourceTree = "<group>"; };
-		B35680C11B7A104E00B44BB9 /* FlameIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconView.swift; sourceTree = "<group>"; };
+		B35680CB1B7A197700B44BB9 /* FlameIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconView.swift; sourceTree = "<group>"; };
+		B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconViewController.swift; sourceTree = "<group>"; };
+		B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarIconViewController.swift; sourceTree = "<group>"; };
+		B35680D31B7A19F900B44BB9 /* CarIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarIconView.swift; sourceTree = "<group>"; };
 		B3AF81D71B7490D700489954 /* FemaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconView.swift; sourceTree = "<group>"; };
 		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
@@ -113,10 +117,11 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
-				B35680BE1B7A101300B44BB9 /* Flame Icon */,
 				B3AF81DB1B74930500489954 /* Cake Icon */,
 				B3AF81D61B7490C000489954 /* Female Icon */,
 				B308F9901B74804100072909 /* Male Icon */,
+				B35680CA1B7A197700B44BB9 /* Flame Icon */,
+				B35680D01B7A19DF00B44BB9 /* Car Icon */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */,
 				B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */,
@@ -185,13 +190,22 @@
 			path = "Male Icon";
 			sourceTree = "<group>";
 		};
-		B35680BE1B7A101300B44BB9 /* Flame Icon */ = {
+		B35680CA1B7A197700B44BB9 /* Flame Icon */ = {
 			isa = PBXGroup;
 			children = (
-				B35680BF1B7A104500B44BB9 /* FlameIconViewController.swift */,
-				B35680C11B7A104E00B44BB9 /* FlameIconView.swift */,
+				B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */,
+				B35680CB1B7A197700B44BB9 /* FlameIconView.swift */,
 			);
-			name = "Flame Icon";
+			path = "Flame Icon";
+			sourceTree = "<group>";
+		};
+		B35680D01B7A19DF00B44BB9 /* Car Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */,
+				B35680D31B7A19F900B44BB9 /* CarIconView.swift */,
+			);
+			path = "Car Icon";
 			sourceTree = "<group>";
 		};
 		B3AF81D61B7490C000489954 /* Female Icon */ = {
@@ -423,15 +437,17 @@
 			files = (
 				B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */,
 				B308F9941B7480AE00072909 /* MaleIconView.swift in Sources */,
-				B35680C21B7A104E00B44BB9 /* FlameIconView.swift in Sources */,
+				B35680D41B7A19F900B44BB9 /* CarIconView.swift in Sources */,
+				B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */,
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
 				B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */,
 				B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */,
 				B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */,
 				B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */,
-				B35680C01B7A104500B44BB9 /* FlameIconViewController.swift in Sources */,
+				B35680D21B7A19F200B44BB9 /* CarIconViewController.swift in Sources */,
 				B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B35680CD1B7A197700B44BB9 /* FlameIconView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

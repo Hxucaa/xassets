@@ -40,6 +40,8 @@ public final class MenuItems {
         ("Nearby Button Untapped", "ToNearbyButtonUntapped"),
         ("Chat Button Tapped", "ToChatButtonTapped"),
         ("Chat Button Untapped", "ToChatButtonUntapped"),
-        ("Price Tag Background", "ToPriceTagBackground")
+        ("Price Tag Background", "ToPriceTagBackground"),
+        ("Navbar Serach Button", "ToNavbarSearchButton"),
+        ("Navbar Filter Button", "ToNavbarFilterButton")
     ]
 }

@@ -47,6 +47,10 @@
 		B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */; };
 		B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */; };
 		B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DE1B74933000489954 /* CakeIconView.swift */; };
+		B3FA65F11B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65F01B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift */; };
+		B3FA65F31B7A59BC003DD5D0 /* NavbarSearchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65F21B7A59BC003DD5D0 /* NavbarSearchButtonView.swift */; };
+		B3FA65FB1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65FA1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift */; };
+		B3FA65FD1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65FC1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift */; };
 		B44D2CD91B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */; };
 		B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */; };
 		B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */; };
@@ -111,6 +115,10 @@
 		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DE1B74933000489954 /* CakeIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconView.swift; sourceTree = "<group>"; };
+		B3FA65F01B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarbarSearchButtonViewController.swift; sourceTree = "<group>"; };
+		B3FA65F21B7A59BC003DD5D0 /* NavbarSearchButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarSearchButtonView.swift; sourceTree = "<group>"; };
+		B3FA65FA1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarFilterButtonViewController.swift; sourceTree = "<group>"; };
+		B3FA65FC1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarFilterButtonView.swift; sourceTree = "<group>"; };
 		B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKsc-Bold.otf"; sourceTree = "<group>"; };
 		B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
@@ -165,6 +173,8 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B3FA65F91B7A5ACA003DD5D0 /* Navbar Filter Button */,
+				B3FA65EF1B7A599E003DD5D0 /* Navbar Search Button */,
 				B35680FE1B7A3BA600B44BB9 /* Profile Button Tapped */,
 				B35680FD1B7A3B9200B44BB9 /* Profile Button Untapped */,
 				B35680FC1B7A3B8500B44BB9 /* Chat Button Tapped */,
@@ -394,6 +404,24 @@
 			path = "Cake Icon";
 			sourceTree = "<group>";
 		};
+		B3FA65EF1B7A599E003DD5D0 /* Navbar Search Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA65F01B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift */,
+				B3FA65F21B7A59BC003DD5D0 /* NavbarSearchButtonView.swift */,
+			);
+			path = "Navbar Search Button";
+			sourceTree = "<group>";
+		};
+		B3FA65F91B7A5ACA003DD5D0 /* Navbar Filter Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA65FA1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift */,
+				B3FA65FC1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift */,
+			);
+			path = "Navbar Filter Button";
+			sourceTree = "<group>";
+		};
 		BAD703D6C1662D7418EFCFA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +635,7 @@
 				B35681061B7A3C2800B44BB9 /* ProfileButtonUntappedView.swift in Sources */,
 				B35680E91B7A2A9700B44BB9 /* WTGButtonUntappedView.swift in Sources */,
 				B35680F61B7A3B1D00B44BB9 /* HomeButtonTappedViewController.swift in Sources */,
+				B3FA65F11B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift in Sources */,
 				B35680F31B7A3ACA00B44BB9 /* HomeButtonUntappedView.swift in Sources */,
 				B35680E71B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift in Sources */,
 				B35681121B7A3D3500B44BB9 /* NearbyButtonTappedView.swift in Sources */,
@@ -618,13 +647,16 @@
 				B35680E41B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift in Sources */,
 				B35680EE1B7A332200B44BB9 /* PriceTagBackgroundView.swift in Sources */,
 				B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */,
+				B3FA65FD1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift in Sources */,
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
 				B35681161B7A3D7E00B44BB9 /* NearbyButtonUntappedView.swift in Sources */,
 				B35681001B7A3BB500B44BB9 /* ProfileButtonTappedViewController.swift in Sources */,
 				B35681101B7A3D2B00B44BB9 /* NearbyButtonTappedViewController.swift in Sources */,
+				B3FA65FB1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift in Sources */,
 				B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */,
 				B35681041B7A3C1400B44BB9 /* ProfileButtonUntappedViewController.swift in Sources */,
 				B35680F81B7A3B2900B44BB9 /* HomeButtonTappedView.swift in Sources */,
+				B3FA65F31B7A59BC003DD5D0 /* NavbarSearchButtonView.swift in Sources */,
 				B35680D71B7A202600B44BB9 /* EtcIconViewController.swift in Sources */,
 				B35681021B7A3BC200B44BB9 /* ProfileButtonTappedView.swift in Sources */,
 				B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */,

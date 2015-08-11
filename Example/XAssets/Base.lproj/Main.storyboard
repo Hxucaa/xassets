@@ -44,6 +44,8 @@
                         <segue destination="CvG-4m-HhQ" kind="show" identifier="ToChatButtonUntapped" id="QGB-f7-eRq"/>
                         <segue destination="mZK-0y-zuD" kind="show" identifier="ToProfileButtonTapped" id="naM-RP-n0t"/>
                         <segue destination="tJo-Z5-Zyg" kind="show" identifier="ToProfileButtonUntapped" id="HaN-p1-8b1"/>
+                        <segue destination="Jwz-6i-DQc" kind="show" identifier="ToNavbarFilterButton" id="eCG-ye-ZBy"/>
+                        <segue destination="ixt-MJ-sut" kind="show" identifier="ToNavbarSearchButton" id="lW4-5b-t8J"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -609,6 +611,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joS-qi-73Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2508" y="1073"/>
+        </scene>
+        <!--Navbar Search Button-->
+        <scene sceneID="jVV-rF-yZA">
+            <objects>
+                <viewController id="ixt-MJ-sut" userLabel="Navbar Search Button" customClass="NavbarSearchButtonViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Umh-Ur-Ome"/>
+                        <viewControllerLayoutGuide type="bottom" id="nov-Ma-8sr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6FY-Ku-3I7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPg-CS-wqS" userLabel="Profile Button Tapped" customClass="NavbarSearchButtonTappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="291" y="251" width="50" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="epE-Wf-fF2"/>
+                                    <constraint firstAttribute="height" constant="43" id="vyd-Rz-97Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tPg-CS-wqS" secondAttribute="centerX" constant="-16" id="YnH-Kt-VbI"/>
+                            <constraint firstItem="tPg-CS-wqS" firstAttribute="top" secondItem="Umh-Ur-Ome" secondAttribute="bottom" constant="187" id="p8E-IT-6BP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QoO-1f-IQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3134" y="417"/>
+        </scene>
+        <!--Navbar Filter Button-->
+        <scene sceneID="4s9-Pv-fYJ">
+            <objects>
+                <viewController id="Jwz-6i-DQc" userLabel="Navbar Filter Button" customClass="NavbarFilterButtonViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DNf-4J-fuG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y88-hY-je3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0BI-MC-I6e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UQ-ai-HRs" userLabel="Navbar Filter Button" customClass="NavbarFilterButtonTappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="286" y="261" width="39" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="E2z-Kj-mEc"/>
+                                    <constraint firstAttribute="height" constant="40" id="NZf-BY-Po0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5UQ-ai-HRs" firstAttribute="top" secondItem="DNf-4J-fuG" secondAttribute="bottom" constant="197" id="IPH-yt-XQa"/>
+                            <constraint firstAttribute="centerX" secondItem="5UQ-ai-HRs" secondAttribute="centerX" constant="-5.5" id="kL0-iZ-B4Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zh7-PP-k4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3134" y="1073"/>
         </scene>
     </scenes>
 </document>

@@ -32,6 +32,14 @@ public final class MenuItems {
         ("Etc Icon", "ToEtcIcon"),
         ("WTG Button Tapped", "ToWTGButtonTapped"),
         ("WTG Button Untapped", "ToWTGButtonUntapped"),
+        ("Profile Button Tapped", "ToProfileButtonTapped"),
+        ("Profile Button Untapped", "ToProfileButtonUntapped"),
+        ("Home Button Tapped", "ToHomeButtonTapped"),
+        ("Home Button Untapped", "ToHomeButtonUntapped"),
+        ("Nearby Button Tapped", "ToNearbyButtonTapped"),
+        ("Nearby Button Untapped", "ToNearbyButtonUntapped"),
+        ("Chat Button Tapped", "ToChatButtonTapped"),
+        ("Chat Button Untapped", "ToChatButtonUntapped"),
         ("Price Tag Background", "ToPriceTagBackground")
     ]
 }

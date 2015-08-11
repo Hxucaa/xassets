@@ -36,6 +36,14 @@
                         <segue destination="m0I-Mx-0ly" kind="show" identifier="ToWTGButtonTapped" id="egA-7W-yE3"/>
                         <segue destination="KDc-LA-9SP" kind="show" identifier="ToWTGButtonUntapped" id="1oG-UX-BEg"/>
                         <segue destination="WeU-Dp-hUp" kind="show" identifier="ToPriceTagBackground" id="KGR-M9-H4g"/>
+                        <segue destination="Kg9-EL-9pO" kind="show" identifier="ToHomeButtonTapped" id="f8l-fE-rFD"/>
+                        <segue destination="f09-kc-Iy5" kind="show" identifier="ToHomeButtonUntapped" id="LsN-rv-3P9"/>
+                        <segue destination="ADR-6C-1th" kind="show" identifier="ToNearbyButtonTapped" id="uQi-NH-ztj"/>
+                        <segue destination="V2K-y3-PhY" kind="show" identifier="ToNearbyButtonUntapped" id="FRh-d2-vLI"/>
+                        <segue destination="ard-ul-uBS" kind="show" identifier="ToChatButtonTapped" id="lWy-e3-tlg"/>
+                        <segue destination="CvG-4m-HhQ" kind="show" identifier="ToChatButtonUntapped" id="QGB-f7-eRq"/>
+                        <segue destination="mZK-0y-zuD" kind="show" identifier="ToProfileButtonTapped" id="naM-RP-n0t"/>
+                        <segue destination="tJo-Z5-Zyg" kind="show" identifier="ToProfileButtonUntapped" id="HaN-p1-8b1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -345,6 +353,262 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpC-ab-pgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2087" y="-256"/>
+        </scene>
+        <!--Home Button Tapped-->
+        <scene sceneID="Pc5-gZ-X8T">
+            <objects>
+                <viewController id="Kg9-EL-9pO" userLabel="Home Button Tapped" customClass="HomeButtonTappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0dQ-S1-TVC"/>
+                        <viewControllerLayoutGuide type="bottom" id="4zR-hP-S2I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lkw-f2-sdx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAt-FG-UAZ" userLabel="Home Button Tapped" customClass="HomeButtonTappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="288" y="249" width="25" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="pnP-3h-9wl"/>
+                                    <constraint firstAttribute="height" constant="31" id="s5N-CL-Sm1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iAt-FG-UAZ" firstAttribute="top" secondItem="0dQ-S1-TVC" secondAttribute="bottom" constant="185" id="agc-NA-tG9"/>
+                            <constraint firstAttribute="centerX" secondItem="iAt-FG-UAZ" secondAttribute="centerX" id="uVL-Cf-gDf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VkP-yb-plC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="410"/>
+        </scene>
+        <!--Home Button Untapped-->
+        <scene sceneID="kuW-kz-e8a">
+            <objects>
+                <viewController id="f09-kc-Iy5" userLabel="Home Button Untapped" customClass="HomeButtonUntappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iGG-Dn-Ksi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ubx-zx-eMX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uJS-xo-uWW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNl-vV-ekd" userLabel="Home Button Untapped" customClass="HomeButtonUntappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="286" y="261" width="29" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="V5l-pg-B6G"/>
+                                    <constraint firstAttribute="width" constant="29" id="W4X-Je-WWE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dNl-vV-ekd" secondAttribute="centerX" id="fHj-dy-UB1"/>
+                            <constraint firstItem="dNl-vV-ekd" firstAttribute="top" secondItem="iGG-Dn-Ksi" secondAttribute="bottom" constant="197" id="u65-mC-tWv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixN-8F-cY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="1073"/>
+        </scene>
+        <!--Nearby Button Tapped-->
+        <scene sceneID="oaD-rc-sUs">
+            <objects>
+                <viewController id="ADR-6C-1th" userLabel="Nearby Button Tapped" customClass="NearbyButtonTappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cj5-XG-dDB"/>
+                        <viewControllerLayoutGuide type="bottom" id="JOj-iD-9dP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V1l-vE-u9n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yp3-JG-iRn" userLabel="Nearby Button Tapped" customClass="NearbyButtonTappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="291" y="251" width="19" height="26"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="obH-Td-ERY"/>
+                                    <constraint firstAttribute="height" constant="26" id="qjq-Zk-g1C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yp3-JG-iRn" firstAttribute="top" secondItem="Cj5-XG-dDB" secondAttribute="bottom" constant="187" id="AH1-UC-oyp"/>
+                            <constraint firstAttribute="centerX" secondItem="Yp3-JG-iRn" secondAttribute="centerX" id="chY-nV-eIb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RC2-Ow-q5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="417"/>
+        </scene>
+        <!--Nearby Button Untapped-->
+        <scene sceneID="gVG-zl-o5A">
+            <objects>
+                <viewController id="V2K-y3-PhY" userLabel="Nearby Button Untapped" customClass="NearbyButtonUntappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fy8-Ax-0Bt"/>
+                        <viewControllerLayoutGuide type="bottom" id="gZH-IR-FxU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xhv-om-ql5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27G-01-uLJ" userLabel="Home Button Untapped" customClass="NearbyButtonUntappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="286" y="261" width="17" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="3so-Zz-DTX"/>
+                                    <constraint firstAttribute="width" constant="17" id="UnM-Tf-q0m"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="27G-01-uLJ" secondAttribute="centerX" constant="5.5" id="emm-Q6-4Yf"/>
+                            <constraint firstItem="27G-01-uLJ" firstAttribute="top" secondItem="fy8-Ax-0Bt" secondAttribute="bottom" constant="197" id="v9P-Sp-AgG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAM-0K-8m2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="1073"/>
+        </scene>
+        <!--Chat Button Tapped-->
+        <scene sceneID="5Gs-Si-YOj">
+            <objects>
+                <viewController id="ard-ul-uBS" userLabel="Chat Button Tapped" customClass="ChatButtonTappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NgB-CH-ZDH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vdw-g6-FkK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kyj-4M-0au">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCZ-AT-rYG" userLabel="Chat Button Tapped" customClass="ChatButtonTappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="291" y="251" width="32" height="26"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="PDP-aC-OTq"/>
+                                    <constraint firstAttribute="height" constant="26" id="bVz-LQ-oFt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OCZ-AT-rYG" firstAttribute="top" secondItem="NgB-CH-ZDH" secondAttribute="bottom" constant="187" id="Xf0-Yw-QY6"/>
+                            <constraint firstAttribute="centerX" secondItem="OCZ-AT-rYG" secondAttribute="centerX" constant="-7" id="fYk-Hy-nIX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQg-RO-XlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="417"/>
+        </scene>
+        <!--Chat Button Untapped-->
+        <scene sceneID="n8Q-Ps-4Rk">
+            <objects>
+                <viewController id="CvG-4m-HhQ" userLabel="Chat Button Untapped" customClass="ChatButtonUntappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x2E-UR-INA"/>
+                        <viewControllerLayoutGuide type="bottom" id="16B-jA-JEm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qvn-y8-ftO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOT-oP-dpt" userLabel="Home Button Untapped" customClass="ChatButtonUntappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="286" y="261" width="28" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="oL5-5Z-qXB"/>
+                                    <constraint firstAttribute="height" constant="21" id="oew-QN-LXg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="JOT-oP-dpt" secondAttribute="centerX" id="cCV-AZ-dCp"/>
+                            <constraint firstItem="JOT-oP-dpt" firstAttribute="top" secondItem="x2E-UR-INA" secondAttribute="bottom" constant="197" id="pwb-Vx-C07"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8DM-gT-Ccs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="1073"/>
+        </scene>
+        <!--Profile Button Tapped-->
+        <scene sceneID="sTH-ej-PKT">
+            <objects>
+                <viewController id="mZK-0y-zuD" userLabel="Profile Button Tapped" customClass="ProfileButtonTappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BMx-f9-KAm"/>
+                        <viewControllerLayoutGuide type="bottom" id="dnU-KN-NfJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lB4-kE-0pZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG1-f9-Dia" userLabel="Profile Button Tapped" customClass="ProfileButtonTappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="291" y="251" width="32" height="26"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="kJH-YE-5wi"/>
+                                    <constraint firstAttribute="height" constant="26" id="ycQ-yF-e9N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UG1-f9-Dia" firstAttribute="top" secondItem="BMx-f9-KAm" secondAttribute="bottom" constant="187" id="cdM-KR-ENH"/>
+                            <constraint firstAttribute="centerX" secondItem="UG1-f9-Dia" secondAttribute="centerX" constant="-7" id="sJj-re-tP7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwE-Pp-wfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="417"/>
+        </scene>
+        <!--Profile Button Untapped-->
+        <scene sceneID="Qq7-ic-XHz">
+            <objects>
+                <viewController id="tJo-Z5-Zyg" userLabel="Profile Button Untapped" customClass="ProfileButtonUntappedViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V02-bn-MKh"/>
+                        <viewControllerLayoutGuide type="bottom" id="wxe-Wk-gVO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z31-G6-yCf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7my-EI-KtS" userLabel="Profile Button Untapped" customClass="ProfileButtonUntappedView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="286" y="261" width="28" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aUH-xN-sVh"/>
+                                    <constraint firstAttribute="width" constant="28" id="krb-A1-WoW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7my-EI-KtS" secondAttribute="centerX" id="khj-Wx-4Da"/>
+                            <constraint firstItem="7my-EI-KtS" firstAttribute="top" secondItem="V02-bn-MKh" secondAttribute="bottom" constant="197" id="wor-dR-H4j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joS-qi-73Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="1073"/>
         </scene>
     </scenes>
 </document>

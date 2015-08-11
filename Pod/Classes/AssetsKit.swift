@@ -25,6 +25,7 @@ public class AssetsKit : NSObject {
         static var carIconColor: UIColor = UIColor(red: 0.961, green: 0.651, blue: 0.137, alpha: 1.000)
         static var etcColor: UIColor = UIColor(red: 0.796, green: 0.796, blue: 0.796, alpha: 1.000)
         static var priceTagColor: UIColor = UIColor(red: 0.686, green: 0.686, blue: 0.686, alpha: 1.000)
+        static var bottomBarButtonUntapped: UIColor = UIColor(red: 0.447, green: 0.447, blue: 0.447, alpha: 1.000)
         static var imageOfFemaleIcon: UIImage?
         static var femaleIconTargets: [AnyObject]?
         static var imageOfMaleIcon: UIImage?
@@ -43,6 +44,7 @@ public class AssetsKit : NSObject {
     public class var carIconColor: UIColor { return Cache.carIconColor }
     public class var etcColor: UIColor { return Cache.etcColor }
     public class var priceTagColor: UIColor { return Cache.priceTagColor }
+    public class var bottomBarButtonUntapped: UIColor { return Cache.bottomBarButtonUntapped }
 
     //// Drawing Methods
 
@@ -417,6 +419,27 @@ public class AssetsKit : NSObject {
         oval3Path.fill()
     }
 
+    public class func drawWTGButtonTapped() {
+
+        //// Group
+        //// Bezier Drawing
+        var bezierPath = UIBezierPath()
+        bezierPath.moveToPoint(CGPointMake(0, 42.54))
+        bezierPath.addCurveToPoint(CGPointMake(5.01, 33.24), controlPoint1: CGPointMake(0, 39.23), controlPoint2: CGPointMake(2.24, 35.05))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 0.61), controlPoint1: CGPointMake(5.01, 33.24), controlPoint2: CGPointMake(53.51, 0.61))
+        bezierPath.addCurveToPoint(CGPointMake(129.99, 33.24), controlPoint1: CGPointMake(81.49, 0.61), controlPoint2: CGPointMake(129.99, 33.24))
+        bezierPath.addCurveToPoint(CGPointMake(135, 42.54), controlPoint1: CGPointMake(132.76, 35.06), controlPoint2: CGPointMake(135, 39.22))
+        bezierPath.addLineToPoint(CGPointMake(135, 103.88))
+        bezierPath.addCurveToPoint(CGPointMake(129.91, 113.05), controlPoint1: CGPointMake(135, 107.2), controlPoint2: CGPointMake(132.73, 111.3))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 145), controlPoint1: CGPointMake(129.91, 113.05), controlPoint2: CGPointMake(79.35, 145))
+        bezierPath.addCurveToPoint(CGPointMake(5.09, 113.05), controlPoint1: CGPointMake(55.65, 145), controlPoint2: CGPointMake(5.09, 113.05))
+        bezierPath.addCurveToPoint(CGPointMake(0, 103.88), controlPoint1: CGPointMake(2.28, 111.3), controlPoint2: CGPointMake(0, 107.2))
+        bezierPath.addLineToPoint(CGPointMake(0, 42.54))
+        bezierPath.closePath()
+        AssetsKit.themeColor.setFill()
+        bezierPath.fill()
+    }
+
     public class func drawWTGButtonUntapped() {
 
         //// Group
@@ -456,27 +479,6 @@ public class AssetsKit : NSObject {
         bezier2Path.fill()
     }
 
-    public class func drawWTGButtonTapped() {
-
-        //// Group
-        //// Bezier Drawing
-        var bezierPath = UIBezierPath()
-        bezierPath.moveToPoint(CGPointMake(0, 42.54))
-        bezierPath.addCurveToPoint(CGPointMake(5.01, 33.24), controlPoint1: CGPointMake(0, 39.23), controlPoint2: CGPointMake(2.24, 35.05))
-        bezierPath.addCurveToPoint(CGPointMake(67.5, 0.61), controlPoint1: CGPointMake(5.01, 33.24), controlPoint2: CGPointMake(53.51, 0.61))
-        bezierPath.addCurveToPoint(CGPointMake(129.99, 33.24), controlPoint1: CGPointMake(81.49, 0.61), controlPoint2: CGPointMake(129.99, 33.24))
-        bezierPath.addCurveToPoint(CGPointMake(135, 42.54), controlPoint1: CGPointMake(132.76, 35.06), controlPoint2: CGPointMake(135, 39.22))
-        bezierPath.addLineToPoint(CGPointMake(135, 103.88))
-        bezierPath.addCurveToPoint(CGPointMake(129.91, 113.05), controlPoint1: CGPointMake(135, 107.2), controlPoint2: CGPointMake(132.73, 111.3))
-        bezierPath.addCurveToPoint(CGPointMake(67.5, 145), controlPoint1: CGPointMake(129.91, 113.05), controlPoint2: CGPointMake(79.35, 145))
-        bezierPath.addCurveToPoint(CGPointMake(5.09, 113.05), controlPoint1: CGPointMake(55.65, 145), controlPoint2: CGPointMake(5.09, 113.05))
-        bezierPath.addCurveToPoint(CGPointMake(0, 103.88), controlPoint1: CGPointMake(2.28, 111.3), controlPoint2: CGPointMake(0, 107.2))
-        bezierPath.addLineToPoint(CGPointMake(0, 42.54))
-        bezierPath.closePath()
-        AssetsKit.themeColor.setFill()
-        bezierPath.fill()
-    }
-
     public class func drawPriceTagBackground() {
 
         //// Rectangle Drawing
@@ -490,6 +492,330 @@ public class AssetsKit : NSObject {
         rectanglePath.closePath()
         AssetsKit.priceTagColor.setFill()
         rectanglePath.fill()
+    }
+
+    public class func drawHomeButtonTapped() {
+
+        //// Group
+        //// Rectangle-72 Drawing
+        var rectangle72Path = UIBezierPath()
+        rectangle72Path.moveToPoint(CGPointMake(19, 8))
+        rectangle72Path.addLineToPoint(CGPointMake(24, 13))
+        rectangle72Path.addLineToPoint(CGPointMake(22, 13))
+        rectangle72Path.addLineToPoint(CGPointMake(22, 24))
+        rectangle72Path.addLineToPoint(CGPointMake(2, 24))
+        rectangle72Path.addLineToPoint(CGPointMake(2, 13))
+        rectangle72Path.addLineToPoint(CGPointMake(2, 13))
+        rectangle72Path.addLineToPoint(CGPointMake(0, 13))
+        rectangle72Path.addLineToPoint(CGPointMake(10.59, 2.41))
+        rectangle72Path.addCurveToPoint(CGPointMake(13.41, 2.41), controlPoint1: CGPointMake(11.37, 1.63), controlPoint2: CGPointMake(12.63, 1.63))
+        rectangle72Path.addLineToPoint(CGPointMake(15.05, 4.05))
+        rectangle72Path.addCurveToPoint(CGPointMake(17, 2.5), controlPoint1: CGPointMake(15.26, 3.16), controlPoint2: CGPointMake(16.05, 2.5))
+        rectangle72Path.addCurveToPoint(CGPointMake(19, 4.5), controlPoint1: CGPointMake(18.11, 2.5), controlPoint2: CGPointMake(19, 3.39))
+        rectangle72Path.addLineToPoint(CGPointMake(19, 8))
+        rectangle72Path.addLineToPoint(CGPointMake(19, 8))
+        rectangle72Path.closePath()
+        rectangle72Path.moveToPoint(CGPointMake(11.5, 16))
+        rectangle72Path.addCurveToPoint(CGPointMake(9.5, 18), controlPoint1: CGPointMake(10.4, 16), controlPoint2: CGPointMake(9.5, 16.89))
+        rectangle72Path.addLineToPoint(CGPointMake(9.5, 24))
+        rectangle72Path.addLineToPoint(CGPointMake(14.5, 24))
+        rectangle72Path.addLineToPoint(CGPointMake(14.5, 18))
+        rectangle72Path.addCurveToPoint(CGPointMake(12.5, 16), controlPoint1: CGPointMake(14.5, 16.89), controlPoint2: CGPointMake(13.61, 16))
+        rectangle72Path.addLineToPoint(CGPointMake(11.5, 16))
+        rectangle72Path.closePath()
+        rectangle72Path.miterLimit = 4;
+
+        rectangle72Path.usesEvenOddFillRule = true;
+
+        AssetsKit.themeColor.setFill()
+        rectangle72Path.fill()
+
+
+        //// Oval-35 Drawing
+        var oval35Path = UIBezierPath(ovalInRect: CGRectMake(9.5, 8, 5, 5))
+        AssetsKit.iconUntapped.setFill()
+        oval35Path.fill()
+        AssetsKit.iconUntapped.setStroke()
+        oval35Path.lineWidth = 1
+        oval35Path.stroke()
+    }
+
+    public class func drawHomeButtonUntapped() {
+
+        //// Group
+        //// Rectangle-72 Drawing
+        var rectangle72Path = UIBezierPath()
+        rectangle72Path.moveToPoint(CGPointMake(19, 7))
+        rectangle72Path.addLineToPoint(CGPointMake(24, 12))
+        rectangle72Path.addLineToPoint(CGPointMake(22, 12))
+        rectangle72Path.addLineToPoint(CGPointMake(22, 23))
+        rectangle72Path.addLineToPoint(CGPointMake(2, 23))
+        rectangle72Path.addLineToPoint(CGPointMake(2, 12))
+        rectangle72Path.addLineToPoint(CGPointMake(2, 12))
+        rectangle72Path.addLineToPoint(CGPointMake(0, 12))
+        rectangle72Path.addLineToPoint(CGPointMake(10.59, 1.41))
+        rectangle72Path.addCurveToPoint(CGPointMake(13.41, 1.41), controlPoint1: CGPointMake(11.37, 0.63), controlPoint2: CGPointMake(12.63, 0.63))
+        rectangle72Path.addLineToPoint(CGPointMake(15.05, 3.05))
+        rectangle72Path.addCurveToPoint(CGPointMake(17, 1.5), controlPoint1: CGPointMake(15.26, 2.16), controlPoint2: CGPointMake(16.05, 1.5))
+        rectangle72Path.addCurveToPoint(CGPointMake(19, 3.5), controlPoint1: CGPointMake(18.11, 1.5), controlPoint2: CGPointMake(19, 2.39))
+        rectangle72Path.addLineToPoint(CGPointMake(19, 7))
+        rectangle72Path.addLineToPoint(CGPointMake(19, 7))
+        rectangle72Path.closePath()
+        rectangle72Path.moveToPoint(CGPointMake(11.5, 15))
+        rectangle72Path.addCurveToPoint(CGPointMake(9.5, 17), controlPoint1: CGPointMake(10.4, 15), controlPoint2: CGPointMake(9.5, 15.89))
+        rectangle72Path.addLineToPoint(CGPointMake(9.5, 23))
+        rectangle72Path.addLineToPoint(CGPointMake(14.5, 23))
+        rectangle72Path.addLineToPoint(CGPointMake(14.5, 17))
+        rectangle72Path.addCurveToPoint(CGPointMake(12.5, 15), controlPoint1: CGPointMake(14.5, 15.89), controlPoint2: CGPointMake(13.61, 15))
+        rectangle72Path.addLineToPoint(CGPointMake(11.5, 15))
+        rectangle72Path.closePath()
+        rectangle72Path.miterLimit = 4;
+
+        rectangle72Path.usesEvenOddFillRule = true;
+
+        AssetsKit.bottomBarButtonUntapped.setStroke()
+        rectangle72Path.lineWidth = 1
+        rectangle72Path.stroke()
+
+
+        //// Oval-35 Drawing
+        var oval35Path = UIBezierPath(ovalInRect: CGRectMake(9.5, 7, 5, 5))
+        AssetsKit.bottomBarButtonUntapped.setStroke()
+        oval35Path.lineWidth = 1
+        oval35Path.stroke()
+    }
+
+    public class func drawNearbyButtonTapped() {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()
+
+        //// Group
+        //// Fill- Drawing
+        var fillPath = UIBezierPath()
+        fillPath.moveToPoint(CGPointMake(7.5, 20.68))
+        fillPath.addLineToPoint(CGPointMake(7.09, 20.21))
+        fillPath.addCurveToPoint(CGPointMake(0.04, 7.38), controlPoint1: CGPointMake(6.8, 19.88), controlPoint2: CGPointMake(0.04, 12.06))
+        fillPath.addCurveToPoint(CGPointMake(7.5, 0.04), controlPoint1: CGPointMake(0.04, 3.33), controlPoint2: CGPointMake(3.39, 0.04))
+        fillPath.addCurveToPoint(CGPointMake(14.96, 7.38), controlPoint1: CGPointMake(11.61, 0.04), controlPoint2: CGPointMake(14.96, 3.33))
+        fillPath.addCurveToPoint(CGPointMake(7.91, 20.21), controlPoint1: CGPointMake(14.96, 12.06), controlPoint2: CGPointMake(8.2, 19.88))
+        fillPath.addLineToPoint(CGPointMake(7.5, 20.68))
+        fillPath.closePath()
+        fillPath.miterLimit = 4;
+
+        fillPath.usesEvenOddFillRule = true;
+
+        AssetsKit.themeColor.setFill()
+        fillPath.fill()
+
+
+        //// Fill-56 Drawing
+        CGContextSaveGState(context)
+        CGContextTranslateCTM(context, 7.5, 7.4)
+        CGContextRotateCTM(context, 1.6 * CGFloat(M_PI) / 180)
+
+        var fill56Path = UIBezierPath(ovalInRect: CGRectMake(-2.85, -2.8, 5.7, 5.6))
+        AssetsKit.iconUntapped.setFill()
+        fill56Path.fill()
+
+        CGContextRestoreGState(context)
+    }
+
+    public class func drawNearbyButtonUntapped() {
+
+        //// Group
+        //// Fill-55 Drawing
+        var fill55Path = UIBezierPath()
+        fill55Path.moveToPoint(CGPointMake(7.5, 20.68))
+        fill55Path.addLineToPoint(CGPointMake(7.09, 20.21))
+        fill55Path.addCurveToPoint(CGPointMake(0.04, 7.38), controlPoint1: CGPointMake(6.8, 19.88), controlPoint2: CGPointMake(0.04, 12.06))
+        fill55Path.addCurveToPoint(CGPointMake(7.5, 0.04), controlPoint1: CGPointMake(0.04, 3.33), controlPoint2: CGPointMake(3.39, 0.04))
+        fill55Path.addCurveToPoint(CGPointMake(14.96, 7.38), controlPoint1: CGPointMake(11.61, 0.04), controlPoint2: CGPointMake(14.96, 3.33))
+        fill55Path.addCurveToPoint(CGPointMake(7.91, 20.21), controlPoint1: CGPointMake(14.96, 12.06), controlPoint2: CGPointMake(8.2, 19.88))
+        fill55Path.addLineToPoint(CGPointMake(7.5, 20.68))
+        fill55Path.addLineToPoint(CGPointMake(7.5, 20.68))
+        fill55Path.closePath()
+        fill55Path.moveToPoint(CGPointMake(7.5, 1.1))
+        fill55Path.addCurveToPoint(CGPointMake(1.11, 7.38), controlPoint1: CGPointMake(3.98, 1.1), controlPoint2: CGPointMake(1.11, 3.91))
+        fill55Path.addCurveToPoint(CGPointMake(7.5, 19.04), controlPoint1: CGPointMake(1.11, 11.05), controlPoint2: CGPointMake(6.03, 17.27))
+        fill55Path.addCurveToPoint(CGPointMake(13.89, 7.38), controlPoint1: CGPointMake(8.97, 17.27), controlPoint2: CGPointMake(13.89, 11.05))
+        fill55Path.addCurveToPoint(CGPointMake(7.5, 1.1), controlPoint1: CGPointMake(13.89, 3.91), controlPoint2: CGPointMake(11.02, 1.1))
+        fill55Path.addLineToPoint(CGPointMake(7.5, 1.1))
+        fill55Path.closePath()
+        fill55Path.miterLimit = 4;
+
+        fill55Path.usesEvenOddFillRule = true;
+
+        AssetsKit.bottomBarButtonUntapped.setFill()
+        fill55Path.fill()
+
+
+        //// Fill-56 Drawing
+        var fill56Path = UIBezierPath()
+        fill56Path.moveToPoint(CGPointMake(7.5, 10.18))
+        fill56Path.addCurveToPoint(CGPointMake(4.66, 7.38), controlPoint1: CGPointMake(5.93, 10.18), controlPoint2: CGPointMake(4.66, 8.92))
+        fill56Path.addCurveToPoint(CGPointMake(7.5, 4.58), controlPoint1: CGPointMake(4.66, 5.84), controlPoint2: CGPointMake(5.93, 4.58))
+        fill56Path.addCurveToPoint(CGPointMake(10.34, 7.38), controlPoint1: CGPointMake(9.07, 4.58), controlPoint2: CGPointMake(10.34, 5.84))
+        fill56Path.addCurveToPoint(CGPointMake(7.5, 10.18), controlPoint1: CGPointMake(10.34, 8.92), controlPoint2: CGPointMake(9.07, 10.18))
+        fill56Path.addLineToPoint(CGPointMake(7.5, 10.18))
+        fill56Path.closePath()
+        fill56Path.moveToPoint(CGPointMake(7.5, 5.64))
+        fill56Path.addCurveToPoint(CGPointMake(5.73, 7.38), controlPoint1: CGPointMake(6.52, 5.64), controlPoint2: CGPointMake(5.73, 6.42))
+        fill56Path.addCurveToPoint(CGPointMake(7.5, 9.12), controlPoint1: CGPointMake(5.73, 8.34), controlPoint2: CGPointMake(6.52, 9.12))
+        fill56Path.addCurveToPoint(CGPointMake(9.27, 7.38), controlPoint1: CGPointMake(8.48, 9.12), controlPoint2: CGPointMake(9.27, 8.34))
+        fill56Path.addCurveToPoint(CGPointMake(7.5, 5.64), controlPoint1: CGPointMake(9.27, 6.42), controlPoint2: CGPointMake(8.48, 5.64))
+        fill56Path.addLineToPoint(CGPointMake(7.5, 5.64))
+        fill56Path.closePath()
+        fill56Path.miterLimit = 4;
+
+        fill56Path.usesEvenOddFillRule = true;
+
+        AssetsKit.bottomBarButtonUntapped.setFill()
+        fill56Path.fill()
+    }
+
+    public class func drawChatButtonTapped() {
+
+        //// Group
+        //// Fill-59 Drawing
+        var fill59Path = UIBezierPath()
+        fill59Path.moveToPoint(CGPointMake(4.4, 19.95))
+        fill59Path.addLineToPoint(CGPointMake(3.27, 19.95))
+        fill59Path.addLineToPoint(CGPointMake(3.94, 19.03))
+        fill59Path.addCurveToPoint(CGPointMake(4.93, 16.34), controlPoint1: CGPointMake(4.44, 18.34), controlPoint2: CGPointMake(4.76, 17.45))
+        fill59Path.addCurveToPoint(CGPointMake(0.1, 8.7), controlPoint1: CGPointMake(1.81, 14.93), controlPoint2: CGPointMake(0.1, 12.23))
+        fill59Path.addCurveToPoint(CGPointMake(10.62, -0.03), controlPoint1: CGPointMake(0.1, 3.31), controlPoint2: CGPointMake(4.13, -0.03))
+        fill59Path.addCurveToPoint(CGPointMake(21.14, 8.7), controlPoint1: CGPointMake(17.11, -0.03), controlPoint2: CGPointMake(21.14, 3.31))
+        fill59Path.addCurveToPoint(CGPointMake(10.62, 17.44), controlPoint1: CGPointMake(21.14, 14.17), controlPoint2: CGPointMake(17.2, 17.44))
+        fill59Path.addCurveToPoint(CGPointMake(10.18, 17.43), controlPoint1: CGPointMake(10.47, 17.44), controlPoint2: CGPointMake(10.32, 17.44))
+        fill59Path.addCurveToPoint(CGPointMake(4.4, 19.95), controlPoint1: CGPointMake(9.19, 18.63), controlPoint2: CGPointMake(7.42, 19.95))
+        fill59Path.addLineToPoint(CGPointMake(4.4, 19.95))
+        fill59Path.closePath()
+        fill59Path.miterLimit = 4;
+
+        fill59Path.usesEvenOddFillRule = true;
+
+        AssetsKit.themeColor.setFill()
+        fill59Path.fill()
+    }
+
+    public class func drawChatButtonUntapped() {
+
+        //// Group
+        //// Fill-59 Drawing
+        var fill59Path = UIBezierPath()
+        fill59Path.moveToPoint(CGPointMake(4.4, 19.95))
+        fill59Path.addLineToPoint(CGPointMake(3.27, 19.95))
+        fill59Path.addLineToPoint(CGPointMake(3.94, 19.03))
+        fill59Path.addCurveToPoint(CGPointMake(4.93, 16.34), controlPoint1: CGPointMake(4.44, 18.34), controlPoint2: CGPointMake(4.76, 17.45))
+        fill59Path.addCurveToPoint(CGPointMake(0.1, 8.7), controlPoint1: CGPointMake(1.81, 14.93), controlPoint2: CGPointMake(0.1, 12.23))
+        fill59Path.addCurveToPoint(CGPointMake(10.62, -0.03), controlPoint1: CGPointMake(0.1, 3.31), controlPoint2: CGPointMake(4.13, -0.03))
+        fill59Path.addCurveToPoint(CGPointMake(21.14, 8.7), controlPoint1: CGPointMake(17.11, -0.03), controlPoint2: CGPointMake(21.14, 3.31))
+        fill59Path.addCurveToPoint(CGPointMake(10.62, 17.44), controlPoint1: CGPointMake(21.14, 14.17), controlPoint2: CGPointMake(17.2, 17.44))
+        fill59Path.addCurveToPoint(CGPointMake(10.18, 17.43), controlPoint1: CGPointMake(10.47, 17.44), controlPoint2: CGPointMake(10.32, 17.44))
+        fill59Path.addCurveToPoint(CGPointMake(4.4, 19.95), controlPoint1: CGPointMake(9.19, 18.63), controlPoint2: CGPointMake(7.42, 19.95))
+        fill59Path.addLineToPoint(CGPointMake(4.4, 19.95))
+        fill59Path.closePath()
+        fill59Path.moveToPoint(CGPointMake(10.62, 1.11))
+        fill59Path.addCurveToPoint(CGPointMake(1.24, 8.73), controlPoint1: CGPointMake(4.75, 1.11), controlPoint2: CGPointMake(1.24, 3.96))
+        fill59Path.addCurveToPoint(CGPointMake(5.77, 15.5), controlPoint1: CGPointMake(1.24, 12.82), controlPoint2: CGPointMake(3.7, 14.67))
+        fill59Path.addLineToPoint(CGPointMake(6.17, 15.66))
+        fill59Path.addLineToPoint(CGPointMake(6.13, 16.1))
+        fill59Path.addCurveToPoint(CGPointMake(5.43, 18.81), controlPoint1: CGPointMake(6.01, 17.15), controlPoint2: CGPointMake(5.78, 18.05))
+        fill59Path.addCurveToPoint(CGPointMake(9.46, 16.56), controlPoint1: CGPointMake(7.54, 18.54), controlPoint2: CGPointMake(8.77, 17.47))
+        fill59Path.addLineToPoint(CGPointMake(9.64, 16.32))
+        fill59Path.addLineToPoint(CGPointMake(10.02, 16.33))
+        fill59Path.addCurveToPoint(CGPointMake(10.62, 16.35), controlPoint1: CGPointMake(10.22, 16.34), controlPoint2: CGPointMake(10.42, 16.35))
+        fill59Path.addCurveToPoint(CGPointMake(19.99, 8.73), controlPoint1: CGPointMake(19.08, 16.35), controlPoint2: CGPointMake(19.99, 11.02))
+        fill59Path.addCurveToPoint(CGPointMake(10.62, 1.11), controlPoint1: CGPointMake(19.99, 3.96), controlPoint2: CGPointMake(16.49, 1.11))
+        fill59Path.addLineToPoint(CGPointMake(10.62, 1.11))
+        fill59Path.closePath()
+        fill59Path.miterLimit = 4;
+
+        fill59Path.usesEvenOddFillRule = true;
+
+        AssetsKit.bottomBarButtonUntapped.setFill()
+        fill59Path.fill()
+    }
+
+    public class func drawProfileButtonTapped() {
+
+        //// Group
+        //// Filled Drawing
+        var filledPath = UIBezierPath()
+        filledPath.moveToPoint(CGPointMake(7.46, 10.09))
+        filledPath.addCurveToPoint(CGPointMake(12.53, 5.06), controlPoint1: CGPointMake(10.26, 10.09), controlPoint2: CGPointMake(12.53, 7.83))
+        filledPath.addCurveToPoint(CGPointMake(7.46, 0.03), controlPoint1: CGPointMake(12.53, 2.29), controlPoint2: CGPointMake(10.26, 0.03))
+        filledPath.addCurveToPoint(CGPointMake(2.39, 5.06), controlPoint1: CGPointMake(4.67, 0.03), controlPoint2: CGPointMake(2.39, 2.29))
+        filledPath.addCurveToPoint(CGPointMake(7.46, 10.09), controlPoint1: CGPointMake(2.39, 7.83), controlPoint2: CGPointMake(4.67, 10.09))
+        filledPath.closePath()
+        filledPath.moveToPoint(CGPointMake(12.71, 12.72))
+        filledPath.addCurveToPoint(CGPointMake(8.54, 10.83), controlPoint1: CGPointMake(11.39, 10.55), controlPoint2: CGPointMake(8.62, 10.82))
+        filledPath.addLineToPoint(CGPointMake(6.29, 10.83))
+        filledPath.addCurveToPoint(CGPointMake(2.66, 12.64), controlPoint1: CGPointMake(6.2, 10.83), controlPoint2: CGPointMake(3.96, 10.77))
+        filledPath.addCurveToPoint(CGPointMake(0.49, 19.28), controlPoint1: CGPointMake(1.93, 13.67), controlPoint2: CGPointMake(0.87, 17.63))
+        filledPath.addCurveToPoint(CGPointMake(0.76, 19.7), controlPoint1: CGPointMake(0.45, 19.47), controlPoint2: CGPointMake(0.57, 19.66))
+        filledPath.addCurveToPoint(CGPointMake(14.64, 19.71), controlPoint1: CGPointMake(0.96, 19.75), controlPoint2: CGPointMake(14.48, 19.71))
+        filledPath.addCurveToPoint(CGPointMake(14.99, 19.28), controlPoint1: CGPointMake(14.67, 19.71), controlPoint2: CGPointMake(15.04, 19.47))
+        filledPath.addCurveToPoint(CGPointMake(12.71, 12.72), controlPoint1: CGPointMake(14.67, 17.9), controlPoint2: CGPointMake(13.55, 13.81))
+        filledPath.closePath()
+        filledPath.miterLimit = 4;
+
+        filledPath.usesEvenOddFillRule = true;
+
+        AssetsKit.themeColor.setFill()
+        filledPath.fill()
+        AssetsKit.themeColor.setStroke()
+        filledPath.lineWidth = 0.5
+        filledPath.stroke()
+    }
+
+    public class func drawProfileButtonUntapped() {
+
+        //// Group
+        //// Unfilled Drawing
+        var unfilledPath = UIBezierPath()
+        unfilledPath.moveToPoint(CGPointMake(7.46, 10.09))
+        unfilledPath.addCurveToPoint(CGPointMake(12.53, 5.06), controlPoint1: CGPointMake(10.26, 10.09), controlPoint2: CGPointMake(12.53, 7.83))
+        unfilledPath.addCurveToPoint(CGPointMake(7.46, 0.03), controlPoint1: CGPointMake(12.53, 2.29), controlPoint2: CGPointMake(10.26, 0.03))
+        unfilledPath.addCurveToPoint(CGPointMake(2.39, 5.06), controlPoint1: CGPointMake(4.67, 0.03), controlPoint2: CGPointMake(2.39, 2.29))
+        unfilledPath.addCurveToPoint(CGPointMake(7.46, 10.09), controlPoint1: CGPointMake(2.39, 7.83), controlPoint2: CGPointMake(4.67, 10.09))
+        unfilledPath.addLineToPoint(CGPointMake(7.46, 10.09))
+        unfilledPath.closePath()
+        unfilledPath.moveToPoint(CGPointMake(7.46, 0.75))
+        unfilledPath.addCurveToPoint(CGPointMake(11.81, 5.06), controlPoint1: CGPointMake(9.86, 0.75), controlPoint2: CGPointMake(11.81, 2.68))
+        unfilledPath.addCurveToPoint(CGPointMake(7.46, 9.37), controlPoint1: CGPointMake(11.81, 7.44), controlPoint2: CGPointMake(9.86, 9.37))
+        unfilledPath.addCurveToPoint(CGPointMake(3.11, 5.06), controlPoint1: CGPointMake(5.06, 9.37), controlPoint2: CGPointMake(3.11, 7.44))
+        unfilledPath.addCurveToPoint(CGPointMake(7.46, 0.75), controlPoint1: CGPointMake(3.11, 2.68), controlPoint2: CGPointMake(5.06, 0.75))
+        unfilledPath.addLineToPoint(CGPointMake(7.46, 0.75))
+        unfilledPath.closePath()
+        unfilledPath.moveToPoint(CGPointMake(14.99, 19.28))
+        unfilledPath.addCurveToPoint(CGPointMake(12.71, 12.72), controlPoint1: CGPointMake(14.67, 17.9), controlPoint2: CGPointMake(13.55, 13.81))
+        unfilledPath.addCurveToPoint(CGPointMake(8.54, 10.83), controlPoint1: CGPointMake(11.39, 10.55), controlPoint2: CGPointMake(8.62, 10.82))
+        unfilledPath.addLineToPoint(CGPointMake(6.29, 10.83))
+        unfilledPath.addCurveToPoint(CGPointMake(2.66, 12.64), controlPoint1: CGPointMake(6.2, 10.83), controlPoint2: CGPointMake(3.96, 10.77))
+        unfilledPath.addCurveToPoint(CGPointMake(0.49, 19.28), controlPoint1: CGPointMake(1.93, 13.67), controlPoint2: CGPointMake(0.87, 17.63))
+        unfilledPath.addCurveToPoint(CGPointMake(0.76, 19.7), controlPoint1: CGPointMake(0.45, 19.47), controlPoint2: CGPointMake(0.57, 19.66))
+        unfilledPath.addCurveToPoint(CGPointMake(1.2, 19.43), controlPoint1: CGPointMake(0.96, 19.75), controlPoint2: CGPointMake(1.15, 19.63))
+        unfilledPath.addCurveToPoint(CGPointMake(3.25, 13.04), controlPoint1: CGPointMake(1.59, 17.7), controlPoint2: CGPointMake(2.63, 13.93))
+        unfilledPath.addCurveToPoint(CGPointMake(6.28, 11.55), controlPoint1: CGPointMake(4.33, 11.51), controlPoint2: CGPointMake(6.25, 11.55))
+        unfilledPath.addLineToPoint(CGPointMake(8.58, 11.54))
+        unfilledPath.addCurveToPoint(CGPointMake(12.1, 13.11), controlPoint1: CGPointMake(8.61, 11.54), controlPoint2: CGPointMake(11.02, 11.31))
+        unfilledPath.addCurveToPoint(CGPointMake(12.12, 13.15), controlPoint1: CGPointMake(12.11, 13.12), controlPoint2: CGPointMake(12.11, 13.13))
+        unfilledPath.addCurveToPoint(CGPointMake(14.29, 19.44), controlPoint1: CGPointMake(12.78, 13.97), controlPoint2: CGPointMake(13.88, 17.68))
+        unfilledPath.addCurveToPoint(CGPointMake(14.64, 19.71), controlPoint1: CGPointMake(14.33, 19.6), controlPoint2: CGPointMake(14.48, 19.71))
+        unfilledPath.addCurveToPoint(CGPointMake(14.72, 19.7), controlPoint1: CGPointMake(14.67, 19.71), controlPoint2: CGPointMake(14.7, 19.71))
+        unfilledPath.addCurveToPoint(CGPointMake(14.99, 19.28), controlPoint1: CGPointMake(14.92, 19.66), controlPoint2: CGPointMake(15.04, 19.47))
+        unfilledPath.addLineToPoint(CGPointMake(14.99, 19.28))
+        unfilledPath.closePath()
+        unfilledPath.miterLimit = 4;
+
+        unfilledPath.usesEvenOddFillRule = true;
+
+        AssetsKit.bottomBarButtonUntapped.setFill()
+        unfilledPath.fill()
+        AssetsKit.bottomBarButtonUntapped.setStroke()
+        unfilledPath.lineWidth = 0.5
+        unfilledPath.stroke()
     }
 
     //// Generated Images

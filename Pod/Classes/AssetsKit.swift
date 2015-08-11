@@ -32,6 +32,32 @@ public class AssetsKit : NSObject {
         static var maleIconTargets: [AnyObject]?
         static var imageOfCakeIcon: UIImage?
         static var cakeIconTargets: [AnyObject]?
+        static var imageOfCarIcon: UIImage?
+        static var carIconTargets: [AnyObject]?
+        static var imageOfEtcIcon: UIImage?
+        static var etcIconTargets: [AnyObject]?
+        static var imageOfWTGButtonTapped: UIImage?
+        static var wTGButtonTappedTargets: [AnyObject]?
+        static var imageOfWTGButtonUntapped: UIImage?
+        static var wTGButtonUntappedTargets: [AnyObject]?
+        static var imageOfPriceTagBackground: UIImage?
+        static var priceTagBackgroundTargets: [AnyObject]?
+        static var imageOfHomeButtonTapped: UIImage?
+        static var homeButtonTappedTargets: [AnyObject]?
+        static var imageOfHomeButtonUntapped: UIImage?
+        static var homeButtonUntappedTargets: [AnyObject]?
+        static var imageOfNearbyButtonTapped: UIImage?
+        static var nearbyButtonTappedTargets: [AnyObject]?
+        static var imageOfNearbyButtonUntapped: UIImage?
+        static var nearbyButtonUntappedTargets: [AnyObject]?
+        static var imageOfChatButtonTapped: UIImage?
+        static var chatButtonTappedTargets: [AnyObject]?
+        static var imageOfChatButtonUntapped: UIImage?
+        static var chatButtonUntappedTargets: [AnyObject]?
+        static var imageOfProfileButtonTapped: UIImage?
+        static var profileButtonTappedTargets: [AnyObject]?
+        static var imageOfProfileButtonUntapped: UIImage?
+        static var profileButtonUntappedTargets: [AnyObject]?
     }
 
     //// Colors
@@ -862,6 +888,198 @@ public class AssetsKit : NSObject {
         return Cache.imageOfCakeIcon!
     }
 
+    public class func imageOfFlameIcon(#scale: CGFloat) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(22, 26), false, 0)
+            AssetsKit.drawFlameIcon(scale: scale)
+
+        let imageOfFlameIcon = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return imageOfFlameIcon
+    }
+
+    public class var imageOfCarIcon: UIImage {
+        if Cache.imageOfCarIcon != nil {
+            return Cache.imageOfCarIcon!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(29, 22), false, 0)
+            AssetsKit.drawCarIcon()
+
+        Cache.imageOfCarIcon = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfCarIcon!
+    }
+
+    public class var imageOfEtcIcon: UIImage {
+        if Cache.imageOfEtcIcon != nil {
+            return Cache.imageOfEtcIcon!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(90, 25), false, 0)
+            AssetsKit.drawEtcIcon()
+
+        Cache.imageOfEtcIcon = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfEtcIcon!
+    }
+
+    public class var imageOfWTGButtonTapped: UIImage {
+        if Cache.imageOfWTGButtonTapped != nil {
+            return Cache.imageOfWTGButtonTapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(135, 145), false, 0)
+            AssetsKit.drawWTGButtonTapped()
+
+        Cache.imageOfWTGButtonTapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfWTGButtonTapped!
+    }
+
+    public class var imageOfWTGButtonUntapped: UIImage {
+        if Cache.imageOfWTGButtonUntapped != nil {
+            return Cache.imageOfWTGButtonUntapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(135, 145), false, 0)
+            AssetsKit.drawWTGButtonUntapped()
+
+        Cache.imageOfWTGButtonUntapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfWTGButtonUntapped!
+    }
+
+    public class var imageOfPriceTagBackground: UIImage {
+        if Cache.imageOfPriceTagBackground != nil {
+            return Cache.imageOfPriceTagBackground!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(217, 76), false, 0)
+            AssetsKit.drawPriceTagBackground()
+
+        Cache.imageOfPriceTagBackground = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfPriceTagBackground!
+    }
+
+    public class var imageOfHomeButtonTapped: UIImage {
+        if Cache.imageOfHomeButtonTapped != nil {
+            return Cache.imageOfHomeButtonTapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(24, 24), false, 0)
+            AssetsKit.drawHomeButtonTapped()
+
+        Cache.imageOfHomeButtonTapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfHomeButtonTapped!
+    }
+
+    public class var imageOfHomeButtonUntapped: UIImage {
+        if Cache.imageOfHomeButtonUntapped != nil {
+            return Cache.imageOfHomeButtonUntapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(24, 23), false, 0)
+            AssetsKit.drawHomeButtonUntapped()
+
+        Cache.imageOfHomeButtonUntapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfHomeButtonUntapped!
+    }
+
+    public class var imageOfNearbyButtonTapped: UIImage {
+        if Cache.imageOfNearbyButtonTapped != nil {
+            return Cache.imageOfNearbyButtonTapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(15, 21), false, 0)
+            AssetsKit.drawNearbyButtonTapped()
+
+        Cache.imageOfNearbyButtonTapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfNearbyButtonTapped!
+    }
+
+    public class var imageOfNearbyButtonUntapped: UIImage {
+        if Cache.imageOfNearbyButtonUntapped != nil {
+            return Cache.imageOfNearbyButtonUntapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(15, 21), false, 0)
+            AssetsKit.drawNearbyButtonUntapped()
+
+        Cache.imageOfNearbyButtonUntapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfNearbyButtonUntapped!
+    }
+
+    public class var imageOfChatButtonTapped: UIImage {
+        if Cache.imageOfChatButtonTapped != nil {
+            return Cache.imageOfChatButtonTapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(21, 20), false, 0)
+            AssetsKit.drawChatButtonTapped()
+
+        Cache.imageOfChatButtonTapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfChatButtonTapped!
+    }
+
+    public class var imageOfChatButtonUntapped: UIImage {
+        if Cache.imageOfChatButtonUntapped != nil {
+            return Cache.imageOfChatButtonUntapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(21, 20), false, 0)
+            AssetsKit.drawChatButtonUntapped()
+
+        Cache.imageOfChatButtonUntapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfChatButtonUntapped!
+    }
+
+    public class var imageOfProfileButtonTapped: UIImage {
+        if Cache.imageOfProfileButtonTapped != nil {
+            return Cache.imageOfProfileButtonTapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(15, 20), false, 0)
+            AssetsKit.drawProfileButtonTapped()
+
+        Cache.imageOfProfileButtonTapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfProfileButtonTapped!
+    }
+
+    public class var imageOfProfileButtonUntapped: UIImage {
+        if Cache.imageOfProfileButtonUntapped != nil {
+            return Cache.imageOfProfileButtonUntapped!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(15, 20), false, 0)
+            AssetsKit.drawProfileButtonUntapped()
+
+        Cache.imageOfProfileButtonUntapped = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfProfileButtonUntapped!
+    }
+
     //// Customization Infrastructure
 
     @IBOutlet var femaleIconTargets: [AnyObject]! {
@@ -890,6 +1108,136 @@ public class AssetsKit : NSObject {
             Cache.cakeIconTargets = newValue
             for target: AnyObject in newValue {
                 target.setImage(AssetsKit.imageOfCakeIcon)
+            }
+        }
+    }
+
+    @IBOutlet var carIconTargets: [AnyObject]! {
+        get { return Cache.carIconTargets }
+        set {
+            Cache.carIconTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfCarIcon)
+            }
+        }
+    }
+
+    @IBOutlet var etcIconTargets: [AnyObject]! {
+        get { return Cache.etcIconTargets }
+        set {
+            Cache.etcIconTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfEtcIcon)
+            }
+        }
+    }
+
+    @IBOutlet var wTGButtonTappedTargets: [AnyObject]! {
+        get { return Cache.wTGButtonTappedTargets }
+        set {
+            Cache.wTGButtonTappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfWTGButtonTapped)
+            }
+        }
+    }
+
+    @IBOutlet var wTGButtonUntappedTargets: [AnyObject]! {
+        get { return Cache.wTGButtonUntappedTargets }
+        set {
+            Cache.wTGButtonUntappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfWTGButtonUntapped)
+            }
+        }
+    }
+
+    @IBOutlet var priceTagBackgroundTargets: [AnyObject]! {
+        get { return Cache.priceTagBackgroundTargets }
+        set {
+            Cache.priceTagBackgroundTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfPriceTagBackground)
+            }
+        }
+    }
+
+    @IBOutlet var homeButtonTappedTargets: [AnyObject]! {
+        get { return Cache.homeButtonTappedTargets }
+        set {
+            Cache.homeButtonTappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfHomeButtonTapped)
+            }
+        }
+    }
+
+    @IBOutlet var homeButtonUntappedTargets: [AnyObject]! {
+        get { return Cache.homeButtonUntappedTargets }
+        set {
+            Cache.homeButtonUntappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfHomeButtonUntapped)
+            }
+        }
+    }
+
+    @IBOutlet var nearbyButtonTappedTargets: [AnyObject]! {
+        get { return Cache.nearbyButtonTappedTargets }
+        set {
+            Cache.nearbyButtonTappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfNearbyButtonTapped)
+            }
+        }
+    }
+
+    @IBOutlet var nearbyButtonUntappedTargets: [AnyObject]! {
+        get { return Cache.nearbyButtonUntappedTargets }
+        set {
+            Cache.nearbyButtonUntappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfNearbyButtonUntapped)
+            }
+        }
+    }
+
+    @IBOutlet var chatButtonTappedTargets: [AnyObject]! {
+        get { return Cache.chatButtonTappedTargets }
+        set {
+            Cache.chatButtonTappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfChatButtonTapped)
+            }
+        }
+    }
+
+    @IBOutlet var chatButtonUntappedTargets: [AnyObject]! {
+        get { return Cache.chatButtonUntappedTargets }
+        set {
+            Cache.chatButtonUntappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfChatButtonUntapped)
+            }
+        }
+    }
+
+    @IBOutlet var profileButtonTappedTargets: [AnyObject]! {
+        get { return Cache.profileButtonTappedTargets }
+        set {
+            Cache.profileButtonTappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfProfileButtonTapped)
+            }
+        }
+    }
+
+    @IBOutlet var profileButtonUntappedTargets: [AnyObject]! {
+        get { return Cache.profileButtonUntappedTargets }
+        set {
+            Cache.profileButtonUntappedTargets = newValue
+            for target: AnyObject in newValue {
+                target.setImage(AssetsKit.imageOfProfileButtonUntapped)
             }
         }
     }

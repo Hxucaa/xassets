@@ -23,6 +23,8 @@ public class AssetsKit : NSObject {
         static var themeColor: UIColor = UIColor(red: 0.000, green: 0.698, blue: 0.675, alpha: 1.000)
         static var flameColor: UIColor = UIColor(red: 0.973, green: 0.278, blue: 0.059, alpha: 1.000)
         static var carIconColor: UIColor = UIColor(red: 0.961, green: 0.651, blue: 0.137, alpha: 1.000)
+        static var etcColor: UIColor = UIColor(red: 0.796, green: 0.796, blue: 0.796, alpha: 1.000)
+        static var priceTagColor: UIColor = UIColor(red: 0.686, green: 0.686, blue: 0.686, alpha: 1.000)
         static var imageOfFemaleIcon: UIImage?
         static var femaleIconTargets: [AnyObject]?
         static var imageOfMaleIcon: UIImage?
@@ -39,6 +41,8 @@ public class AssetsKit : NSObject {
     public class var themeColor: UIColor { return Cache.themeColor }
     public class var flameColor: UIColor { return Cache.flameColor }
     public class var carIconColor: UIColor { return Cache.carIconColor }
+    public class var etcColor: UIColor { return Cache.etcColor }
+    public class var priceTagColor: UIColor { return Cache.priceTagColor }
 
     //// Drawing Methods
 
@@ -393,52 +397,27 @@ public class AssetsKit : NSObject {
     }
 
     public class func drawEtcIcon() {
-        //// Color Declarations
-        let etcColor = UIColor(red: 0.796, green: 0.796, blue: 0.796, alpha: 1.000)
 
         //// Group
         //// Oval Drawing
         var ovalPath = UIBezierPath(ovalInRect: CGRectMake(0, 0, 25, 25))
-        etcColor.setFill()
+        AssetsKit.etcColor.setFill()
         ovalPath.fill()
 
 
         //// Oval 2 Drawing
         var oval2Path = UIBezierPath(ovalInRect: CGRectMake(32, 0, 25, 25))
-        etcColor.setFill()
+        AssetsKit.etcColor.setFill()
         oval2Path.fill()
 
 
         //// Oval 3 Drawing
         var oval3Path = UIBezierPath(ovalInRect: CGRectMake(65, 0, 25, 25))
-        etcColor.setFill()
+        AssetsKit.etcColor.setFill()
         oval3Path.fill()
     }
 
-    public class func drawWTGButtonTapped() {
-
-        //// Group
-        //// Bezier Drawing
-        var bezierPath = UIBezierPath()
-        bezierPath.moveToPoint(CGPointMake(0, 42.54))
-        bezierPath.addCurveToPoint(CGPointMake(5.01, 33.24), controlPoint1: CGPointMake(0, 39.23), controlPoint2: CGPointMake(2.24, 35.05))
-        bezierPath.addCurveToPoint(CGPointMake(67.5, 0.61), controlPoint1: CGPointMake(5.01, 33.24), controlPoint2: CGPointMake(53.51, 0.61))
-        bezierPath.addCurveToPoint(CGPointMake(129.99, 33.24), controlPoint1: CGPointMake(81.49, 0.61), controlPoint2: CGPointMake(129.99, 33.24))
-        bezierPath.addCurveToPoint(CGPointMake(135, 42.54), controlPoint1: CGPointMake(132.76, 35.06), controlPoint2: CGPointMake(135, 39.22))
-        bezierPath.addLineToPoint(CGPointMake(135, 103.88))
-        bezierPath.addCurveToPoint(CGPointMake(129.91, 113.05), controlPoint1: CGPointMake(135, 107.2), controlPoint2: CGPointMake(132.73, 111.3))
-        bezierPath.addCurveToPoint(CGPointMake(67.5, 145), controlPoint1: CGPointMake(129.91, 113.05), controlPoint2: CGPointMake(79.35, 145))
-        bezierPath.addCurveToPoint(CGPointMake(5.09, 113.05), controlPoint1: CGPointMake(55.65, 145), controlPoint2: CGPointMake(5.09, 113.05))
-        bezierPath.addCurveToPoint(CGPointMake(0, 103.88), controlPoint1: CGPointMake(2.28, 111.3), controlPoint2: CGPointMake(0, 107.2))
-        bezierPath.addLineToPoint(CGPointMake(0, 42.54))
-        bezierPath.closePath()
-        AssetsKit.themeColor.setFill()
-        bezierPath.fill()
-    }
-
     public class func drawWTGButtonUntapped() {
-        //// Color Declarations
-        let fillColor2 = UIColor(red: 1.000, green: 0.998, blue: 0.995, alpha: 1.000)
 
         //// Group
         //// Bezier Drawing
@@ -473,8 +452,44 @@ public class AssetsKit : NSObject {
         bezier2Path.addCurveToPoint(CGPointMake(10.97, 98.83), controlPoint1: CGPointMake(12.88, 105.04), controlPoint2: CGPointMake(10.97, 101.61))
         bezier2Path.addLineToPoint(CGPointMake(10.97, 47.46))
         bezier2Path.closePath()
-        fillColor2.setFill()
+        AssetsKit.iconUntapped.setFill()
         bezier2Path.fill()
+    }
+
+    public class func drawWTGButtonTapped() {
+
+        //// Group
+        //// Bezier Drawing
+        var bezierPath = UIBezierPath()
+        bezierPath.moveToPoint(CGPointMake(0, 42.54))
+        bezierPath.addCurveToPoint(CGPointMake(5.01, 33.24), controlPoint1: CGPointMake(0, 39.23), controlPoint2: CGPointMake(2.24, 35.05))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 0.61), controlPoint1: CGPointMake(5.01, 33.24), controlPoint2: CGPointMake(53.51, 0.61))
+        bezierPath.addCurveToPoint(CGPointMake(129.99, 33.24), controlPoint1: CGPointMake(81.49, 0.61), controlPoint2: CGPointMake(129.99, 33.24))
+        bezierPath.addCurveToPoint(CGPointMake(135, 42.54), controlPoint1: CGPointMake(132.76, 35.06), controlPoint2: CGPointMake(135, 39.22))
+        bezierPath.addLineToPoint(CGPointMake(135, 103.88))
+        bezierPath.addCurveToPoint(CGPointMake(129.91, 113.05), controlPoint1: CGPointMake(135, 107.2), controlPoint2: CGPointMake(132.73, 111.3))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 145), controlPoint1: CGPointMake(129.91, 113.05), controlPoint2: CGPointMake(79.35, 145))
+        bezierPath.addCurveToPoint(CGPointMake(5.09, 113.05), controlPoint1: CGPointMake(55.65, 145), controlPoint2: CGPointMake(5.09, 113.05))
+        bezierPath.addCurveToPoint(CGPointMake(0, 103.88), controlPoint1: CGPointMake(2.28, 111.3), controlPoint2: CGPointMake(0, 107.2))
+        bezierPath.addLineToPoint(CGPointMake(0, 42.54))
+        bezierPath.closePath()
+        AssetsKit.themeColor.setFill()
+        bezierPath.fill()
+    }
+
+    public class func drawPriceTagBackground() {
+
+        //// Rectangle Drawing
+        var rectanglePath = UIBezierPath()
+        rectanglePath.moveToPoint(CGPointMake(1, 76))
+        rectanglePath.addLineToPoint(CGPointMake(184, 76))
+        rectanglePath.addLineToPoint(CGPointMake(218, 40))
+        rectanglePath.addLineToPoint(CGPointMake(184, 0))
+        rectanglePath.addLineToPoint(CGPointMake(1, 0))
+        rectanglePath.addLineToPoint(CGPointMake(1, 76))
+        rectanglePath.closePath()
+        AssetsKit.priceTagColor.setFill()
+        rectanglePath.fill()
     }
 
     //// Generated Images

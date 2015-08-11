@@ -25,6 +25,8 @@
 		B35680E41B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */; };
 		B35680E71B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */; };
 		B35680E91B7A2A9700B44BB9 /* WTGButtonUntappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */; };
+		B35680EC1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680EB1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift */; };
+		B35680EE1B7A332200B44BB9 /* PriceTagBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680ED1B7A332200B44BB9 /* PriceTagBackgroundView.swift */; };
 		B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D71B7490D700489954 /* FemaleIconView.swift */; };
 		B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */; };
 		B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */; };
@@ -71,6 +73,8 @@
 		B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonTappedViewController.swift; sourceTree = "<group>"; };
 		B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonUntappedViewController.swift; sourceTree = "<group>"; };
 		B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonUntappedView.swift; sourceTree = "<group>"; };
+		B35680EB1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTagBackgroundViewController.swift; sourceTree = "<group>"; };
+		B35680ED1B7A332200B44BB9 /* PriceTagBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTagBackgroundView.swift; sourceTree = "<group>"; };
 		B3AF81D71B7490D700489954 /* FemaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconView.swift; sourceTree = "<group>"; };
 		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B35680EA1B7A330200B44BB9 /* Price Tag Background */,
 				B35680E51B7A2A7300B44BB9 /* WTG Button Untapped */,
 				B35680E01B7A2A6000B44BB9 /* WTG Button Tapped */,
 				B3AF81DB1B74930500489954 /* Cake Icon */,
@@ -248,6 +253,15 @@
 				B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */,
 			);
 			path = "WTG Button Untapped";
+			sourceTree = "<group>";
+		};
+		B35680EA1B7A330200B44BB9 /* Price Tag Background */ = {
+			isa = PBXGroup;
+			children = (
+				B35680EB1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift */,
+				B35680ED1B7A332200B44BB9 /* PriceTagBackgroundView.swift */,
+			);
+			path = "Price Tag Background";
 			sourceTree = "<group>";
 		};
 		B3AF81D61B7490C000489954 /* Female Icon */ = {
@@ -484,6 +498,7 @@
 				B35680D41B7A19F900B44BB9 /* CarIconView.swift in Sources */,
 				B35680D91B7A202F00B44BB9 /* EtcIconView.swift in Sources */,
 				B35680E41B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift in Sources */,
+				B35680EE1B7A332200B44BB9 /* PriceTagBackgroundView.swift in Sources */,
 				B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */,
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
 				B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */,
@@ -496,6 +511,7 @@
 				B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				B35680CD1B7A197700B44BB9 /* FlameIconView.swift in Sources */,
+				B35680EC1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

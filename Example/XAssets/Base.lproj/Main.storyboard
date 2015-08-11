@@ -35,6 +35,7 @@
                         <segue destination="6kk-l5-YGP" kind="show" identifier="ToEtcIcon" id="ZEh-cp-sQv"/>
                         <segue destination="m0I-Mx-0ly" kind="show" identifier="ToWTGButtonTapped" id="egA-7W-yE3"/>
                         <segue destination="KDc-LA-9SP" kind="show" identifier="ToWTGButtonUntapped" id="1oG-UX-BEg"/>
+                        <segue destination="WeU-Dp-hUp" kind="show" identifier="ToPriceTagBackground" id="KGR-M9-H4g"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -312,6 +313,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66Q-sz-K5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1407" y="-244"/>
+        </scene>
+        <!--Price Tag Background-->
+        <scene sceneID="7QS-08-rzD">
+            <objects>
+                <viewController id="WeU-Dp-hUp" userLabel="Price Tag Background" customClass="PriceTagBackgroundViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D4Z-OX-Nn5"/>
+                        <viewControllerLayoutGuide type="bottom" id="A9f-Pe-eHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FIj-Pa-VLu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-6M-WTh" userLabel="Price Tag Background" customClass="PriceTagBackgroundView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="189" y="203" width="222" height="87"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="6vd-f2-4KE"/>
+                                    <constraint firstAttribute="height" constant="87" id="rIE-08-tp9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Vh-6M-WTh" firstAttribute="top" secondItem="D4Z-OX-Nn5" secondAttribute="bottom" constant="139" id="6gw-7e-3Y6"/>
+                            <constraint firstAttribute="centerX" secondItem="7Vh-6M-WTh" secondAttribute="centerX" id="uCo-Se-16V"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NpC-ab-pgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2087" y="-256"/>
         </scene>
     </scenes>
 </document>

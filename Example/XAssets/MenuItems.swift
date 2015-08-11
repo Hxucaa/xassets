@@ -31,6 +31,7 @@ public final class MenuItems {
         ("Car Icon", "ToCarIcon"),
         ("Etc Icon", "ToEtcIcon"),
         ("WTG Button Tapped", "ToWTGButtonTapped"),
-        ("WTG Button Untapped", "ToWTGButtonUntapped")
+        ("WTG Button Untapped", "ToWTGButtonUntapped"),
+        ("Price Tag Background", "ToPriceTagBackground")
     ]
 }

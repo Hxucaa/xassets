@@ -352,24 +352,26 @@ public class AssetsKit : NSObject {
         //// Group
         //// Bezier Drawing
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, -0, 0.4)
+        CGContextTranslateCTM(context, (scale - 0.063), scale)
         CGContextScaleCTM(context, scale, scale)
 
         var bezierPath = UIBezierPath()
-        bezierPath.moveToPoint(CGPointMake(100.11, 409.6))
-        bezierPath.addCurveToPoint(CGPointMake(108.34, 289.58), controlPoint1: CGPointMake(72.82, 352.8), controlPoint2: CGPointMake(87.36, 320.25))
-        bezierPath.addCurveToPoint(CGPointMake(137.23, 222.76), controlPoint1: CGPointMake(131.31, 256), controlPoint2: CGPointMake(137.23, 222.76))
-        bezierPath.addCurveToPoint(CGPointMake(148.07, 282.96), controlPoint1: CGPointMake(137.23, 222.76), controlPoint2: CGPointMake(155.29, 246.24))
-        bezierPath.addCurveToPoint(CGPointMake(181.18, 169.18), controlPoint1: CGPointMake(179.98, 247.44), controlPoint2: CGPointMake(186, 190.85))
-        bezierPath.addCurveToPoint(CGPointMake(242.59, 409.6), controlPoint1: CGPointMake(253.31, 219.58), controlPoint2: CGPointMake(284.13, 328.72))
-        bezierPath.addCurveToPoint(CGPointMake(268.65, 76.46), controlPoint1: CGPointMake(463.54, 284.59), controlPoint2: CGPointMake(297.55, 97.53))
-        bezierPath.addCurveToPoint(CGPointMake(260.65, 150.51), controlPoint1: CGPointMake(278.29, 97.53), controlPoint2: CGPointMake(280.11, 133.2))
-        bezierPath.addCurveToPoint(CGPointMake(146.26, 0), controlPoint1: CGPointMake(227.71, 25.6), controlPoint2: CGPointMake(146.26, 0))
-        bezierPath.addCurveToPoint(CGPointMake(68.39, 187.49), controlPoint1: CGPointMake(155.9, 64.42), controlPoint2: CGPointMake(111.34, 134.86))
-        bezierPath.addCurveToPoint(CGPointMake(51.77, 119.5), controlPoint1: CGPointMake(66.88, 161.81), controlPoint2: CGPointMake(65.27, 144.08))
-        bezierPath.addCurveToPoint(CGPointMake(3.41, 250.95), controlPoint1: CGPointMake(48.73, 166.16), controlPoint2: CGPointMake(13.07, 204.2))
-        bezierPath.addCurveToPoint(CGPointMake(100.11, 409.6), controlPoint1: CGPointMake(-9.66, 314.27), controlPoint2: CGPointMake(13.22, 360.62))
+        bezierPath.moveToPoint(CGPointMake(130.36, 533.33))
+        bezierPath.addCurveToPoint(CGPointMake(141.06, 377.06), controlPoint1: CGPointMake(94.81, 459.37), controlPoint2: CGPointMake(113.74, 416.99))
+        bezierPath.addCurveToPoint(CGPointMake(178.69, 290.05), controlPoint1: CGPointMake(170.98, 333.33), controlPoint2: CGPointMake(178.69, 290.05))
+        bezierPath.addCurveToPoint(CGPointMake(192.8, 368.44), controlPoint1: CGPointMake(178.69, 290.05), controlPoint2: CGPointMake(202.21, 320.62))
+        bezierPath.addCurveToPoint(CGPointMake(235.91, 220.28), controlPoint1: CGPointMake(234.35, 322.19), controlPoint2: CGPointMake(242.19, 248.5))
+        bezierPath.addCurveToPoint(CGPointMake(315.87, 533.33), controlPoint1: CGPointMake(329.83, 285.91), controlPoint2: CGPointMake(369.96, 428.02))
+        bezierPath.addCurveToPoint(CGPointMake(349.81, 99.56), controlPoint1: CGPointMake(603.57, 370.56), controlPoint2: CGPointMake(387.44, 126.99))
+        bezierPath.addCurveToPoint(CGPointMake(339.39, 195.98), controlPoint1: CGPointMake(362.35, 126.99), controlPoint2: CGPointMake(364.73, 173.44))
+        bezierPath.addCurveToPoint(CGPointMake(190.45, 0), controlPoint1: CGPointMake(296.5, 33.33), controlPoint2: CGPointMake(190.45, 0))
+        bezierPath.addCurveToPoint(CGPointMake(89.04, 244.13), controlPoint1: CGPointMake(202.99, 83.88), controlPoint2: CGPointMake(144.98, 175.6))
+        bezierPath.addCurveToPoint(CGPointMake(67.4, 155.6), controlPoint1: CGPointMake(87.08, 210.68), controlPoint2: CGPointMake(84.99, 187.6))
+        bezierPath.addCurveToPoint(CGPointMake(4.45, 326.76), controlPoint1: CGPointMake(63.45, 216.36), controlPoint2: CGPointMake(17.02, 265.88))
+        bezierPath.addCurveToPoint(CGPointMake(130.36, 533.33), controlPoint1: CGPointMake(-12.58, 409.2), controlPoint2: CGPointMake(17.21, 469.56))
         bezierPath.closePath()
+        bezierPath.miterLimit = 4;
+
         AssetsKit.flameColor.setFill()
         bezierPath.fill()
 
@@ -889,7 +891,7 @@ public class AssetsKit : NSObject {
     }
 
     public class func imageOfFlameIcon(#scale: CGFloat) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(22, 26), false, 0)
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(29, 34), false, 0)
             AssetsKit.drawFlameIcon(scale: scale)
 
         let imageOfFlameIcon = UIGraphicsGetImageFromCurrentImageContext()!

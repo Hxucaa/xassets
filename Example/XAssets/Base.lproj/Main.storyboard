@@ -32,6 +32,7 @@
                         <segue destination="VAH-N4-pK3" kind="show" identifier="ToCakeIcon" id="dTq-zO-F6X"/>
                         <segue destination="wIj-ty-CkU" kind="show" identifier="ToFlameIcon" id="RvT-CB-HGm"/>
                         <segue destination="7Hm-qb-UY4" kind="show" identifier="ToCarIcon" id="eww-9R-JrP"/>
+                        <segue destination="6kk-l5-YGP" kind="show" identifier="ToEtcIcon" id="ZEh-cp-sQv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,6 +214,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Es-of-CVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1880" y="1106"/>
+        </scene>
+        <!--Etc Icon-->
+        <scene sceneID="sd7-2K-2is">
+            <objects>
+                <viewController id="6kk-l5-YGP" userLabel="Etc Icon" customClass="EtcIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DKZ-m6-JdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="kfT-Yx-OYn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uiZ-Sz-Vaj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ols-zb-V1q" userLabel="Etc Icon" customClass="EtcIconView" customModule="XAssets_Example" customModuleProvider="target">
+                                <rect key="frame" x="253" y="202" width="94" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="SXe-sl-XHs"/>
+                                    <constraint firstAttribute="width" constant="94" id="c0c-J5-mYN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ols-zb-V1q" firstAttribute="top" secondItem="DKZ-m6-JdK" secondAttribute="bottom" constant="138" id="MyK-3y-sRc"/>
+                            <constraint firstAttribute="centerX" secondItem="Ols-zb-V1q" secondAttribute="centerX" id="wCw-6E-wv5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o73-VN-MbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="-250"/>
         </scene>
     </scenes>
 </document>

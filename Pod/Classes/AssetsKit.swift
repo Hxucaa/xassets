@@ -392,6 +392,29 @@ public class AssetsKit : NSObject {
         bezierPath.fill()
     }
 
+    public class func drawEtcIcon() {
+        //// Color Declarations
+        let etcColor = UIColor(red: 0.796, green: 0.796, blue: 0.796, alpha: 1.000)
+
+        //// Group
+        //// Oval Drawing
+        var ovalPath = UIBezierPath(ovalInRect: CGRectMake(0, 0, 25, 25))
+        etcColor.setFill()
+        ovalPath.fill()
+
+
+        //// Oval 2 Drawing
+        var oval2Path = UIBezierPath(ovalInRect: CGRectMake(32, 0, 25, 25))
+        etcColor.setFill()
+        oval2Path.fill()
+
+
+        //// Oval 3 Drawing
+        var oval3Path = UIBezierPath(ovalInRect: CGRectMake(65, 0, 25, 25))
+        etcColor.setFill()
+        oval3Path.fill()
+    }
+
     //// Generated Images
 
     public class var imageOfFemaleIcon: UIImage {

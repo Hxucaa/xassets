@@ -28,6 +28,7 @@ public final class MenuItems {
         ("Female Icon", "ToFemaleIcon"),
         ("Cake Icon", "ToCakeIcon"),
         ("Flame Icon", "ToFlameIcon"),
-        ("Car Icon", "ToCarIcon")
+        ("Car Icon", "ToCarIcon"),
+        ("Etc Icon", "ToEtcIcon")
     ]
 }

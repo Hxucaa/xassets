@@ -1,5 +1,5 @@
 //
-//  EtcIconViewController.swift
+//  WTGButtonUntappedViewController.swift
 //  XAssets
 //
 //  Created by Connor Wang on 8/11/15.
@@ -9,7 +9,7 @@
 import UIKit
 import XAssets
 
-class EtcIconViewController: UIViewController {
+class WTGButtonUntappedViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

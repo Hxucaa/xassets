@@ -415,6 +415,68 @@ public class AssetsKit : NSObject {
         oval3Path.fill()
     }
 
+    public class func drawWTGButtonTapped() {
+
+        //// Group
+        //// Bezier Drawing
+        var bezierPath = UIBezierPath()
+        bezierPath.moveToPoint(CGPointMake(0, 42.54))
+        bezierPath.addCurveToPoint(CGPointMake(5.01, 33.24), controlPoint1: CGPointMake(0, 39.23), controlPoint2: CGPointMake(2.24, 35.05))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 0.61), controlPoint1: CGPointMake(5.01, 33.24), controlPoint2: CGPointMake(53.51, 0.61))
+        bezierPath.addCurveToPoint(CGPointMake(129.99, 33.24), controlPoint1: CGPointMake(81.49, 0.61), controlPoint2: CGPointMake(129.99, 33.24))
+        bezierPath.addCurveToPoint(CGPointMake(135, 42.54), controlPoint1: CGPointMake(132.76, 35.06), controlPoint2: CGPointMake(135, 39.22))
+        bezierPath.addLineToPoint(CGPointMake(135, 103.88))
+        bezierPath.addCurveToPoint(CGPointMake(129.91, 113.05), controlPoint1: CGPointMake(135, 107.2), controlPoint2: CGPointMake(132.73, 111.3))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 145), controlPoint1: CGPointMake(129.91, 113.05), controlPoint2: CGPointMake(79.35, 145))
+        bezierPath.addCurveToPoint(CGPointMake(5.09, 113.05), controlPoint1: CGPointMake(55.65, 145), controlPoint2: CGPointMake(5.09, 113.05))
+        bezierPath.addCurveToPoint(CGPointMake(0, 103.88), controlPoint1: CGPointMake(2.28, 111.3), controlPoint2: CGPointMake(0, 107.2))
+        bezierPath.addLineToPoint(CGPointMake(0, 42.54))
+        bezierPath.closePath()
+        AssetsKit.themeColor.setFill()
+        bezierPath.fill()
+    }
+
+    public class func drawWTGButtonUntapped() {
+        //// Color Declarations
+        let fillColor2 = UIColor(red: 1.000, green: 0.998, blue: 0.995, alpha: 1.000)
+
+        //// Group
+        //// Bezier Drawing
+        var bezierPath = UIBezierPath()
+        bezierPath.moveToPoint(CGPointMake(0, 42.54))
+        bezierPath.addCurveToPoint(CGPointMake(5.01, 33.24), controlPoint1: CGPointMake(0, 39.23), controlPoint2: CGPointMake(2.24, 35.05))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 0.61), controlPoint1: CGPointMake(5.01, 33.24), controlPoint2: CGPointMake(53.51, 0.61))
+        bezierPath.addCurveToPoint(CGPointMake(129.99, 33.24), controlPoint1: CGPointMake(81.49, 0.61), controlPoint2: CGPointMake(129.99, 33.24))
+        bezierPath.addCurveToPoint(CGPointMake(135, 42.54), controlPoint1: CGPointMake(132.76, 35.06), controlPoint2: CGPointMake(135, 39.22))
+        bezierPath.addLineToPoint(CGPointMake(135, 103.88))
+        bezierPath.addCurveToPoint(CGPointMake(129.91, 113.05), controlPoint1: CGPointMake(135, 107.2), controlPoint2: CGPointMake(132.73, 111.3))
+        bezierPath.addCurveToPoint(CGPointMake(67.5, 145), controlPoint1: CGPointMake(129.91, 113.05), controlPoint2: CGPointMake(79.35, 145))
+        bezierPath.addCurveToPoint(CGPointMake(5.09, 113.05), controlPoint1: CGPointMake(55.65, 145), controlPoint2: CGPointMake(5.09, 113.05))
+        bezierPath.addCurveToPoint(CGPointMake(0, 103.88), controlPoint1: CGPointMake(2.28, 111.3), controlPoint2: CGPointMake(0, 107.2))
+        bezierPath.addLineToPoint(CGPointMake(0, 42.54))
+        bezierPath.closePath()
+        AssetsKit.themeColor.setFill()
+        bezierPath.fill()
+
+
+        //// Bezier 2 Drawing
+        var bezier2Path = UIBezierPath()
+        bezier2Path.moveToPoint(CGPointMake(10.97, 47.46))
+        bezier2Path.addCurveToPoint(CGPointMake(15.16, 39.67), controlPoint1: CGPointMake(10.97, 44.68), controlPoint2: CGPointMake(12.85, 41.19))
+        bezier2Path.addCurveToPoint(CGPointMake(67.5, 12.34), controlPoint1: CGPointMake(15.16, 39.67), controlPoint2: CGPointMake(55.78, 12.34))
+        bezier2Path.addCurveToPoint(CGPointMake(119.84, 39.67), controlPoint1: CGPointMake(79.22, 12.34), controlPoint2: CGPointMake(119.84, 39.67))
+        bezier2Path.addCurveToPoint(CGPointMake(124.03, 47.46), controlPoint1: CGPointMake(122.15, 41.19), controlPoint2: CGPointMake(124.03, 44.68))
+        bezier2Path.addLineToPoint(CGPointMake(124.03, 98.83))
+        bezier2Path.addCurveToPoint(CGPointMake(119.77, 106.51), controlPoint1: CGPointMake(124.03, 101.61), controlPoint2: CGPointMake(122.13, 105.05))
+        bezier2Path.addCurveToPoint(CGPointMake(67.5, 133.27), controlPoint1: CGPointMake(119.77, 106.51), controlPoint2: CGPointMake(77.42, 133.27))
+        bezier2Path.addCurveToPoint(CGPointMake(15.23, 106.51), controlPoint1: CGPointMake(57.58, 133.27), controlPoint2: CGPointMake(15.23, 106.51))
+        bezier2Path.addCurveToPoint(CGPointMake(10.97, 98.83), controlPoint1: CGPointMake(12.88, 105.04), controlPoint2: CGPointMake(10.97, 101.61))
+        bezier2Path.addLineToPoint(CGPointMake(10.97, 47.46))
+        bezier2Path.closePath()
+        fillColor2.setFill()
+        bezier2Path.fill()
+    }
+
     //// Generated Images
 
     public class var imageOfFemaleIcon: UIImage {

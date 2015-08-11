@@ -21,6 +21,10 @@
 		B35680D41B7A19F900B44BB9 /* CarIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D31B7A19F900B44BB9 /* CarIconView.swift */; };
 		B35680D71B7A202600B44BB9 /* EtcIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D61B7A202600B44BB9 /* EtcIconViewController.swift */; };
 		B35680D91B7A202F00B44BB9 /* EtcIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D81B7A202F00B44BB9 /* EtcIconView.swift */; };
+		B35680E31B7A2A6000B44BB9 /* WTGButtonTappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E11B7A2A6000B44BB9 /* WTGButtonTappedView.swift */; };
+		B35680E41B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */; };
+		B35680E71B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */; };
+		B35680E91B7A2A9700B44BB9 /* WTGButtonUntappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */; };
 		B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D71B7490D700489954 /* FemaleIconView.swift */; };
 		B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */; };
 		B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */; };
@@ -63,6 +67,10 @@
 		B35680D31B7A19F900B44BB9 /* CarIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarIconView.swift; sourceTree = "<group>"; };
 		B35680D61B7A202600B44BB9 /* EtcIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcIconViewController.swift; sourceTree = "<group>"; };
 		B35680D81B7A202F00B44BB9 /* EtcIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcIconView.swift; sourceTree = "<group>"; };
+		B35680E11B7A2A6000B44BB9 /* WTGButtonTappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonTappedView.swift; sourceTree = "<group>"; };
+		B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonTappedViewController.swift; sourceTree = "<group>"; };
+		B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonUntappedViewController.swift; sourceTree = "<group>"; };
+		B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonUntappedView.swift; sourceTree = "<group>"; };
 		B3AF81D71B7490D700489954 /* FemaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconView.swift; sourceTree = "<group>"; };
 		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,8 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B35680E51B7A2A7300B44BB9 /* WTG Button Untapped */,
+				B35680E01B7A2A6000B44BB9 /* WTG Button Tapped */,
 				B3AF81DB1B74930500489954 /* Cake Icon */,
 				B3AF81D61B7490C000489954 /* Female Icon */,
 				B308F9901B74804100072909 /* Male Icon */,
@@ -220,6 +230,24 @@
 				B35680D81B7A202F00B44BB9 /* EtcIconView.swift */,
 			);
 			path = "Etc Icon";
+			sourceTree = "<group>";
+		};
+		B35680E01B7A2A6000B44BB9 /* WTG Button Tapped */ = {
+			isa = PBXGroup;
+			children = (
+				B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */,
+				B35680E11B7A2A6000B44BB9 /* WTGButtonTappedView.swift */,
+			);
+			path = "WTG Button Tapped";
+			sourceTree = "<group>";
+		};
+		B35680E51B7A2A7300B44BB9 /* WTG Button Untapped */ = {
+			isa = PBXGroup;
+			children = (
+				B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */,
+				B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */,
+			);
+			path = "WTG Button Untapped";
 			sourceTree = "<group>";
 		};
 		B3AF81D61B7490C000489954 /* Female Icon */ = {
@@ -449,10 +477,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35680E91B7A2A9700B44BB9 /* WTGButtonUntappedView.swift in Sources */,
+				B35680E71B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift in Sources */,
 				B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */,
 				B308F9941B7480AE00072909 /* MaleIconView.swift in Sources */,
 				B35680D41B7A19F900B44BB9 /* CarIconView.swift in Sources */,
 				B35680D91B7A202F00B44BB9 /* EtcIconView.swift in Sources */,
+				B35680E41B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift in Sources */,
 				B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */,
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
 				B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */,
@@ -460,6 +491,7 @@
 				B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */,
 				B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */,
 				B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */,
+				B35680E31B7A2A6000B44BB9 /* WTGButtonTappedView.swift in Sources */,
 				B35680D21B7A19F200B44BB9 /* CarIconViewController.swift in Sources */,
 				B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

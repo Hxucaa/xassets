@@ -29,6 +29,8 @@ public final class MenuItems {
         ("Cake Icon", "ToCakeIcon"),
         ("Flame Icon", "ToFlameIcon"),
         ("Car Icon", "ToCarIcon"),
-        ("Etc Icon", "ToEtcIcon")
+        ("Etc Icon", "ToEtcIcon"),
+        ("WTG Button Tapped", "ToWTGButtonTapped"),
+        ("WTG Button Untapped", "ToWTGButtonUntapped")
     ]
 }

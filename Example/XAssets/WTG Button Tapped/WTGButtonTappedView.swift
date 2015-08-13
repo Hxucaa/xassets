@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class WTGButtonTappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawWTGButtonTapped()
+        AssetsKit.drawWTGButtonTapped(scale: 1)
     }
 }

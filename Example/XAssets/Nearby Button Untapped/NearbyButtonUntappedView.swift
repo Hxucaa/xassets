@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class NearbyButtonUntappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawNearbyButtonUntapped()
+        AssetsKit.drawNearbyButtonUntapped(scale: 1)
     }
 }

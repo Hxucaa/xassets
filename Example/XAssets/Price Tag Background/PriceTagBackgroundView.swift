@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class PriceTagBackgroundView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawPriceTagBackground()
+        AssetsKit.drawPriceTagBackground(scale: 1)
     }
 }

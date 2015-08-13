@@ -14,6 +14,6 @@ import XAssets
 @IBDesignable
 final class EtcIconView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawEtcIcon()
+        AssetsKit.drawEtcIcon(scale: 1)
     }
 }

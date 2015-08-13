@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class MaleIconView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawMaleIcon()
+        AssetsKit.drawMaleIcon(scale: 1)
     }
 }

@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class HomeButtonTappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawHomeButtonTapped()
+        AssetsKit.drawHomeButtonTapped(scale: 1)
     }
 }

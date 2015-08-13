@@ -113,18 +113,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2D-rE-Tfk" userLabel="Female Icon" customClass="FemaleIconView" customModule="XAssets_Example" customModuleProvider="target">
-                                <rect key="frame" x="284" y="199" width="33" height="39"/>
+                                <rect key="frame" x="284" y="199" width="45" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="mVL-i6-gyn"/>
-                                    <constraint firstAttribute="width" constant="33" id="oCY-Xc-bJJ"/>
+                                    <constraint firstAttribute="height" constant="46" id="mVL-i6-gyn"/>
+                                    <constraint firstAttribute="width" constant="45" id="oCY-Xc-bJJ"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="m2D-rE-Tfk" firstAttribute="top" secondItem="15F-Ll-18X" secondAttribute="bottom" constant="135" id="HGR-VF-KPR"/>
-                            <constraint firstAttribute="centerX" secondItem="m2D-rE-Tfk" secondAttribute="centerX" id="czP-wP-0fA"/>
+                            <constraint firstAttribute="centerX" secondItem="m2D-rE-Tfk" secondAttribute="centerX" constant="-6.5" id="czP-wP-0fA"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -177,18 +177,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ld-77-RBN" userLabel="Flame Icon" customClass="FlameIconView" customModule="XAssets_Example" customModuleProvider="target">
-                                <rect key="frame" x="284" y="199" width="33" height="39"/>
+                                <rect key="frame" x="271" y="193" width="58" height="58"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="8rm-G2-w28"/>
-                                    <constraint firstAttribute="width" constant="33" id="CC2-lF-agQ"/>
+                                    <constraint firstAttribute="height" constant="58" id="8rm-G2-w28"/>
+                                    <constraint firstAttribute="width" constant="58" id="CC2-lF-agQ"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="7ld-77-RBN" secondAttribute="centerX" id="b3F-cw-epm"/>
-                            <constraint firstItem="7ld-77-RBN" firstAttribute="top" secondItem="T9y-Hg-s6g" secondAttribute="bottom" constant="135" id="pqn-lt-Jlu"/>
+                            <constraint firstItem="7ld-77-RBN" firstAttribute="top" secondItem="T9y-Hg-s6g" secondAttribute="bottom" constant="129" id="pqn-lt-Jlu"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class WTGButtonUntappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawWTGButtonUntapped()
+        AssetsKit.drawWTGButtonUntapped(scale: 1)
     }
 }

@@ -1,8 +1,8 @@
 //
-//  LogoView.swift
+//  CarIconView.swift
 //  XAssets
 //
-//  Created by Lance Zhu on 2015-06-30.
+//  Created by Connor Wang on 8/11/15.
 //  Copyright (c) 2015 CocoaPods. All rights reserved.
 //
 
@@ -11,8 +11,8 @@ import UIKit
 import XAssets
 
 @IBDesignable
-final class LogoView : UIView {
+final class CarIconView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawLandingIcon(scale: 0.5)
+        AssetsKit.drawCarIcon()
     }
 }

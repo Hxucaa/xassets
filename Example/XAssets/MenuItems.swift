@@ -24,9 +24,24 @@ public final class MenuItems {
     /// A collection of items for table view. 
     /// The name of item to be displayed and the segue identifier for navigating to the next controller.
     private let _items: [Entry] = [
-        ("Logo", "ToLogo"),
         ("Male Icon", "ToMaleIcon"),
         ("Female Icon", "ToFemaleIcon"),
-        ("Cake Icon", "ToCakeIcon")
+        ("Cake Icon", "ToCakeIcon"),
+        ("Flame Icon", "ToFlameIcon"),
+        ("Car Icon", "ToCarIcon"),
+        ("Etc Icon", "ToEtcIcon"),
+        ("WTG Button Tapped", "ToWTGButtonTapped"),
+        ("WTG Button Untapped", "ToWTGButtonUntapped"),
+        ("Profile Button Tapped", "ToProfileButtonTapped"),
+        ("Profile Button Untapped", "ToProfileButtonUntapped"),
+        ("Home Button Tapped", "ToHomeButtonTapped"),
+        ("Home Button Untapped", "ToHomeButtonUntapped"),
+        ("Nearby Button Tapped", "ToNearbyButtonTapped"),
+        ("Nearby Button Untapped", "ToNearbyButtonUntapped"),
+        ("Chat Button Tapped", "ToChatButtonTapped"),
+        ("Chat Button Untapped", "ToChatButtonUntapped"),
+        ("Price Tag Background", "ToPriceTagBackground"),
+        ("Navbar Serach Button", "ToNavbarSearchButton"),
+        ("Navbar Filter Button", "ToNavbarFilterButton")
     ]
 }

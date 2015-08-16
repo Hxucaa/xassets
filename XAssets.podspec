@@ -8,7 +8,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "XAssts"
+  s.name             = "XAssets"
   s.version          = "0.1.7"
   s.summary          = "Assets for iOS."
   s.description      = <<-DESC

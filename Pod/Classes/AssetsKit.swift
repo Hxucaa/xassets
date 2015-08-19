@@ -593,7 +593,7 @@ public class AssetsKit : NSObject {
         let textStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
         textStyle.alignment = NSTextAlignment.Left
 
-        let textFontAttributes = [NSFontAttributeName: UIFont(name: "STHeitiSC-Light", size: 47)!, NSForegroundColorAttributeName: AssetsKit.iconUntapped, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(47), NSForegroundColorAttributeName: AssetsKit.iconUntapped, NSParagraphStyleAttributeName: textStyle]
 
         let textInset: CGRect = CGRectInset(textRect, 13, 10)
         let textTextHeight: CGFloat = NSString(string: pricetag).boundingRectWithSize(CGSizeMake(textInset.width, CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: textFontAttributes, context: nil).size.height

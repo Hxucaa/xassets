@@ -505,52 +505,6 @@ public class AssetsKit : NSObject {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()
 
-        //// Bezier Drawing
-        CGContextSaveGState(context)
-        CGContextScaleCTM(context, scale, scale)
-
-        var bezierPath = UIBezierPath()
-        bezierPath.moveToPoint(CGPointMake(0, 41.93))
-        bezierPath.addCurveToPoint(CGPointMake(5.01, 32.63), controlPoint1: CGPointMake(0, 38.62), controlPoint2: CGPointMake(2.24, 34.44))
-        bezierPath.addCurveToPoint(CGPointMake(67.5, 0), controlPoint1: CGPointMake(5.01, 32.63), controlPoint2: CGPointMake(53.51, 0))
-        bezierPath.addCurveToPoint(CGPointMake(129.99, 32.63), controlPoint1: CGPointMake(81.49, 0), controlPoint2: CGPointMake(129.99, 32.63))
-        bezierPath.addCurveToPoint(CGPointMake(135, 41.93), controlPoint1: CGPointMake(132.76, 34.45), controlPoint2: CGPointMake(135, 38.62))
-        bezierPath.addLineToPoint(CGPointMake(135, 103.27))
-        bezierPath.addCurveToPoint(CGPointMake(129.91, 112.44), controlPoint1: CGPointMake(135, 106.59), controlPoint2: CGPointMake(132.73, 110.69))
-        bezierPath.addCurveToPoint(CGPointMake(67.5, 144.39), controlPoint1: CGPointMake(129.91, 112.44), controlPoint2: CGPointMake(79.35, 144.39))
-        bezierPath.addCurveToPoint(CGPointMake(5.09, 112.44), controlPoint1: CGPointMake(55.65, 144.39), controlPoint2: CGPointMake(5.09, 112.44))
-        bezierPath.addCurveToPoint(CGPointMake(0, 103.27), controlPoint1: CGPointMake(2.28, 110.69), controlPoint2: CGPointMake(0, 106.59))
-        bezierPath.addLineToPoint(CGPointMake(0, 41.93))
-        bezierPath.closePath()
-        AssetsKit.themeColor.setFill()
-        bezierPath.fill()
-
-        CGContextRestoreGState(context)
-
-
-        //// Bezier 2 Drawing
-        CGContextSaveGState(context)
-        CGContextScaleCTM(context, scale, scale)
-
-        var bezier2Path = UIBezierPath()
-        bezier2Path.moveToPoint(CGPointMake(17, 49.65))
-        bezier2Path.addCurveToPoint(CGPointMake(20.75, 42.63), controlPoint1: CGPointMake(17, 47.15), controlPoint2: CGPointMake(18.68, 44))
-        bezier2Path.addCurveToPoint(CGPointMake(67.5, 18), controlPoint1: CGPointMake(20.75, 42.63), controlPoint2: CGPointMake(57.03, 18))
-        bezier2Path.addCurveToPoint(CGPointMake(114.25, 42.63), controlPoint1: CGPointMake(77.97, 18), controlPoint2: CGPointMake(114.25, 42.63))
-        bezier2Path.addCurveToPoint(CGPointMake(118, 49.65), controlPoint1: CGPointMake(116.32, 44.01), controlPoint2: CGPointMake(118, 47.15))
-        bezier2Path.addLineToPoint(CGPointMake(118, 95.96))
-        bezier2Path.addCurveToPoint(CGPointMake(114.19, 102.88), controlPoint1: CGPointMake(118, 98.46), controlPoint2: CGPointMake(116.3, 101.56))
-        bezier2Path.addCurveToPoint(CGPointMake(67.5, 127), controlPoint1: CGPointMake(114.19, 102.88), controlPoint2: CGPointMake(76.37, 127))
-        bezier2Path.addCurveToPoint(CGPointMake(20.81, 102.88), controlPoint1: CGPointMake(58.63, 127), controlPoint2: CGPointMake(20.81, 102.88))
-        bezier2Path.addCurveToPoint(CGPointMake(17, 95.96), controlPoint1: CGPointMake(18.7, 101.56), controlPoint2: CGPointMake(17, 98.46))
-        bezier2Path.addLineToPoint(CGPointMake(17, 49.65))
-        bezier2Path.closePath()
-        UIColor.whiteColor().setFill()
-        bezier2Path.fill()
-
-        CGContextRestoreGState(context)
-
-
         //// Text Drawing
         CGContextSaveGState(context)
         CGContextScaleCTM(context, scale, scale)
@@ -569,6 +523,37 @@ public class AssetsKit : NSObject {
         CGContextRestoreGState(context)
 
         CGContextRestoreGState(context)
+
+
+        //// Bezier 3 Drawing
+        var bezier3Path = UIBezierPath()
+        bezier3Path.moveToPoint(CGPointMake(68, 15))
+        bezier3Path.addCurveToPoint(CGPointMake(18.93, 40.99), controlPoint1: CGPointMake(57.01, 15), controlPoint2: CGPointMake(18.93, 40.99))
+        bezier3Path.addCurveToPoint(CGPointMake(15, 48.4), controlPoint1: CGPointMake(16.76, 42.43), controlPoint2: CGPointMake(15, 45.76))
+        bezier3Path.addLineToPoint(CGPointMake(15, 97.25))
+        bezier3Path.addCurveToPoint(CGPointMake(18.99, 104.55), controlPoint1: CGPointMake(15, 99.89), controlPoint2: CGPointMake(16.79, 103.16))
+        bezier3Path.addCurveToPoint(CGPointMake(68, 130), controlPoint1: CGPointMake(18.99, 104.55), controlPoint2: CGPointMake(58.69, 130))
+        bezier3Path.addCurveToPoint(CGPointMake(117.01, 104.55), controlPoint1: CGPointMake(77.31, 130), controlPoint2: CGPointMake(117.01, 104.55))
+        bezier3Path.addCurveToPoint(CGPointMake(121, 97.25), controlPoint1: CGPointMake(119.22, 103.16), controlPoint2: CGPointMake(121, 99.89))
+        bezier3Path.addLineToPoint(CGPointMake(121, 48.4))
+        bezier3Path.addCurveToPoint(CGPointMake(117.07, 40.99), controlPoint1: CGPointMake(121, 45.76), controlPoint2: CGPointMake(119.24, 42.44))
+        bezier3Path.addCurveToPoint(CGPointMake(68, 15), controlPoint1: CGPointMake(117.07, 40.99), controlPoint2: CGPointMake(78.99, 15))
+        bezier3Path.closePath()
+        bezier3Path.moveToPoint(CGPointMake(129.96, 32.61))
+        bezier3Path.addCurveToPoint(CGPointMake(135, 41.93), controlPoint1: CGPointMake(132.76, 34.45), controlPoint2: CGPointMake(135, 38.62))
+        bezier3Path.addLineToPoint(CGPointMake(135, 103.27))
+        bezier3Path.addCurveToPoint(CGPointMake(129.91, 112.44), controlPoint1: CGPointMake(135, 106.59), controlPoint2: CGPointMake(132.73, 110.69))
+        bezier3Path.addCurveToPoint(CGPointMake(67.5, 144.39), controlPoint1: CGPointMake(129.91, 112.44), controlPoint2: CGPointMake(79.35, 144.39))
+        bezier3Path.addCurveToPoint(CGPointMake(5.09, 112.44), controlPoint1: CGPointMake(55.65, 144.39), controlPoint2: CGPointMake(5.09, 112.44))
+        bezier3Path.addCurveToPoint(CGPointMake(0, 103.27), controlPoint1: CGPointMake(2.28, 110.69), controlPoint2: CGPointMake(0, 106.59))
+        bezier3Path.addLineToPoint(CGPointMake(0, 41.93))
+        bezier3Path.addCurveToPoint(CGPointMake(5.01, 32.63), controlPoint1: CGPointMake(0, 38.62), controlPoint2: CGPointMake(2.24, 34.44))
+        bezier3Path.addCurveToPoint(CGPointMake(67.5, 0), controlPoint1: CGPointMake(5.01, 32.63), controlPoint2: CGPointMake(53.51, 0))
+        bezier3Path.addCurveToPoint(CGPointMake(129.99, 32.63), controlPoint1: CGPointMake(81.49, 0), controlPoint2: CGPointMake(129.99, 32.63))
+        bezier3Path.addLineToPoint(CGPointMake(129.96, 32.61))
+        bezier3Path.closePath()
+        AssetsKit.themeColor.setFill()
+        bezier3Path.fill()
     }
 
     public class func drawPriceTagBackground(#scale: CGFloat, pricetag: String) {

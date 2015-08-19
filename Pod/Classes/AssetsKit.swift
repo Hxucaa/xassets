@@ -526,18 +526,21 @@ public class AssetsKit : NSObject {
 
 
         //// Bezier 3 Drawing
+        CGContextSaveGState(context)
+        CGContextScaleCTM(context, scale, scale)
+
         var bezier3Path = UIBezierPath()
-        bezier3Path.moveToPoint(CGPointMake(67.5, 12))
-        bezier3Path.addCurveToPoint(CGPointMake(16.12, 39.12), controlPoint1: CGPointMake(56, 12), controlPoint2: CGPointMake(16.12, 39.12))
-        bezier3Path.addCurveToPoint(CGPointMake(12, 46.85), controlPoint1: CGPointMake(13.84, 40.62), controlPoint2: CGPointMake(12, 44.09))
-        bezier3Path.addLineToPoint(CGPointMake(12, 97.83))
-        bezier3Path.addCurveToPoint(CGPointMake(16.18, 105.44), controlPoint1: CGPointMake(12, 100.58), controlPoint2: CGPointMake(13.87, 103.99))
-        bezier3Path.addCurveToPoint(CGPointMake(67.5, 132), controlPoint1: CGPointMake(16.18, 105.44), controlPoint2: CGPointMake(57.76, 132))
-        bezier3Path.addCurveToPoint(CGPointMake(118.82, 105.44), controlPoint1: CGPointMake(77.24, 132), controlPoint2: CGPointMake(118.82, 105.44))
-        bezier3Path.addCurveToPoint(CGPointMake(123, 97.83), controlPoint1: CGPointMake(121.13, 104), controlPoint2: CGPointMake(123, 100.58))
-        bezier3Path.addLineToPoint(CGPointMake(123, 46.85))
-        bezier3Path.addCurveToPoint(CGPointMake(118.88, 39.12), controlPoint1: CGPointMake(123, 44.09), controlPoint2: CGPointMake(121.16, 40.63))
-        bezier3Path.addCurveToPoint(CGPointMake(67.5, 12), controlPoint1: CGPointMake(118.88, 39.12), controlPoint2: CGPointMake(79, 12))
+        bezier3Path.moveToPoint(CGPointMake(68, 11))
+        bezier3Path.addCurveToPoint(CGPointMake(15.23, 38.8), controlPoint1: CGPointMake(56.18, 11), controlPoint2: CGPointMake(15.23, 38.8))
+        bezier3Path.addCurveToPoint(CGPointMake(11, 46.72), controlPoint1: CGPointMake(12.89, 40.34), controlPoint2: CGPointMake(11, 43.9))
+        bezier3Path.addLineToPoint(CGPointMake(11, 98.97))
+        bezier3Path.addCurveToPoint(CGPointMake(15.3, 106.78), controlPoint1: CGPointMake(11, 101.8), controlPoint2: CGPointMake(12.92, 105.29))
+        bezier3Path.addCurveToPoint(CGPointMake(68, 134), controlPoint1: CGPointMake(15.3, 106.78), controlPoint2: CGPointMake(57.99, 134))
+        bezier3Path.addCurveToPoint(CGPointMake(120.7, 106.78), controlPoint1: CGPointMake(78.01, 134), controlPoint2: CGPointMake(120.7, 106.78))
+        bezier3Path.addCurveToPoint(CGPointMake(125, 98.97), controlPoint1: CGPointMake(123.08, 105.3), controlPoint2: CGPointMake(125, 101.8))
+        bezier3Path.addLineToPoint(CGPointMake(125, 46.72))
+        bezier3Path.addCurveToPoint(CGPointMake(120.77, 38.8), controlPoint1: CGPointMake(125, 43.9), controlPoint2: CGPointMake(123.11, 40.35))
+        bezier3Path.addCurveToPoint(CGPointMake(68, 11), controlPoint1: CGPointMake(120.77, 38.8), controlPoint2: CGPointMake(79.82, 11))
         bezier3Path.closePath()
         bezier3Path.moveToPoint(CGPointMake(129.96, 32.61))
         bezier3Path.addCurveToPoint(CGPointMake(135, 41.93), controlPoint1: CGPointMake(132.76, 34.45), controlPoint2: CGPointMake(135, 38.62))
@@ -554,6 +557,8 @@ public class AssetsKit : NSObject {
         bezier3Path.closePath()
         AssetsKit.themeColor.setFill()
         bezier3Path.fill()
+
+        CGContextRestoreGState(context)
     }
 
     public class func drawPriceTagBackground(#scale: CGFloat, pricetag: String) {
@@ -581,20 +586,20 @@ public class AssetsKit : NSObject {
 
         //// Text Drawing
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, -7, 0)
+        CGContextTranslateCTM(context, 1, 0)
         CGContextScaleCTM(context, scale, scale)
 
-        let textRect = CGRectMake(17, 0, 200, 76)
+        let textRect = CGRectMake(0, 0, 217, 76)
         let textStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
         textStyle.alignment = NSTextAlignment.Left
 
         let textFontAttributes = [NSFontAttributeName: UIFont(name: "STHeitiSC-Light", size: 47)!, NSForegroundColorAttributeName: AssetsKit.iconUntapped, NSParagraphStyleAttributeName: textStyle]
 
-        let textInset: CGRect = CGRectInset(textRect, 4, 0)
+        let textInset: CGRect = CGRectInset(textRect, 13, 10)
         let textTextHeight: CGFloat = NSString(string: pricetag).boundingRectWithSize(CGSizeMake(textInset.width, CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: textFontAttributes, context: nil).size.height
         CGContextSaveGState(context)
         CGContextClipToRect(context, textInset);
-        NSString(string: pricetag).drawInRect(CGRectMake(textInset.minX, textInset.minY + (textInset.height - textTextHeight) / 2, textInset.width, textTextHeight), withAttributes: textFontAttributes)
+        NSString(string: pricetag).drawInRect(CGRectMake(textInset.minX, textInset.minY + textInset.height - textTextHeight, textInset.width, textTextHeight), withAttributes: textFontAttributes)
         CGContextRestoreGState(context)
 
         CGContextRestoreGState(context)

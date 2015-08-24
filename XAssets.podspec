@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "XAssets"
-  s.version          = "0.2.1"
+  s.version          = "0.2.2"
   s.summary          = "Assets for iOS."
   s.description      = <<-DESC
                        Assets repo for iOS app.
@@ -29,5 +29,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SDWebImage', '~> 3.7.0'
+  s.dependency 'ReactiveCocoa', '= 3.0-RC.1'
 end

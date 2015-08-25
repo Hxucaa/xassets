@@ -39,6 +39,18 @@ public final class AssetFactory {
         }
     }
     
+    /// Remove image from memory cache. Optionally remove from disk cache.
+    public class func removeImage(asset: Asset, fromDisk: Bool? = true) -> SignalProducer<Void, NoError> {
+        return SignalProducer { sink, disposable in
+            // cache has to be declared locally to solve a compile time compatibility issue between SDWebImage and ReactiveCocoa
+            let cache = SDImageCache(namespace: CacheNamespace)
+            cache.removeImageForKey(self.cacheKey(asset), fromDisk: fromDisk!) { () -> Void in
+                sendNext(sink, ())
+                sendCompleted(sink)
+            }
+        }
+    }
+    
     /// Clear memory cache.
     public class func clearMemoryCache() {
         let cache = SDImageCache(namespace: CacheNamespace)

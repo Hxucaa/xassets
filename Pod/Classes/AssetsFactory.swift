@@ -16,6 +16,7 @@ public final class AssetFactory {
     
     /// Retrieve the image from cache. If it is not already in the cache, one will be created and stored in cache.
     public class func getImage(asset: Asset) -> SignalProducer<UIImage, NoError> {
+        println(234234234234234234)
         let key = asset.cacheKey()
         
         return SignalProducer { sink, disposable in

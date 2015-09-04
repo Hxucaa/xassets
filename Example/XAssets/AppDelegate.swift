@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import XAssets
+import ReactiveCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        AssetFactory.clearMemoryCache()
+        AssetFactory.clearDiskCache() |> start()
         return true
     }
 

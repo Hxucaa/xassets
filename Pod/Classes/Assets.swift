@@ -14,7 +14,7 @@ public enum Asset {
     case MaleIcon(scale: CGFloat)
     case CakeIcon(scale: CGFloat)
     case FlameIcon(scale: CGFloat)
-    case CarIcon(scale: CGFloat)
+    case CarIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?)
     case EtcIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?)
     case WTGButtonTapped(scale: CGFloat)
     case WTGButtonUntapped(scale: CGFloat)
@@ -43,10 +43,10 @@ public enum Asset {
             return AssetsKit.imageOfCakeIcon(scaleX: scale)
         case let .FlameIcon(scale):
             return AssetsKit.imageOfFlameIcon(scaleX: scale)
-        case let .CarIcon(scale):
-            return AssetsKit.imageOfCarIcon(scaleX: scale)
+        case let .CarIcon(size, backgroundColor, opaque, imageContextScale):
+            return AssetsKit.x_imageOfCarIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale)
         case let .EtcIcon(size, backgroundColor, opaque, imageContextScale):
-            return AssetsKit.x_imageOfEtcIcon(size, drawingSize: self.drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale)
+            return AssetsKit.x_imageOfEtcIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale)
         case let .WTGButtonTapped(scaleX):
             return AssetsKit.imageOfWTGButtonTapped(scaleX: scaleX)
         case let .WTGButtonUntapped(scaleX):
@@ -88,8 +88,8 @@ public enum Asset {
             return "CakeIcon\(scaleX)"
         case let .FlameIcon(scaleX):
             return "FlameIcon\(scaleX)"
-        case let .CarIcon(scaleX):
-            return "CarIcon\(scaleX)"
+        case let .CarIcon(size, backgroundColor, opaque, imageContextScale):
+            return "CarIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)"
         case let .EtcIcon(size, backgroundColor, opaque, imageContextScale):
             return "EtcIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)"
         case let .WTGButtonTapped(scaleX):
@@ -123,6 +123,8 @@ public enum Asset {
     
     internal func drawingSize() -> CGSize {
         switch(self) {
+        case .CarIcon:
+            return CGSizeMake(31, 24)
         case .EtcIcon:
             return CGSizeMake(36, 40)
         default:

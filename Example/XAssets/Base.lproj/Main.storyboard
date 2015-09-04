@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bc2-BD-Y5L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bc2-BD-Y5L">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -209,21 +209,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMR-iE-2De" userLabel="Flame Icon" customClass="CarIconView" customModule="XAssets_Example" customModuleProvider="target">
-                                <rect key="frame" x="284" y="199" width="33" height="39"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oqt-bC-Yeb">
+                                <rect key="frame" x="145" y="180" width="310" height="240"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="gT3-w5-tKp"/>
-                                    <constraint firstAttribute="width" constant="33" id="kDf-Lm-VSb"/>
+                                    <constraint firstAttribute="height" constant="240" id="Ia0-Rc-LNC"/>
+                                    <constraint firstAttribute="width" constant="310" id="Yjf-0x-85z"/>
                                 </constraints>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="MMR-iE-2De" secondAttribute="centerX" id="URJ-vm-1zK"/>
-                            <constraint firstItem="MMR-iE-2De" firstAttribute="top" secondItem="Fws-Q5-36t" secondAttribute="bottom" constant="135" id="ZJe-Ii-LOg"/>
+                            <constraint firstAttribute="centerY" secondItem="Oqt-bC-Yeb" secondAttribute="centerY" id="KnS-jz-bsC"/>
+                            <constraint firstAttribute="centerX" secondItem="Oqt-bC-Yeb" secondAttribute="centerX" id="SZ9-xF-PVf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Oqt-bC-Yeb" id="2zl-31-L1Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Es-of-CVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -241,21 +243,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ols-zb-V1q" userLabel="Etc Icon" customClass="EtcIconView" customModule="XAssets_Example" customModuleProvider="target">
-                                <rect key="frame" x="253" y="202" width="94" height="25"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eub-P5-F2u">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="SXe-sl-XHs"/>
-                                    <constraint firstAttribute="width" constant="94" id="c0c-J5-mYN"/>
+                                    <constraint firstAttribute="width" constant="100" id="CgJ-EN-dLB"/>
+                                    <constraint firstAttribute="height" constant="100" id="uO8-w1-1HW"/>
                                 </constraints>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ols-zb-V1q" firstAttribute="top" secondItem="DKZ-m6-JdK" secondAttribute="bottom" constant="138" id="MyK-3y-sRc"/>
-                            <constraint firstAttribute="centerX" secondItem="Ols-zb-V1q" secondAttribute="centerX" id="wCw-6E-wv5"/>
+                            <constraint firstAttribute="centerY" secondItem="eub-P5-F2u" secondAttribute="centerY" id="D1g-uU-P1i"/>
+                            <constraint firstAttribute="centerX" secondItem="eub-P5-F2u" secondAttribute="centerX" id="N23-bP-VXt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="eub-P5-F2u" id="DwS-DC-ao1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o73-VN-MbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

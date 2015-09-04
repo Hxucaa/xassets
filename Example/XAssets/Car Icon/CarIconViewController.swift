@@ -8,8 +8,19 @@
 
 import UIKit
 import XAssets
+import ReactiveCocoa
 
 class CarIconViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+        imageView.rac_image <~ AssetFactory.getImage(Asset.CarIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil))
+            |> map { Optional<UIImage>($0) }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class ChatButtonUntappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawChatButtonUntapped(scale: 1)
+        AssetsKit.drawChatButtonUntapped(scaleX: 1)
     }
 }

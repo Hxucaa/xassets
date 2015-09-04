@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class FlameIconView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawFlameIcon(scale: 1)
+        AssetsKit.drawFlameIcon(scaleX: 1)
     }
 }

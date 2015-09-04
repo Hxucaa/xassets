@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class CarIconView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawCarIcon(scale: 1)
+        AssetsKit.drawCarIcon(scaleX: 1)
     }
 }

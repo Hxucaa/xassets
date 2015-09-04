@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class ProfileButtonTappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawProfileButtonTapped(scale: 1)
+        AssetsKit.drawProfileButtonTapped(scaleX: 1)
     }
 }

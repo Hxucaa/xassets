@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class NavbarSearchButtonTappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawNavBarSearchButton(scale: 1)
+        AssetsKit.drawNavBarSearchButton(scaleX: 1)
     }
 }

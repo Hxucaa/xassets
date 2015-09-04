@@ -13,6 +13,6 @@ import XAssets
 @IBDesignable
 final class NavbarFilterButtonTappedView : UIView {
     override func drawRect(rect: CGRect) {
-        AssetsKit.drawNavbarFilterButton(scale: 1)
+        AssetsKit.drawNavbarFilterButton(scaleX: 1)
     }
 }

@@ -15,10 +15,10 @@ public enum Asset {
     case CakeIcon(scale: CGFloat)
     case FlameIcon(scale: CGFloat)
     case CarIcon(scale: CGFloat)
-    case EtcIcon(scale: CGFloat?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?)
+    case EtcIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?)
     case WTGButtonTapped(scale: CGFloat)
     case WTGButtonUntapped(scale: CGFloat)
-    case PriceTag(scale: CGFloat, tag: String)
+    case PriceTag(scale: CGFloat)
     case HomeButtonTapped(scale: CGFloat)
     case HomeButtonUntapped(scale: CGFloat)
     case NearbyButtonTapped(scale: CGFloat)
@@ -35,43 +35,44 @@ public enum Asset {
         
         switch(self){
         case let .FemaleIcon(scale):
-            return AssetsKit.imageOfFemaleIcon(scale: scale)
+            return AssetsKit.imageOfFemaleIcon(scaleX: scale)
         case let .MaleIcon(scale):
-            return AssetsKit.imageOfMaleIcon(scale: scale)
+            return AssetsKit.imageOfMaleIcon(scaleX
+                : scale)
         case let .CakeIcon(scale):
-            return AssetsKit.imageOfCakeIcon(scale: scale)
+            return AssetsKit.imageOfCakeIcon(scaleX: scale)
         case let .FlameIcon(scale):
-            return AssetsKit.imageOfFlameIcon(scale: scale)
+            return AssetsKit.imageOfFlameIcon(scaleX: scale)
         case let .CarIcon(scale):
-            return AssetsKit.imageOfCarIcon(scale: scale)
-        case let .EtcIcon(scale, backgroundColor, opaque, imageContextScale):
-            return AssetsKit.x_imageOfEtcIcon(scale: scale, backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale)
-        case let .WTGButtonTapped(scale):
-            return AssetsKit.imageOfWTGButtonTapped(scale: scale)
-        case let .WTGButtonUntapped(scale):
-            return AssetsKit.imageOfWTGButtonUntapped(scale: scale)
-        case let .PriceTag(scale, tag):
-            return AssetsKit.imageOfPriceTagBackground(scale: scale)
-        case let .HomeButtonTapped(scale):
-            return AssetsKit.imageOfHomeButtonTapped(scale: scale)
-        case let .HomeButtonUntapped(scale):
-            return AssetsKit.imageOfHomeButtonUntapped(scale: scale)
-        case let .NearbyButtonTapped(scale):
-            return AssetsKit.imageOfNearbyButtonTapped(scale: scale)
-        case let .NearbyButtonUntapped(scale):
-            return AssetsKit.imageOfNearbyButtonUntapped(scale: scale)
-        case let .ChatButtonTapped(scale):
-            return AssetsKit.imageOfChatButtonTapped(scale: scale)
-        case let .ChatButtonUntapped(scale):
-            return AssetsKit.imageOfChatButtonUntapped(scale: scale)
-        case let .ProfileButtonTapped(scale):
-            return AssetsKit.imageOfProfileButtonTapped(scale: scale)
-        case let .ProfileButtonUntapped(scale):
-            return AssetsKit.imageOfProfileButtonUntapped(scale: scale)
-        case let .NavBarSearchButton(scale):
-            return AssetsKit.imageOfNavBarSearchButton(scale: scale)
-        case let .NavbarFilterButton(scale):
-            return AssetsKit.imageOfNavbarFilterButton(scale: scale)
+            return AssetsKit.imageOfCarIcon(scaleX: scale)
+        case let .EtcIcon(size, backgroundColor, opaque, imageContextScale):
+            return AssetsKit.x_imageOfEtcIcon(size, drawingSize: self.drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale)
+        case let .WTGButtonTapped(scaleX):
+            return AssetsKit.imageOfWTGButtonTapped(scaleX: scaleX)
+        case let .WTGButtonUntapped(scaleX):
+            return AssetsKit.imageOfWTGButtonUntapped(scaleX: scaleX)
+        case let .PriceTag(scaleX):
+            return AssetsKit.imageOfPriceTagBackground(scaleX: scaleX)
+        case let .HomeButtonTapped(scaleX):
+            return AssetsKit.imageOfHomeButtonTapped(scaleX: scaleX)
+        case let .HomeButtonUntapped(scaleX):
+            return AssetsKit.imageOfHomeButtonUntapped(scaleX: scaleX)
+        case let .NearbyButtonTapped(scaleX):
+            return AssetsKit.imageOfNearbyButtonTapped(scaleX: scaleX)
+        case let .NearbyButtonUntapped(scaleX):
+            return AssetsKit.imageOfNearbyButtonUntapped(scaleX: scaleX)
+        case let .ChatButtonTapped(scaleX):
+            return AssetsKit.imageOfChatButtonTapped(scaleX: scaleX)
+        case let .ChatButtonUntapped(scaleX):
+            return AssetsKit.imageOfChatButtonUntapped(scaleX: scaleX)
+        case let .ProfileButtonTapped(scaleX):
+            return AssetsKit.imageOfProfileButtonTapped(scaleX: scaleX)
+        case let .ProfileButtonUntapped(scaleX):
+            return AssetsKit.imageOfProfileButtonUntapped(scaleX: scaleX)
+        case let .NavBarSearchButton(scaleX):
+            return AssetsKit.imageOfNavBarSearchButton(scaleX: scaleX)
+        case let .NavbarFilterButton(scaleX):
+            return AssetsKit.imageOfNavbarFilterButton(scaleX: scaleX)
         }
     }
     
@@ -79,45 +80,53 @@ public enum Asset {
     internal func cacheKey() -> String {
         
         switch(self){
-        case let .FemaleIcon(scale):
-            return "FemaleIcon\(scale)"
-        case let .MaleIcon(scale):
-            return "MaleIcon\(scale)"
-        case let .CakeIcon(scale):
-            return "CakeIcon\(scale)"
-        case let .FlameIcon(scale):
-            return "FlameIcon\(scale)"
-        case let .CarIcon(scale):
-            return "CarIcon\(scale)"
-        case let .EtcIcon(scale, backgroundColor, opaque, imageContextScale):
-            return "EtcIcon|\(scale)|\(backgroundColor)|\(opaque)|\(imageContextScale)"
-        case let .WTGButtonTapped(scale):
-            return "WTGButtonTapped\(scale)"
-        case let .WTGButtonUntapped(scale):
-            return "WTGButtonUntapped\(scale)"
-        case let .PriceTag(scale, tag):
-            return "PriceTag\(scale)\(tag)"
-        case let .HomeButtonTapped(scale):
-            return "HomeButtonTapped\(scale)"
-        case let .HomeButtonUntapped(scale):
-            return "HomeButtonUntapped\(scale)"
-        case let .NearbyButtonTapped(scale):
-            return "NearbyButtonTapped\(scale)"
-        case let .NearbyButtonUntapped(scale):
-            return "NearbyButtonUntapped\(scale)"
-        case let .ChatButtonTapped(scale):
-            return "ChatButtonTapped\(scale)"
-        case let .ChatButtonUntapped(scale):
-            return "ChatButtonUntapped\(scale)"
-        case let .ProfileButtonTapped(scale):
-            return "ProfileButtonTapped\(scale)"
-        case let .ProfileButtonUntapped(scale):
-            return "ProfileButtonUntapped\(scale)"
-        case let .NavBarSearchButton(scale):
-            return "NavBarSearchButton\(scale)"
-        case let .NavbarFilterButton(scale):
-            return "NavbarFilterButton\(scale)"
+        case let .FemaleIcon(scaleX):
+            return "FemaleIcon\(scaleX)"
+        case let .MaleIcon(scaleX):
+            return "MaleIcon\(scaleX)"
+        case let .CakeIcon(scaleX):
+            return "CakeIcon\(scaleX)"
+        case let .FlameIcon(scaleX):
+            return "FlameIcon\(scaleX)"
+        case let .CarIcon(scaleX):
+            return "CarIcon\(scaleX)"
+        case let .EtcIcon(size, backgroundColor, opaque, imageContextScale):
+            return "EtcIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)"
+        case let .WTGButtonTapped(scaleX):
+            return "WTGButtonTapped\(scaleX)"
+        case let .WTGButtonUntapped(scaleX):
+            return "WTGButtonUntapped\(scaleX)"
+        case let .PriceTag(scaleX):
+            return "PriceTag\(scaleX)"
+        case let .HomeButtonTapped(scaleX):
+            return "HomeButtonTapped\(scaleX)"
+        case let .HomeButtonUntapped(scaleX):
+            return "HomeButtonUntapped\(scaleX)"
+        case let .NearbyButtonTapped(scaleX):
+            return "NearbyButtonTapped\(scaleX)"
+        case let .NearbyButtonUntapped(scaleX):
+            return "NearbyButtonUntapped\(scaleX)"
+        case let .ChatButtonTapped(scaleX):
+            return "ChatButtonTapped\(scaleX)"
+        case let .ChatButtonUntapped(scaleX):
+            return "ChatButtonUntapped\(scaleX)"
+        case let .ProfileButtonTapped(scaleX):
+            return "ProfileButtonTapped\(scaleX)"
+        case let .ProfileButtonUntapped(scaleX):
+            return "ProfileButtonUntapped\(scaleX)"
+        case let .NavBarSearchButton(scaleX):
+            return "NavBarSearchButton\(scaleX)"
+        case let .NavbarFilterButton(scaleX):
+            return "NavbarFilterButton\(scaleX)"
         }
     }
     
+    internal func drawingSize() -> CGSize {
+        switch(self) {
+        case .EtcIcon:
+            return CGSizeMake(36, 40)
+        default:
+            return CGSizeMake(0, 0)
+        }
+    }
 }

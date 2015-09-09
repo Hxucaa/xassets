@@ -122,7 +122,7 @@
         <!--Filter Button View Controller-->
         <scene sceneID="OQS-wa-2kw">
             <objects>
-                <viewController id="tjK-cZ-BA8" customClass="FilterButtonViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tjK-cZ-BA8" customClass="FilterButtonViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ClM-uJ-Vid"/>
                         <viewControllerLayoutGuide type="bottom" id="sEs-3L-Fht"/>

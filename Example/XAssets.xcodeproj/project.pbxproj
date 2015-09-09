@@ -13,22 +13,22 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308F9911B74809800072909 /* MaleIconViewController.swift */; };
-		B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */; };
-		B35680D21B7A19F200B44BB9 /* CarIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */; };
-		B35680D71B7A202600B44BB9 /* EtcIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D61B7A202600B44BB9 /* EtcIconViewController.swift */; };
-		B35680EC1B7A331500B44BB9 /* PriceIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680EB1B7A331500B44BB9 /* PriceIconViewController.swift */; };
-		B35680F61B7A3B1D00B44BB9 /* HomeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680F51B7A3B1D00B44BB9 /* HomeButtonViewController.swift */; };
-		B35681001B7A3BB500B44BB9 /* ProfileButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680FF1B7A3BB500B44BB9 /* ProfileButtonViewController.swift */; };
-		B35681081B7A3C9B00B44BB9 /* ChatButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681071B7A3C9B00B44BB9 /* ChatButtonViewController.swift */; };
-		B35681141B7A3D7400B44BB9 /* NearbyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681131B7A3D7400B44BB9 /* NearbyButtonViewController.swift */; };
-		B3A54E571BA000E10076C7FF /* ShareButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E561BA000E10076C7FF /* ShareButtonViewController.swift */; };
-		B3A54E5A1BA001CC0076C7FF /* MarsLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E591BA001CC0076C7FF /* MarsLabelViewController.swift */; };
-		B3A54E5D1BA0024C0076C7FF /* VenusLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E5C1BA0024C0076C7FF /* VenusLabelViewController.swift */; };
-		B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */; };
-		B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */; };
-		B3FA65F11B7A59AE003DD5D0 /* SearchButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65F01B7A59AE003DD5D0 /* SearchButtonViewController.swift */; };
-		B3FA65FB1B7A5AD8003DD5D0 /* FilterButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65FA1B7A5AD8003DD5D0 /* FilterButtonViewController.swift */; };
+		B3A54EB11BA039500076C7FF /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E921BA039500076C7FF /* CakeIconViewController.swift */; };
+		B3A54EB21BA039500076C7FF /* CarIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E941BA039500076C7FF /* CarIconViewController.swift */; };
+		B3A54EB31BA039500076C7FF /* ChatButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E961BA039500076C7FF /* ChatButtonViewController.swift */; };
+		B3A54EB41BA039500076C7FF /* EtcIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E981BA039500076C7FF /* EtcIconViewController.swift */; };
+		B3A54EB51BA039500076C7FF /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E9A1BA039500076C7FF /* FemaleIconViewController.swift */; };
+		B3A54EB61BA039500076C7FF /* FilterButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E9C1BA039500076C7FF /* FilterButtonViewController.swift */; };
+		B3A54EB71BA039500076C7FF /* FlameIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E9E1BA039500076C7FF /* FlameIconViewController.swift */; };
+		B3A54EB81BA039500076C7FF /* HomeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EA01BA039500076C7FF /* HomeButtonViewController.swift */; };
+		B3A54EB91BA039500076C7FF /* MaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EA21BA039500076C7FF /* MaleIconViewController.swift */; };
+		B3A54EBA1BA039500076C7FF /* MarsLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EA41BA039500076C7FF /* MarsLabelViewController.swift */; };
+		B3A54EBB1BA039500076C7FF /* NearbyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EA61BA039500076C7FF /* NearbyButtonViewController.swift */; };
+		B3A54EBC1BA039500076C7FF /* PriceIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EA81BA039500076C7FF /* PriceIconViewController.swift */; };
+		B3A54EBD1BA039500076C7FF /* ProfileButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EAA1BA039500076C7FF /* ProfileButtonViewController.swift */; };
+		B3A54EBE1BA039500076C7FF /* SearchButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EAC1BA039500076C7FF /* SearchButtonViewController.swift */; };
+		B3A54EBF1BA039500076C7FF /* ShareButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EAE1BA039500076C7FF /* ShareButtonViewController.swift */; };
+		B3A54EC01BA039500076C7FF /* VenusLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EB01BA039500076C7FF /* VenusLabelViewController.swift */; };
 		B44D2CD91B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */; };
 		B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */; };
 		B4D7338C1B996AD800B599B9 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */; };
@@ -60,22 +60,22 @@
 		6B6141AAF07C072511700F94 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XAssets_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BE606CA7121D9F2D3BB968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B308F9911B74809800072909 /* MaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconViewController.swift; sourceTree = "<group>"; };
-		B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconViewController.swift; sourceTree = "<group>"; };
-		B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarIconViewController.swift; sourceTree = "<group>"; };
-		B35680D61B7A202600B44BB9 /* EtcIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcIconViewController.swift; sourceTree = "<group>"; };
-		B35680EB1B7A331500B44BB9 /* PriceIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceIconViewController.swift; sourceTree = "<group>"; };
-		B35680F51B7A3B1D00B44BB9 /* HomeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonViewController.swift; sourceTree = "<group>"; };
-		B35680FF1B7A3BB500B44BB9 /* ProfileButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonViewController.swift; sourceTree = "<group>"; };
-		B35681071B7A3C9B00B44BB9 /* ChatButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonViewController.swift; sourceTree = "<group>"; };
-		B35681131B7A3D7400B44BB9 /* NearbyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyButtonViewController.swift; sourceTree = "<group>"; };
-		B3A54E561BA000E10076C7FF /* ShareButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareButtonViewController.swift; sourceTree = "<group>"; };
-		B3A54E591BA001CC0076C7FF /* MarsLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsLabelViewController.swift; sourceTree = "<group>"; };
-		B3A54E5C1BA0024C0076C7FF /* VenusLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusLabelViewController.swift; sourceTree = "<group>"; };
-		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
-		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
-		B3FA65F01B7A59AE003DD5D0 /* SearchButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchButtonViewController.swift; sourceTree = "<group>"; };
-		B3FA65FA1B7A5AD8003DD5D0 /* FilterButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54E921BA039500076C7FF /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
+		B3A54E941BA039500076C7FF /* CarIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarIconViewController.swift; sourceTree = "<group>"; };
+		B3A54E961BA039500076C7FF /* ChatButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54E981BA039500076C7FF /* EtcIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcIconViewController.swift; sourceTree = "<group>"; };
+		B3A54E9A1BA039500076C7FF /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
+		B3A54E9C1BA039500076C7FF /* FilterButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54E9E1BA039500076C7FF /* FlameIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconViewController.swift; sourceTree = "<group>"; };
+		B3A54EA01BA039500076C7FF /* HomeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54EA21BA039500076C7FF /* MaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconViewController.swift; sourceTree = "<group>"; };
+		B3A54EA41BA039500076C7FF /* MarsLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsLabelViewController.swift; sourceTree = "<group>"; };
+		B3A54EA61BA039500076C7FF /* NearbyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54EA81BA039500076C7FF /* PriceIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceIconViewController.swift; sourceTree = "<group>"; };
+		B3A54EAA1BA039500076C7FF /* ProfileButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54EAC1BA039500076C7FF /* SearchButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54EAE1BA039500076C7FF /* ShareButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54EB01BA039500076C7FF /* VenusLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusLabelViewController.swift; sourceTree = "<group>"; };
 		B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKsc-Bold.otf"; sourceTree = "<group>"; };
 		B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
@@ -131,22 +131,22 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
-				B3A54E5B1BA002340076C7FF /* Venus Label */,
-				B3A54E581BA001AC0076C7FF /* Mars Label */,
-				B3A54E551B9FEDCE0076C7FF /* Share Button */,
-				B3FA65F91B7A5ACA003DD5D0 /* Filter Button */,
-				B3FA65EF1B7A599E003DD5D0 /* Search Button */,
-				B35680FE1B7A3BA600B44BB9 /* Profile Button */,
-				B35680FC1B7A3B8500B44BB9 /* Chat Button */,
-				B35680F91B7A3B5C00B44BB9 /* Nearby Button */,
-				B35680F41B7A3B0F00B44BB9 /* Home Button */,
-				B35680EA1B7A330200B44BB9 /* Price Icon */,
-				B3AF81DB1B74930500489954 /* Cake Icon */,
-				B3AF81D61B7490C000489954 /* Female Icon */,
-				B308F9901B74804100072909 /* Male Icon */,
-				B35680CA1B7A197700B44BB9 /* Flame Icon */,
-				B35680D01B7A19DF00B44BB9 /* Car Icon */,
-				B35680D51B7A201300B44BB9 /* Etc Icon */,
+				B3A54E911BA039500076C7FF /* Cake Icon */,
+				B3A54E931BA039500076C7FF /* Car Icon */,
+				B3A54E951BA039500076C7FF /* Chat Button */,
+				B3A54E971BA039500076C7FF /* Etc Icon */,
+				B3A54E991BA039500076C7FF /* Female Icon */,
+				B3A54E9B1BA039500076C7FF /* Filter Button */,
+				B3A54E9D1BA039500076C7FF /* Flame Icon */,
+				B3A54E9F1BA039500076C7FF /* Home Button */,
+				B3A54EA11BA039500076C7FF /* Male Icon */,
+				B3A54EA31BA039500076C7FF /* Mars Label */,
+				B3A54EA51BA039500076C7FF /* Nearby Button */,
+				B3A54EA71BA039500076C7FF /* Price Icon */,
+				B3A54EA91BA039500076C7FF /* Profile Button */,
+				B3A54EAB1BA039500076C7FF /* Search Button */,
+				B3A54EAD1BA039500076C7FF /* Share Button */,
+				B3A54EAF1BA039500076C7FF /* Venus Label */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */,
 				B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */,
@@ -207,139 +207,132 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B308F9901B74804100072909 /* Male Icon */ = {
+		B3A54E911BA039500076C7FF /* Cake Icon */ = {
 			isa = PBXGroup;
 			children = (
-				B308F9911B74809800072909 /* MaleIconViewController.swift */,
-			);
-			path = "Male Icon";
-			sourceTree = "<group>";
-		};
-		B35680CA1B7A197700B44BB9 /* Flame Icon */ = {
-			isa = PBXGroup;
-			children = (
-				B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */,
-			);
-			path = "Flame Icon";
-			sourceTree = "<group>";
-		};
-		B35680D01B7A19DF00B44BB9 /* Car Icon */ = {
-			isa = PBXGroup;
-			children = (
-				B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */,
-			);
-			path = "Car Icon";
-			sourceTree = "<group>";
-		};
-		B35680D51B7A201300B44BB9 /* Etc Icon */ = {
-			isa = PBXGroup;
-			children = (
-				B35680D61B7A202600B44BB9 /* EtcIconViewController.swift */,
-			);
-			path = "Etc Icon";
-			sourceTree = "<group>";
-		};
-		B35680EA1B7A330200B44BB9 /* Price Icon */ = {
-			isa = PBXGroup;
-			children = (
-				B35680EB1B7A331500B44BB9 /* PriceIconViewController.swift */,
-			);
-			name = "Price Icon";
-			path = "Price Tag Background";
-			sourceTree = "<group>";
-		};
-		B35680F41B7A3B0F00B44BB9 /* Home Button */ = {
-			isa = PBXGroup;
-			children = (
-				B35680F51B7A3B1D00B44BB9 /* HomeButtonViewController.swift */,
-			);
-			name = "Home Button";
-			path = "Home Button Tapped";
-			sourceTree = "<group>";
-		};
-		B35680F91B7A3B5C00B44BB9 /* Nearby Button */ = {
-			isa = PBXGroup;
-			children = (
-				B35681131B7A3D7400B44BB9 /* NearbyButtonViewController.swift */,
-			);
-			name = "Nearby Button";
-			path = "Nearby Button Untapped";
-			sourceTree = "<group>";
-		};
-		B35680FC1B7A3B8500B44BB9 /* Chat Button */ = {
-			isa = PBXGroup;
-			children = (
-				B35681071B7A3C9B00B44BB9 /* ChatButtonViewController.swift */,
-			);
-			name = "Chat Button";
-			path = "Chat Button Tapped";
-			sourceTree = "<group>";
-		};
-		B35680FE1B7A3BA600B44BB9 /* Profile Button */ = {
-			isa = PBXGroup;
-			children = (
-				B35680FF1B7A3BB500B44BB9 /* ProfileButtonViewController.swift */,
-			);
-			name = "Profile Button";
-			path = "Profile Button Tapped";
-			sourceTree = "<group>";
-		};
-		B3A54E551B9FEDCE0076C7FF /* Share Button */ = {
-			isa = PBXGroup;
-			children = (
-				B3A54E561BA000E10076C7FF /* ShareButtonViewController.swift */,
-			);
-			name = "Share Button";
-			sourceTree = "<group>";
-		};
-		B3A54E581BA001AC0076C7FF /* Mars Label */ = {
-			isa = PBXGroup;
-			children = (
-				B3A54E591BA001CC0076C7FF /* MarsLabelViewController.swift */,
-			);
-			name = "Mars Label";
-			sourceTree = "<group>";
-		};
-		B3A54E5B1BA002340076C7FF /* Venus Label */ = {
-			isa = PBXGroup;
-			children = (
-				B3A54E5C1BA0024C0076C7FF /* VenusLabelViewController.swift */,
-			);
-			name = "Venus Label";
-			sourceTree = "<group>";
-		};
-		B3AF81D61B7490C000489954 /* Female Icon */ = {
-			isa = PBXGroup;
-			children = (
-				B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */,
-			);
-			path = "Female Icon";
-			sourceTree = "<group>";
-		};
-		B3AF81DB1B74930500489954 /* Cake Icon */ = {
-			isa = PBXGroup;
-			children = (
-				B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */,
+				B3A54E921BA039500076C7FF /* CakeIconViewController.swift */,
 			);
 			path = "Cake Icon";
 			sourceTree = "<group>";
 		};
-		B3FA65EF1B7A599E003DD5D0 /* Search Button */ = {
+		B3A54E931BA039500076C7FF /* Car Icon */ = {
 			isa = PBXGroup;
 			children = (
-				B3FA65F01B7A59AE003DD5D0 /* SearchButtonViewController.swift */,
+				B3A54E941BA039500076C7FF /* CarIconViewController.swift */,
 			);
-			name = "Search Button";
-			path = "Navbar Search Button";
+			path = "Car Icon";
 			sourceTree = "<group>";
 		};
-		B3FA65F91B7A5ACA003DD5D0 /* Filter Button */ = {
+		B3A54E951BA039500076C7FF /* Chat Button */ = {
 			isa = PBXGroup;
 			children = (
-				B3FA65FA1B7A5AD8003DD5D0 /* FilterButtonViewController.swift */,
+				B3A54E961BA039500076C7FF /* ChatButtonViewController.swift */,
 			);
-			name = "Filter Button";
-			path = "Navbar Filter Button";
+			path = "Chat Button";
+			sourceTree = "<group>";
+		};
+		B3A54E971BA039500076C7FF /* Etc Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54E981BA039500076C7FF /* EtcIconViewController.swift */,
+			);
+			path = "Etc Icon";
+			sourceTree = "<group>";
+		};
+		B3A54E991BA039500076C7FF /* Female Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54E9A1BA039500076C7FF /* FemaleIconViewController.swift */,
+			);
+			path = "Female Icon";
+			sourceTree = "<group>";
+		};
+		B3A54E9B1BA039500076C7FF /* Filter Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54E9C1BA039500076C7FF /* FilterButtonViewController.swift */,
+			);
+			path = "Filter Button";
+			sourceTree = "<group>";
+		};
+		B3A54E9D1BA039500076C7FF /* Flame Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54E9E1BA039500076C7FF /* FlameIconViewController.swift */,
+			);
+			path = "Flame Icon";
+			sourceTree = "<group>";
+		};
+		B3A54E9F1BA039500076C7FF /* Home Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EA01BA039500076C7FF /* HomeButtonViewController.swift */,
+			);
+			path = "Home Button";
+			sourceTree = "<group>";
+		};
+		B3A54EA11BA039500076C7FF /* Male Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EA21BA039500076C7FF /* MaleIconViewController.swift */,
+			);
+			path = "Male Icon";
+			sourceTree = "<group>";
+		};
+		B3A54EA31BA039500076C7FF /* Mars Label */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EA41BA039500076C7FF /* MarsLabelViewController.swift */,
+			);
+			path = "Mars Label";
+			sourceTree = "<group>";
+		};
+		B3A54EA51BA039500076C7FF /* Nearby Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EA61BA039500076C7FF /* NearbyButtonViewController.swift */,
+			);
+			path = "Nearby Button";
+			sourceTree = "<group>";
+		};
+		B3A54EA71BA039500076C7FF /* Price Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EA81BA039500076C7FF /* PriceIconViewController.swift */,
+			);
+			path = "Price Icon";
+			sourceTree = "<group>";
+		};
+		B3A54EA91BA039500076C7FF /* Profile Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EAA1BA039500076C7FF /* ProfileButtonViewController.swift */,
+			);
+			path = "Profile Button";
+			sourceTree = "<group>";
+		};
+		B3A54EAB1BA039500076C7FF /* Search Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EAC1BA039500076C7FF /* SearchButtonViewController.swift */,
+			);
+			path = "Search Button";
+			sourceTree = "<group>";
+		};
+		B3A54EAD1BA039500076C7FF /* Share Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EAE1BA039500076C7FF /* ShareButtonViewController.swift */,
+			);
+			path = "Share Button";
+			sourceTree = "<group>";
+		};
+		B3A54EAF1BA039500076C7FF /* Venus Label */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54EB01BA039500076C7FF /* VenusLabelViewController.swift */,
+			);
+			path = "Venus Label";
 			sourceTree = "<group>";
 		};
 		BAD703D6C1662D7418EFCFA1 /* Frameworks */ = {
@@ -551,26 +544,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35681141B7A3D7400B44BB9 /* NearbyButtonViewController.swift in Sources */,
-				B35680F61B7A3B1D00B44BB9 /* HomeButtonViewController.swift in Sources */,
-				B3FA65F11B7A59AE003DD5D0 /* SearchButtonViewController.swift in Sources */,
-				B3A54E5D1BA0024C0076C7FF /* VenusLabelViewController.swift in Sources */,
-				B3A54E5A1BA001CC0076C7FF /* MarsLabelViewController.swift in Sources */,
-				B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */,
+				B3A54EBD1BA039500076C7FF /* ProfileButtonViewController.swift in Sources */,
+				B3A54EC01BA039500076C7FF /* VenusLabelViewController.swift in Sources */,
+				B3A54EB71BA039500076C7FF /* FlameIconViewController.swift in Sources */,
+				B3A54EB31BA039500076C7FF /* ChatButtonViewController.swift in Sources */,
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
-				B35681001B7A3BB500B44BB9 /* ProfileButtonViewController.swift in Sources */,
-				B3FA65FB1B7A5AD8003DD5D0 /* FilterButtonViewController.swift in Sources */,
-				B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */,
-				B35680D71B7A202600B44BB9 /* EtcIconViewController.swift in Sources */,
+				B3A54EBE1BA039500076C7FF /* SearchButtonViewController.swift in Sources */,
+				B3A54EBF1BA039500076C7FF /* ShareButtonViewController.swift in Sources */,
+				B3A54EBC1BA039500076C7FF /* PriceIconViewController.swift in Sources */,
+				B3A54EB41BA039500076C7FF /* EtcIconViewController.swift in Sources */,
 				B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */,
-				B35681081B7A3C9B00B44BB9 /* ChatButtonViewController.swift in Sources */,
-				B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */,
-				B3A54E571BA000E10076C7FF /* ShareButtonViewController.swift in Sources */,
-				B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */,
-				B35680D21B7A19F200B44BB9 /* CarIconViewController.swift in Sources */,
+				B3A54EB91BA039500076C7FF /* MaleIconViewController.swift in Sources */,
+				B3A54EBA1BA039500076C7FF /* MarsLabelViewController.swift in Sources */,
+				B3A54EB81BA039500076C7FF /* HomeButtonViewController.swift in Sources */,
+				B3A54EB21BA039500076C7FF /* CarIconViewController.swift in Sources */,
+				B3A54EB11BA039500076C7FF /* CakeIconViewController.swift in Sources */,
+				B3A54EB51BA039500076C7FF /* FemaleIconViewController.swift in Sources */,
+				B3A54EBB1BA039500076C7FF /* NearbyButtonViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B3A54EB61BA039500076C7FF /* FilterButtonViewController.swift in Sources */,
 				B4D7338C1B996AD800B599B9 /* UIImageView+extension.swift in Sources */,
-				B35680EC1B7A331500B44BB9 /* PriceIconViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

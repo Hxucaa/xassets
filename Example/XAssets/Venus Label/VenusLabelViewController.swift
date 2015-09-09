@@ -17,7 +17,7 @@ class VenusLabelViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        imageView.rac_image <~ AssetFactory.getImage(Asset.VenusLabel(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, generation: "123"))
+        imageView.rac_image <~ AssetFactory.getImage(Asset.VenusLabel(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, textInput: "123"))
             |> map { Optional<UIImage>($0) }
     }
     

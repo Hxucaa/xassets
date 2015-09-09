@@ -17,7 +17,7 @@ class PriceIconViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)      
         
-        imageView.rac_image <~ AssetFactory.getImage(Asset.PriceIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, pressed: false, shadow: false))
+        imageView.rac_image <~ AssetFactory.getImage(Asset.PriceIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, textInput: "567"))
             |> map { Optional<UIImage>($0) }
     }
     

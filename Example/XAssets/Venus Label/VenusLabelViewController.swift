@@ -1,5 +1,5 @@
 //
-//  EtcIconViewController.swift
+//  PriceTagBackgroundViewController.swift
 //  XAssets
 //
 //  Created by Connor Wang on 8/11/15.
@@ -10,14 +10,14 @@ import UIKit
 import XAssets
 import ReactiveCocoa
 
-class FlameIconViewController: UIViewController {
+class VenusLabelViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-                
-        imageView.rac_image <~ AssetFactory.getImage(Asset.FlameIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, pressed: false, shadow: false))
+        
+        imageView.rac_image <~ AssetFactory.getImage(Asset.VenusLabel(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, generation: "123"))
             |> map { Optional<UIImage>($0) }
     }
     

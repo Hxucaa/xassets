@@ -10,69 +10,59 @@ import Foundation
 import UIKit
 
 public enum Asset {
-    case FemaleIcon(scale: CGFloat)
-    case MaleIcon(scale: CGFloat)
-    case CakeIcon(scale: CGFloat)
-    case FlameIcon(scale: CGFloat)
-    case CarIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?)
-    case EtcIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?)
-    case WTGButtonTapped(scale: CGFloat)
-    case WTGButtonUntapped(scale: CGFloat)
-    case PriceTag(scale: CGFloat)
-    case HomeButtonTapped(scale: CGFloat)
-    case HomeButtonUntapped(scale: CGFloat)
-    case NearbyButtonTapped(scale: CGFloat)
-    case NearbyButtonUntapped(scale: CGFloat)
-    case ChatButtonTapped(scale: CGFloat)
-    case ChatButtonUntapped(scale: CGFloat)
-    case ProfileButtonTapped(scale: CGFloat)
-    case ProfileButtonUntapped(scale: CGFloat)
-    case NavBarSearchButton(scale: CGFloat)
-    case NavbarFilterButton(scale: CGFloat)
+    case VenusLabel(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, generation: String?)
+    case MarsLabel(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, generation: String?)
+    case ShareButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case FemaleIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case MaleIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case CakeIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case FlameIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case CarIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case EtcIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case PriceIcon(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case HomeButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case NearbyButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case ChatButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case ProfileButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case SearchButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
+    case FilterButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, pressed: Bool?, shadow: Bool?)
     
     /// Retrieve the drawing in `UIImage` for the `Asset`.
     internal func image() -> UIImage {
         
         switch(self){
-        case let .FemaleIcon(scale):
-            return AssetsKit.imageOfFemaleIcon(scaleX: scale)
-        case let .MaleIcon(scale):
-            return AssetsKit.imageOfMaleIcon(scaleX
-                : scale)
-        case let .CakeIcon(scale):
-            return AssetsKit.imageOfCakeIcon(scaleX: scale)
-        case let .FlameIcon(scale):
-            return AssetsKit.imageOfFlameIcon(scaleX: scale)
-        case let .CarIcon(size, backgroundColor, opaque, imageContextScale):
-            return AssetsKit.x_imageOfCarIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale)
-        case let .EtcIcon(size, backgroundColor, opaque, imageContextScale):
-            return AssetsKit.x_imageOfEtcIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale)
-        case let .WTGButtonTapped(scaleX):
-            return AssetsKit.imageOfWTGButtonTapped(scaleX: scaleX)
-        case let .WTGButtonUntapped(scaleX):
-            return AssetsKit.imageOfWTGButtonUntapped(scaleX: scaleX)
-        case let .PriceTag(scaleX):
-            return AssetsKit.imageOfPriceTagBackground(scaleX: scaleX)
-        case let .HomeButtonTapped(scaleX):
-            return AssetsKit.imageOfHomeButtonTapped(scaleX: scaleX)
-        case let .HomeButtonUntapped(scaleX):
-            return AssetsKit.imageOfHomeButtonUntapped(scaleX: scaleX)
-        case let .NearbyButtonTapped(scaleX):
-            return AssetsKit.imageOfNearbyButtonTapped(scaleX: scaleX)
-        case let .NearbyButtonUntapped(scaleX):
-            return AssetsKit.imageOfNearbyButtonUntapped(scaleX: scaleX)
-        case let .ChatButtonTapped(scaleX):
-            return AssetsKit.imageOfChatButtonTapped(scaleX: scaleX)
-        case let .ChatButtonUntapped(scaleX):
-            return AssetsKit.imageOfChatButtonUntapped(scaleX: scaleX)
-        case let .ProfileButtonTapped(scaleX):
-            return AssetsKit.imageOfProfileButtonTapped(scaleX: scaleX)
-        case let .ProfileButtonUntapped(scaleX):
-            return AssetsKit.imageOfProfileButtonUntapped(scaleX: scaleX)
-        case let .NavBarSearchButton(scaleX):
-            return AssetsKit.imageOfNavBarSearchButton(scaleX: scaleX)
-        case let .NavbarFilterButton(scaleX):
-            return AssetsKit.imageOfNavbarFilterButton(scaleX: scaleX)
+        case let .VenusLabel(size, backgroundColor, opaque, imageContextScale, generation):
+            return AssetsKit.x_imageOfVenusLabel(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, generation: generation)
+        case let .MarsLabel(size, backgroundColor, opaque, imageContextScale, generation):
+            return AssetsKit.x_imageOfMarsLabel(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, generation: generation)
+        case let .ShareButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfShareButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .FilterButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfFilterButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .SearchButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfSearchButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .ProfileButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfProfileButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .ChatButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfChatButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .NearbyButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfNearbyButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .HomeButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfHomeButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .PriceIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfPriceIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .CakeIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfCakeIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .FemaleIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfFemaleIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .MaleIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfMaleIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .FlameIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfFlameIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .CarIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfCarIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
+        case let .EtcIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return AssetsKit.x_imageOfEtcIcon(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
         }
     }
     
@@ -80,53 +70,76 @@ public enum Asset {
     internal func cacheKey() -> String {
         
         switch(self){
-        case let .FemaleIcon(scaleX):
-            return "FemaleIcon\(scaleX)"
-        case let .MaleIcon(scaleX):
-            return "MaleIcon\(scaleX)"
-        case let .CakeIcon(scaleX):
-            return "CakeIcon\(scaleX)"
-        case let .FlameIcon(scaleX):
-            return "FlameIcon\(scaleX)"
-        case let .CarIcon(size, backgroundColor, opaque, imageContextScale):
-            return "CarIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)"
-        case let .EtcIcon(size, backgroundColor, opaque, imageContextScale):
-            return "EtcIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)"
-        case let .WTGButtonTapped(scaleX):
-            return "WTGButtonTapped\(scaleX)"
-        case let .WTGButtonUntapped(scaleX):
-            return "WTGButtonUntapped\(scaleX)"
-        case let .PriceTag(scaleX):
-            return "PriceTag\(scaleX)"
-        case let .HomeButtonTapped(scaleX):
-            return "HomeButtonTapped\(scaleX)"
-        case let .HomeButtonUntapped(scaleX):
-            return "HomeButtonUntapped\(scaleX)"
-        case let .NearbyButtonTapped(scaleX):
-            return "NearbyButtonTapped\(scaleX)"
-        case let .NearbyButtonUntapped(scaleX):
-            return "NearbyButtonUntapped\(scaleX)"
-        case let .ChatButtonTapped(scaleX):
-            return "ChatButtonTapped\(scaleX)"
-        case let .ChatButtonUntapped(scaleX):
-            return "ChatButtonUntapped\(scaleX)"
-        case let .ProfileButtonTapped(scaleX):
-            return "ProfileButtonTapped\(scaleX)"
-        case let .ProfileButtonUntapped(scaleX):
-            return "ProfileButtonUntapped\(scaleX)"
-        case let .NavBarSearchButton(scaleX):
-            return "NavBarSearchButton\(scaleX)"
-        case let .NavbarFilterButton(scaleX):
-            return "NavbarFilterButton\(scaleX)"
+        case let .VenusLabel(size, backgroundColor, opaque, imageContextScale, generation):
+            return "VenusLabel|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(generation)"
+        case let .MarsLabel(size, backgroundColor, opaque, imageContextScale, generation):
+            return "MarsLabel|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(generation)"
+        case let .ShareButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "ShareButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .FilterButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "FilterButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .SearchButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "SearchButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .ProfileButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "ProfileButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .ChatButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "ChatButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .NearbyButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "NearbyButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .HomeButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "HomeButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .PriceIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "PriceIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .CakeIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "CakeIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .FemaleIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "FemaleIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .MaleIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "MaleIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .FlameIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "FlameIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .CarIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "CarIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+        case let .EtcIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
+            return "EtcIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
+
         }
     }
     
     internal func drawingSize() -> CGSize {
         switch(self) {
-        case .CarIcon:
-            return CGSizeMake(31, 24)
-        case .EtcIcon:
+        case .VenusLabel:
+            return CGSizeMake(58, 17)
+        case .MarsLabel:
+            return CGSizeMake(58, 17)
+        case .ShareButton:
+            return CGSizeMake(26, 25)
+        case .FilterButton:
+            return CGSizeMake(26, 25)
+        case .SearchButton:
+            return CGSizeMake(20, 21)
+        case .ProfileButton:
+            return CGSizeMake(22, 27)
+        case .ChatButton:
+            return CGSizeMake(27, 27)
+        case .NearbyButton:
+            return CGSizeMake(27, 27)
+        case .HomeButton:
+            return CGSizeMake(32, 27)
+        case .PriceIcon:
+            return CGSizeMake(11, 11)
+        case .CakeIcon:
+            return CGSizeMake(45, 36)
+        case .FemaleIcon:
             return CGSizeMake(36, 40)
+        case .MaleIcon:
+            return CGSizeMake(37, 40)
+        case .FlameIcon:
+            return CGSizeMake(32, 34)
+        case .CarIcon:
+            return CGSizeMake(14, 13)
+        case .EtcIcon:
+            return CGSizeMake(32,11)
         default:
             return CGSizeMake(0, 0)
         }

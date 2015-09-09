@@ -17,8 +17,7 @@ class EtcIconViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        imageView.clipsToBounds = true
-        imageView.rac_image <~ AssetFactory.getImage(Asset.EtcIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil))
+        imageView.rac_image <~ AssetFactory.getImage(Asset.EtcIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, pressed: false, shadow: false))
             |> map { Optional<UIImage>($0) }
     }
     

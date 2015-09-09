@@ -1,5 +1,5 @@
 //
-//  EtcIconViewController.swift
+//  PriceIconViewController.swift
 //  XAssets
 //
 //  Created by Connor Wang on 8/11/15.
@@ -10,14 +10,14 @@ import UIKit
 import XAssets
 import ReactiveCocoa
 
-class FlameIconViewController: UIViewController {
+class PriceIconViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-                
-        imageView.rac_image <~ AssetFactory.getImage(Asset.FlameIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, pressed: false, shadow: false))
+        super.viewDidAppear(animated)      
+        
+        imageView.rac_image <~ AssetFactory.getImage(Asset.PriceIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, pressed: false, shadow: false))
             |> map { Optional<UIImage>($0) }
     }
     

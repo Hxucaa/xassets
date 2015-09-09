@@ -30,18 +30,15 @@ public final class MenuItems {
         ("Flame Icon", "ToFlameIcon"),
         ("Car Icon", "ToCarIcon"),
         ("Etc Icon", "ToEtcIcon"),
-        ("WTG Button Tapped", "ToWTGButtonTapped"),
-        ("WTG Button Untapped", "ToWTGButtonUntapped"),
-        ("Profile Button Tapped", "ToProfileButtonTapped"),
-        ("Profile Button Untapped", "ToProfileButtonUntapped"),
-        ("Home Button Tapped", "ToHomeButtonTapped"),
-        ("Home Button Untapped", "ToHomeButtonUntapped"),
-        ("Nearby Button Tapped", "ToNearbyButtonTapped"),
-        ("Nearby Button Untapped", "ToNearbyButtonUntapped"),
-        ("Chat Button Tapped", "ToChatButtonTapped"),
-        ("Chat Button Untapped", "ToChatButtonUntapped"),
-        ("Price Tag Background", "ToPriceTagBackground"),
-        ("Navbar Serach Button", "ToNavbarSearchButton"),
-        ("Navbar Filter Button", "ToNavbarFilterButton")
+        ("Profile Button", "ToProfileButton"),
+        ("Home Button", "ToHomeButton"),
+        ("Nearby Button", "ToNearbyButton"),
+        ("Chat Button", "ToChatButton"),
+        ("Price Icon", "ToPriceIcon"),
+        ("Serach Button", "ToSearchButton"),
+        ("Filter Button", "ToFilterButton"),
+        ("Share Button", "ToShareButton"),
+        ("Venus Label", "ToVenusLabel"),
+        ("Mars Label", "ToMarsLabel")
     ]
 }

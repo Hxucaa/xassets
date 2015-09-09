@@ -14,41 +14,21 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308F9911B74809800072909 /* MaleIconViewController.swift */; };
-		B308F9941B7480AE00072909 /* MaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308F9931B7480AE00072909 /* MaleIconView.swift */; };
-		B35680CD1B7A197700B44BB9 /* FlameIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680CB1B7A197700B44BB9 /* FlameIconView.swift */; };
 		B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */; };
 		B35680D21B7A19F200B44BB9 /* CarIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */; };
 		B35680D71B7A202600B44BB9 /* EtcIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680D61B7A202600B44BB9 /* EtcIconViewController.swift */; };
-		B35680E31B7A2A6000B44BB9 /* WTGButtonTappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E11B7A2A6000B44BB9 /* WTGButtonTappedView.swift */; };
-		B35680E41B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */; };
-		B35680E71B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */; };
-		B35680E91B7A2A9700B44BB9 /* WTGButtonUntappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */; };
-		B35680EC1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680EB1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift */; };
-		B35680EE1B7A332200B44BB9 /* PriceTagBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680ED1B7A332200B44BB9 /* PriceTagBackgroundView.swift */; };
-		B35680F11B7A3ABF00B44BB9 /* HomeButtonUntappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680F01B7A3ABF00B44BB9 /* HomeButtonUntappedViewController.swift */; };
-		B35680F31B7A3ACA00B44BB9 /* HomeButtonUntappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680F21B7A3ACA00B44BB9 /* HomeButtonUntappedView.swift */; };
-		B35680F61B7A3B1D00B44BB9 /* HomeButtonTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680F51B7A3B1D00B44BB9 /* HomeButtonTappedViewController.swift */; };
-		B35680F81B7A3B2900B44BB9 /* HomeButtonTappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680F71B7A3B2900B44BB9 /* HomeButtonTappedView.swift */; };
-		B35681001B7A3BB500B44BB9 /* ProfileButtonTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680FF1B7A3BB500B44BB9 /* ProfileButtonTappedViewController.swift */; };
-		B35681021B7A3BC200B44BB9 /* ProfileButtonTappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681011B7A3BC200B44BB9 /* ProfileButtonTappedView.swift */; };
-		B35681041B7A3C1400B44BB9 /* ProfileButtonUntappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681031B7A3C1400B44BB9 /* ProfileButtonUntappedViewController.swift */; };
-		B35681061B7A3C2800B44BB9 /* ProfileButtonUntappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681051B7A3C2800B44BB9 /* ProfileButtonUntappedView.swift */; };
-		B35681081B7A3C9B00B44BB9 /* ChatButtonTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681071B7A3C9B00B44BB9 /* ChatButtonTappedViewController.swift */; };
-		B356810A1B7A3CA900B44BB9 /* ChatButtonTappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681091B7A3CA900B44BB9 /* ChatButtonTappedView.swift */; };
-		B356810C1B7A3CD600B44BB9 /* ChatButtonUntappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356810B1B7A3CD600B44BB9 /* ChatButtonUntappedViewController.swift */; };
-		B356810E1B7A3CE000B44BB9 /* ChatButtonUntappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356810D1B7A3CE000B44BB9 /* ChatButtonUntappedView.swift */; };
-		B35681101B7A3D2B00B44BB9 /* NearbyButtonTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356810F1B7A3D2B00B44BB9 /* NearbyButtonTappedViewController.swift */; };
-		B35681121B7A3D3500B44BB9 /* NearbyButtonTappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681111B7A3D3500B44BB9 /* NearbyButtonTappedView.swift */; };
-		B35681141B7A3D7400B44BB9 /* NearbyButtonUntappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681131B7A3D7400B44BB9 /* NearbyButtonUntappedViewController.swift */; };
-		B35681161B7A3D7E00B44BB9 /* NearbyButtonUntappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681151B7A3D7E00B44BB9 /* NearbyButtonUntappedView.swift */; };
-		B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D71B7490D700489954 /* FemaleIconView.swift */; };
+		B35680EC1B7A331500B44BB9 /* PriceIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680EB1B7A331500B44BB9 /* PriceIconViewController.swift */; };
+		B35680F61B7A3B1D00B44BB9 /* HomeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680F51B7A3B1D00B44BB9 /* HomeButtonViewController.swift */; };
+		B35681001B7A3BB500B44BB9 /* ProfileButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35680FF1B7A3BB500B44BB9 /* ProfileButtonViewController.swift */; };
+		B35681081B7A3C9B00B44BB9 /* ChatButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681071B7A3C9B00B44BB9 /* ChatButtonViewController.swift */; };
+		B35681141B7A3D7400B44BB9 /* NearbyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35681131B7A3D7400B44BB9 /* NearbyButtonViewController.swift */; };
+		B3A54E571BA000E10076C7FF /* ShareButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E561BA000E10076C7FF /* ShareButtonViewController.swift */; };
+		B3A54E5A1BA001CC0076C7FF /* MarsLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E591BA001CC0076C7FF /* MarsLabelViewController.swift */; };
+		B3A54E5D1BA0024C0076C7FF /* VenusLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E5C1BA0024C0076C7FF /* VenusLabelViewController.swift */; };
 		B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */; };
 		B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */; };
-		B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF81DE1B74933000489954 /* CakeIconView.swift */; };
-		B3FA65F11B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65F01B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift */; };
-		B3FA65F31B7A59BC003DD5D0 /* NavbarSearchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65F21B7A59BC003DD5D0 /* NavbarSearchButtonView.swift */; };
-		B3FA65FB1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65FA1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift */; };
-		B3FA65FD1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65FC1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift */; };
+		B3FA65F11B7A59AE003DD5D0 /* SearchButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65F01B7A59AE003DD5D0 /* SearchButtonViewController.swift */; };
+		B3FA65FB1B7A5AD8003DD5D0 /* FilterButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA65FA1B7A5AD8003DD5D0 /* FilterButtonViewController.swift */; };
 		B44D2CD91B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */; };
 		B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */; };
 		B4D7338C1B996AD800B599B9 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */; };
@@ -81,41 +61,21 @@
 		720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XAssets_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BE606CA7121D9F2D3BB968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B308F9911B74809800072909 /* MaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconViewController.swift; sourceTree = "<group>"; };
-		B308F9931B7480AE00072909 /* MaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaleIconView.swift; sourceTree = "<group>"; };
-		B35680CB1B7A197700B44BB9 /* FlameIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconView.swift; sourceTree = "<group>"; };
 		B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlameIconViewController.swift; sourceTree = "<group>"; };
 		B35680D11B7A19F200B44BB9 /* CarIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarIconViewController.swift; sourceTree = "<group>"; };
 		B35680D61B7A202600B44BB9 /* EtcIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtcIconViewController.swift; sourceTree = "<group>"; };
-		B35680E11B7A2A6000B44BB9 /* WTGButtonTappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonTappedView.swift; sourceTree = "<group>"; };
-		B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonTappedViewController.swift; sourceTree = "<group>"; };
-		B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonUntappedViewController.swift; sourceTree = "<group>"; };
-		B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGButtonUntappedView.swift; sourceTree = "<group>"; };
-		B35680EB1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTagBackgroundViewController.swift; sourceTree = "<group>"; };
-		B35680ED1B7A332200B44BB9 /* PriceTagBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTagBackgroundView.swift; sourceTree = "<group>"; };
-		B35680F01B7A3ABF00B44BB9 /* HomeButtonUntappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonUntappedViewController.swift; sourceTree = "<group>"; };
-		B35680F21B7A3ACA00B44BB9 /* HomeButtonUntappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonUntappedView.swift; sourceTree = "<group>"; };
-		B35680F51B7A3B1D00B44BB9 /* HomeButtonTappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonTappedViewController.swift; sourceTree = "<group>"; };
-		B35680F71B7A3B2900B44BB9 /* HomeButtonTappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonTappedView.swift; sourceTree = "<group>"; };
-		B35680FF1B7A3BB500B44BB9 /* ProfileButtonTappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonTappedViewController.swift; sourceTree = "<group>"; };
-		B35681011B7A3BC200B44BB9 /* ProfileButtonTappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonTappedView.swift; sourceTree = "<group>"; };
-		B35681031B7A3C1400B44BB9 /* ProfileButtonUntappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonUntappedViewController.swift; sourceTree = "<group>"; };
-		B35681051B7A3C2800B44BB9 /* ProfileButtonUntappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonUntappedView.swift; sourceTree = "<group>"; };
-		B35681071B7A3C9B00B44BB9 /* ChatButtonTappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonTappedViewController.swift; sourceTree = "<group>"; };
-		B35681091B7A3CA900B44BB9 /* ChatButtonTappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonTappedView.swift; sourceTree = "<group>"; };
-		B356810B1B7A3CD600B44BB9 /* ChatButtonUntappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonUntappedViewController.swift; sourceTree = "<group>"; };
-		B356810D1B7A3CE000B44BB9 /* ChatButtonUntappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonUntappedView.swift; sourceTree = "<group>"; };
-		B356810F1B7A3D2B00B44BB9 /* NearbyButtonTappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyButtonTappedViewController.swift; sourceTree = "<group>"; };
-		B35681111B7A3D3500B44BB9 /* NearbyButtonTappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyButtonTappedView.swift; sourceTree = "<group>"; };
-		B35681131B7A3D7400B44BB9 /* NearbyButtonUntappedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyButtonUntappedViewController.swift; sourceTree = "<group>"; };
-		B35681151B7A3D7E00B44BB9 /* NearbyButtonUntappedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyButtonUntappedView.swift; sourceTree = "<group>"; };
-		B3AF81D71B7490D700489954 /* FemaleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconView.swift; sourceTree = "<group>"; };
+		B35680EB1B7A331500B44BB9 /* PriceIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceIconViewController.swift; sourceTree = "<group>"; };
+		B35680F51B7A3B1D00B44BB9 /* HomeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonViewController.swift; sourceTree = "<group>"; };
+		B35680FF1B7A3BB500B44BB9 /* ProfileButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonViewController.swift; sourceTree = "<group>"; };
+		B35681071B7A3C9B00B44BB9 /* ChatButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonViewController.swift; sourceTree = "<group>"; };
+		B35681131B7A3D7400B44BB9 /* NearbyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54E561BA000E10076C7FF /* ShareButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareButtonViewController.swift; sourceTree = "<group>"; };
+		B3A54E591BA001CC0076C7FF /* MarsLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsLabelViewController.swift; sourceTree = "<group>"; };
+		B3A54E5C1BA0024C0076C7FF /* VenusLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusLabelViewController.swift; sourceTree = "<group>"; };
 		B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FemaleIconViewController.swift; sourceTree = "<group>"; };
 		B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
-		B3AF81DE1B74933000489954 /* CakeIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconView.swift; sourceTree = "<group>"; };
-		B3FA65F01B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarbarSearchButtonViewController.swift; sourceTree = "<group>"; };
-		B3FA65F21B7A59BC003DD5D0 /* NavbarSearchButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarSearchButtonView.swift; sourceTree = "<group>"; };
-		B3FA65FA1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarFilterButtonViewController.swift; sourceTree = "<group>"; };
-		B3FA65FC1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarFilterButtonView.swift; sourceTree = "<group>"; };
+		B3FA65F01B7A59AE003DD5D0 /* SearchButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchButtonViewController.swift; sourceTree = "<group>"; };
+		B3FA65FA1B7A5AD8003DD5D0 /* FilterButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterButtonViewController.swift; sourceTree = "<group>"; };
 		B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKsc-Bold.otf"; sourceTree = "<group>"; };
 		B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
@@ -171,19 +131,16 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
-				B3FA65F91B7A5ACA003DD5D0 /* Navbar Filter Button */,
-				B3FA65EF1B7A599E003DD5D0 /* Navbar Search Button */,
-				B35680FE1B7A3BA600B44BB9 /* Profile Button Tapped */,
-				B35680FD1B7A3B9200B44BB9 /* Profile Button Untapped */,
-				B35680FC1B7A3B8500B44BB9 /* Chat Button Tapped */,
-				B35680FB1B7A3B7B00B44BB9 /* Chat Button Untapped */,
-				B35680FA1B7A3B6F00B44BB9 /* Nearby Button Tapped */,
-				B35680F91B7A3B5C00B44BB9 /* Nearby Button Untapped */,
-				B35680F41B7A3B0F00B44BB9 /* Home Button Tapped */,
-				B35680EF1B7A3AA600B44BB9 /* Home Button Untapped */,
-				B35680E51B7A2A7300B44BB9 /* WTG Button Untapped */,
-				B35680E01B7A2A6000B44BB9 /* WTG Button Tapped */,
-				B35680EA1B7A330200B44BB9 /* Price Tag Background */,
+				B3A54E5B1BA002340076C7FF /* Venus Label */,
+				B3A54E581BA001AC0076C7FF /* Mars Label */,
+				B3A54E551B9FEDCE0076C7FF /* Share Button */,
+				B3FA65F91B7A5ACA003DD5D0 /* Filter Button */,
+				B3FA65EF1B7A599E003DD5D0 /* Search Button */,
+				B35680FE1B7A3BA600B44BB9 /* Profile Button */,
+				B35680FC1B7A3B8500B44BB9 /* Chat Button */,
+				B35680F91B7A3B5C00B44BB9 /* Nearby Button */,
+				B35680F41B7A3B0F00B44BB9 /* Home Button */,
+				B35680EA1B7A330200B44BB9 /* Price Icon */,
 				B3AF81DB1B74930500489954 /* Cake Icon */,
 				B3AF81D61B7490C000489954 /* Female Icon */,
 				B308F9901B74804100072909 /* Male Icon */,
@@ -254,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				B308F9911B74809800072909 /* MaleIconViewController.swift */,
-				B308F9931B7480AE00072909 /* MaleIconView.swift */,
 			);
 			path = "Male Icon";
 			sourceTree = "<group>";
@@ -263,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				B35680CC1B7A197700B44BB9 /* FlameIconViewController.swift */,
-				B35680CB1B7A197700B44BB9 /* FlameIconView.swift */,
 			);
 			path = "Flame Icon";
 			sourceTree = "<group>";
@@ -284,110 +239,79 @@
 			path = "Etc Icon";
 			sourceTree = "<group>";
 		};
-		B35680E01B7A2A6000B44BB9 /* WTG Button Tapped */ = {
+		B35680EA1B7A330200B44BB9 /* Price Icon */ = {
 			isa = PBXGroup;
 			children = (
-				B35680E21B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift */,
-				B35680E11B7A2A6000B44BB9 /* WTGButtonTappedView.swift */,
+				B35680EB1B7A331500B44BB9 /* PriceIconViewController.swift */,
 			);
-			path = "WTG Button Tapped";
-			sourceTree = "<group>";
-		};
-		B35680E51B7A2A7300B44BB9 /* WTG Button Untapped */ = {
-			isa = PBXGroup;
-			children = (
-				B35680E61B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift */,
-				B35680E81B7A2A9700B44BB9 /* WTGButtonUntappedView.swift */,
-			);
-			path = "WTG Button Untapped";
-			sourceTree = "<group>";
-		};
-		B35680EA1B7A330200B44BB9 /* Price Tag Background */ = {
-			isa = PBXGroup;
-			children = (
-				B35680EB1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift */,
-				B35680ED1B7A332200B44BB9 /* PriceTagBackgroundView.swift */,
-			);
+			name = "Price Icon";
 			path = "Price Tag Background";
 			sourceTree = "<group>";
 		};
-		B35680EF1B7A3AA600B44BB9 /* Home Button Untapped */ = {
+		B35680F41B7A3B0F00B44BB9 /* Home Button */ = {
 			isa = PBXGroup;
 			children = (
-				B35680F01B7A3ABF00B44BB9 /* HomeButtonUntappedViewController.swift */,
-				B35680F21B7A3ACA00B44BB9 /* HomeButtonUntappedView.swift */,
+				B35680F51B7A3B1D00B44BB9 /* HomeButtonViewController.swift */,
 			);
-			path = "Home Button Untapped";
-			sourceTree = "<group>";
-		};
-		B35680F41B7A3B0F00B44BB9 /* Home Button Tapped */ = {
-			isa = PBXGroup;
-			children = (
-				B35680F51B7A3B1D00B44BB9 /* HomeButtonTappedViewController.swift */,
-				B35680F71B7A3B2900B44BB9 /* HomeButtonTappedView.swift */,
-			);
+			name = "Home Button";
 			path = "Home Button Tapped";
 			sourceTree = "<group>";
 		};
-		B35680F91B7A3B5C00B44BB9 /* Nearby Button Untapped */ = {
+		B35680F91B7A3B5C00B44BB9 /* Nearby Button */ = {
 			isa = PBXGroup;
 			children = (
-				B35681131B7A3D7400B44BB9 /* NearbyButtonUntappedViewController.swift */,
-				B35681151B7A3D7E00B44BB9 /* NearbyButtonUntappedView.swift */,
+				B35681131B7A3D7400B44BB9 /* NearbyButtonViewController.swift */,
 			);
+			name = "Nearby Button";
 			path = "Nearby Button Untapped";
 			sourceTree = "<group>";
 		};
-		B35680FA1B7A3B6F00B44BB9 /* Nearby Button Tapped */ = {
+		B35680FC1B7A3B8500B44BB9 /* Chat Button */ = {
 			isa = PBXGroup;
 			children = (
-				B356810F1B7A3D2B00B44BB9 /* NearbyButtonTappedViewController.swift */,
-				B35681111B7A3D3500B44BB9 /* NearbyButtonTappedView.swift */,
+				B35681071B7A3C9B00B44BB9 /* ChatButtonViewController.swift */,
 			);
-			path = "Nearby Button Tapped";
-			sourceTree = "<group>";
-		};
-		B35680FB1B7A3B7B00B44BB9 /* Chat Button Untapped */ = {
-			isa = PBXGroup;
-			children = (
-				B356810B1B7A3CD600B44BB9 /* ChatButtonUntappedViewController.swift */,
-				B356810D1B7A3CE000B44BB9 /* ChatButtonUntappedView.swift */,
-			);
-			path = "Chat Button Untapped";
-			sourceTree = "<group>";
-		};
-		B35680FC1B7A3B8500B44BB9 /* Chat Button Tapped */ = {
-			isa = PBXGroup;
-			children = (
-				B35681071B7A3C9B00B44BB9 /* ChatButtonTappedViewController.swift */,
-				B35681091B7A3CA900B44BB9 /* ChatButtonTappedView.swift */,
-			);
+			name = "Chat Button";
 			path = "Chat Button Tapped";
 			sourceTree = "<group>";
 		};
-		B35680FD1B7A3B9200B44BB9 /* Profile Button Untapped */ = {
+		B35680FE1B7A3BA600B44BB9 /* Profile Button */ = {
 			isa = PBXGroup;
 			children = (
-				B35681031B7A3C1400B44BB9 /* ProfileButtonUntappedViewController.swift */,
-				B35681051B7A3C2800B44BB9 /* ProfileButtonUntappedView.swift */,
+				B35680FF1B7A3BB500B44BB9 /* ProfileButtonViewController.swift */,
 			);
-			path = "Profile Button Untapped";
+			name = "Profile Button";
+			path = "Profile Button Tapped";
 			sourceTree = "<group>";
 		};
-		B35680FE1B7A3BA600B44BB9 /* Profile Button Tapped */ = {
+		B3A54E551B9FEDCE0076C7FF /* Share Button */ = {
 			isa = PBXGroup;
 			children = (
-				B35680FF1B7A3BB500B44BB9 /* ProfileButtonTappedViewController.swift */,
-				B35681011B7A3BC200B44BB9 /* ProfileButtonTappedView.swift */,
+				B3A54E561BA000E10076C7FF /* ShareButtonViewController.swift */,
 			);
-			path = "Profile Button Tapped";
+			name = "Share Button";
+			sourceTree = "<group>";
+		};
+		B3A54E581BA001AC0076C7FF /* Mars Label */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54E591BA001CC0076C7FF /* MarsLabelViewController.swift */,
+			);
+			name = "Mars Label";
+			sourceTree = "<group>";
+		};
+		B3A54E5B1BA002340076C7FF /* Venus Label */ = {
+			isa = PBXGroup;
+			children = (
+				B3A54E5C1BA0024C0076C7FF /* VenusLabelViewController.swift */,
+			);
+			name = "Venus Label";
 			sourceTree = "<group>";
 		};
 		B3AF81D61B7490C000489954 /* Female Icon */ = {
 			isa = PBXGroup;
 			children = (
 				B3AF81D91B7490EC00489954 /* FemaleIconViewController.swift */,
-				B3AF81D71B7490D700489954 /* FemaleIconView.swift */,
 			);
 			path = "Female Icon";
 			sourceTree = "<group>";
@@ -396,26 +320,25 @@
 			isa = PBXGroup;
 			children = (
 				B3AF81DC1B74931D00489954 /* CakeIconViewController.swift */,
-				B3AF81DE1B74933000489954 /* CakeIconView.swift */,
 			);
 			path = "Cake Icon";
 			sourceTree = "<group>";
 		};
-		B3FA65EF1B7A599E003DD5D0 /* Navbar Search Button */ = {
+		B3FA65EF1B7A599E003DD5D0 /* Search Button */ = {
 			isa = PBXGroup;
 			children = (
-				B3FA65F01B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift */,
-				B3FA65F21B7A59BC003DD5D0 /* NavbarSearchButtonView.swift */,
+				B3FA65F01B7A59AE003DD5D0 /* SearchButtonViewController.swift */,
 			);
+			name = "Search Button";
 			path = "Navbar Search Button";
 			sourceTree = "<group>";
 		};
-		B3FA65F91B7A5ACA003DD5D0 /* Navbar Filter Button */ = {
+		B3FA65F91B7A5ACA003DD5D0 /* Filter Button */ = {
 			isa = PBXGroup;
 			children = (
-				B3FA65FA1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift */,
-				B3FA65FC1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift */,
+				B3FA65FA1B7A5AD8003DD5D0 /* FilterButtonViewController.swift */,
 			);
+			name = "Filter Button";
 			path = "Navbar Filter Button";
 			sourceTree = "<group>";
 		};
@@ -628,46 +551,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35681141B7A3D7400B44BB9 /* NearbyButtonUntappedViewController.swift in Sources */,
-				B35681061B7A3C2800B44BB9 /* ProfileButtonUntappedView.swift in Sources */,
-				B35680E91B7A2A9700B44BB9 /* WTGButtonUntappedView.swift in Sources */,
-				B35680F61B7A3B1D00B44BB9 /* HomeButtonTappedViewController.swift in Sources */,
-				B3FA65F11B7A59AE003DD5D0 /* NarbarSearchButtonViewController.swift in Sources */,
-				B35680F31B7A3ACA00B44BB9 /* HomeButtonUntappedView.swift in Sources */,
-				B35680E71B7A2A8B00B44BB9 /* WTGButtonUntappedViewController.swift in Sources */,
-				B35681121B7A3D3500B44BB9 /* NearbyButtonTappedView.swift in Sources */,
-				B3AF81D81B7490D700489954 /* FemaleIconView.swift in Sources */,
-				B308F9941B7480AE00072909 /* MaleIconView.swift in Sources */,
-				B356810A1B7A3CA900B44BB9 /* ChatButtonTappedView.swift in Sources */,
-				B35680E41B7A2A6000B44BB9 /* WTGButtonTappedViewController.swift in Sources */,
-				B35680EE1B7A332200B44BB9 /* PriceTagBackgroundView.swift in Sources */,
+				B35681141B7A3D7400B44BB9 /* NearbyButtonViewController.swift in Sources */,
+				B35680F61B7A3B1D00B44BB9 /* HomeButtonViewController.swift in Sources */,
+				B3FA65F11B7A59AE003DD5D0 /* SearchButtonViewController.swift in Sources */,
+				B3A54E5D1BA0024C0076C7FF /* VenusLabelViewController.swift in Sources */,
+				B3A54E5A1BA001CC0076C7FF /* MarsLabelViewController.swift in Sources */,
 				B35680CE1B7A197700B44BB9 /* FlameIconViewController.swift in Sources */,
-				B3FA65FD1B7A5AE5003DD5D0 /* NavbarFilterButtonView.swift in Sources */,
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
-				B35681161B7A3D7E00B44BB9 /* NearbyButtonUntappedView.swift in Sources */,
-				B35681001B7A3BB500B44BB9 /* ProfileButtonTappedViewController.swift in Sources */,
-				B35681101B7A3D2B00B44BB9 /* NearbyButtonTappedViewController.swift in Sources */,
-				B3FA65FB1B7A5AD8003DD5D0 /* NavbarFilterButtonViewController.swift in Sources */,
+				B35681001B7A3BB500B44BB9 /* ProfileButtonViewController.swift in Sources */,
+				B3FA65FB1B7A5AD8003DD5D0 /* FilterButtonViewController.swift in Sources */,
 				B308F9921B74809800072909 /* MaleIconViewController.swift in Sources */,
-				B35681041B7A3C1400B44BB9 /* ProfileButtonUntappedViewController.swift in Sources */,
-				B35680F81B7A3B2900B44BB9 /* HomeButtonTappedView.swift in Sources */,
-				B3FA65F31B7A59BC003DD5D0 /* NavbarSearchButtonView.swift in Sources */,
 				B35680D71B7A202600B44BB9 /* EtcIconViewController.swift in Sources */,
-				B35681021B7A3BC200B44BB9 /* ProfileButtonTappedView.swift in Sources */,
 				B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */,
-				B35681081B7A3C9B00B44BB9 /* ChatButtonTappedViewController.swift in Sources */,
+				B35681081B7A3C9B00B44BB9 /* ChatButtonViewController.swift in Sources */,
 				B3AF81DA1B7490EC00489954 /* FemaleIconViewController.swift in Sources */,
-				B35680F11B7A3ABF00B44BB9 /* HomeButtonUntappedViewController.swift in Sources */,
+				B3A54E571BA000E10076C7FF /* ShareButtonViewController.swift in Sources */,
 				B3AF81DD1B74931D00489954 /* CakeIconViewController.swift in Sources */,
-				B356810E1B7A3CE000B44BB9 /* ChatButtonUntappedView.swift in Sources */,
-				B35680E31B7A2A6000B44BB9 /* WTGButtonTappedView.swift in Sources */,
 				B35680D21B7A19F200B44BB9 /* CarIconViewController.swift in Sources */,
-				B3AF81DF1B74933000489954 /* CakeIconView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				B356810C1B7A3CD600B44BB9 /* ChatButtonUntappedViewController.swift in Sources */,
-				B35680CD1B7A197700B44BB9 /* FlameIconView.swift in Sources */,
 				B4D7338C1B996AD800B599B9 /* UIImageView+extension.swift in Sources */,
-				B35680EC1B7A331500B44BB9 /* PriceTagBackgroundViewController.swift in Sources */,
+				B35680EC1B7A331500B44BB9 /* PriceIconViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

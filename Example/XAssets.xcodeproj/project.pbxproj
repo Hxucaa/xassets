@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		B37020591BA4089A003BF34B /* JoinButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37020581BA4089A003BF34B /* JoinButtonViewController.swift */; };
 		B3A54EB11BA039500076C7FF /* CakeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E921BA039500076C7FF /* CakeIconViewController.swift */; };
 		B3A54EB21BA039500076C7FF /* CarIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E941BA039500076C7FF /* CarIconViewController.swift */; };
 		B3A54EB31BA039500076C7FF /* ChatButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54E961BA039500076C7FF /* ChatButtonViewController.swift */; };
@@ -60,6 +61,7 @@
 		6B6141AAF07C072511700F94 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XAssets_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BE606CA7121D9F2D3BB968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B37020581BA4089A003BF34B /* JoinButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinButtonViewController.swift; sourceTree = "<group>"; };
 		B3A54E921BA039500076C7FF /* CakeIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeIconViewController.swift; sourceTree = "<group>"; };
 		B3A54E941BA039500076C7FF /* CarIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarIconViewController.swift; sourceTree = "<group>"; };
 		B3A54E961BA039500076C7FF /* ChatButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatButtonViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B37020571BA4089A003BF34B /* Join Button */,
 				B3A54E911BA039500076C7FF /* Cake Icon */,
 				B3A54E931BA039500076C7FF /* Car Icon */,
 				B3A54E951BA039500076C7FF /* Chat Button */,
@@ -205,6 +208,14 @@
 				4F0608BE0CE9007B6B4C2B1B /* Pods-XAssets_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B37020571BA4089A003BF34B /* Join Button */ = {
+			isa = PBXGroup;
+			children = (
+				B37020581BA4089A003BF34B /* JoinButtonViewController.swift */,
+			);
+			path = "Join Button";
 			sourceTree = "<group>";
 		};
 		B3A54E911BA039500076C7FF /* Cake Icon */ = {
@@ -551,6 +562,7 @@
 				B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */,
 				B3A54EBE1BA039500076C7FF /* SearchButtonViewController.swift in Sources */,
 				B3A54EBF1BA039500076C7FF /* ShareButtonViewController.swift in Sources */,
+				B37020591BA4089A003BF34B /* JoinButtonViewController.swift in Sources */,
 				B3A54EBC1BA039500076C7FF /* PriceIconViewController.swift in Sources */,
 				B3A54EB41BA039500076C7FF /* EtcIconViewController.swift in Sources */,
 				B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */,

@@ -45,6 +45,7 @@
                         <segue destination="Vxe-Nd-1bs" kind="show" identifier="ToMarsLabel" id="HyO-Ub-TZm"/>
                         <segue destination="Pe4-mm-3A8" kind="show" identifier="ToShareButton" id="FQu-L5-u9u"/>
                         <segue destination="BX0-pa-i78" kind="show" identifier="ToVenusLabel" id="t48-1L-WuY"/>
+                        <segue destination="9ca-dq-2YX" kind="show" identifier="ToJoinButton" id="Axn-VO-z9V"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -542,6 +543,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o73-VN-MbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-944" y="1814"/>
+        </scene>
+        <!--Join Button View Controller-->
+        <scene sceneID="0cU-7A-edX">
+            <objects>
+                <viewController id="9ca-dq-2YX" customClass="JoinButtonViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JDb-ZM-LHh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ymI-US-nW3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oGv-GY-ikH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lsS-7g-WSS">
+                                <rect key="frame" x="261" y="268" width="78" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="W0f-mC-Zpi"/>
+                                    <constraint firstAttribute="width" constant="78" id="vi5-w1-mxd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="lsS-7g-WSS" secondAttribute="centerY" id="62K-hJ-mlq"/>
+                            <constraint firstAttribute="centerX" secondItem="lsS-7g-WSS" secondAttribute="centerX" id="el2-fR-iBH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="lsS-7g-WSS" id="UPQ-9K-GkB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4a-kv-tfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-944" y="2494"/>
         </scene>
         <!--Share Button View Controller-->
         <scene sceneID="Rlu-cZ-Zpn">

@@ -39,6 +39,7 @@ public final class MenuItems {
         ("Filter Button", "ToFilterButton"),
         ("Share Button", "ToShareButton"),
         ("Venus Label", "ToVenusLabel"),
-        ("Mars Label", "ToMarsLabel")
+        ("Mars Label", "ToMarsLabel"),
+        ("Join Button", "ToJoinButton")
     ]
 }

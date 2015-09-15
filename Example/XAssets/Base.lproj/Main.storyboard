@@ -6,6 +6,40 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Filter Button View Controller-->
+        <scene sceneID="9oc-Uq-Jkw">
+            <objects>
+                <viewController id="RQ6-Tw-vKU" customClass="FilterButtonViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VqT-On-ULR"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRJ-7E-cwh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Lv-6a-Uzs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-ij-G8Y">
+                                <rect key="frame" x="261" y="268" width="78" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="708-Y9-nXS"/>
+                                    <constraint firstAttribute="width" constant="78" id="pX6-yc-WoM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Je5-ij-G8Y" secondAttribute="centerY" id="PAj-5q-RZs"/>
+                            <constraint firstAttribute="centerX" secondItem="Je5-ij-G8Y" secondAttribute="centerX" id="hnX-OW-Ida"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Je5-ij-G8Y" id="fkZ-h8-zAX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IwD-O3-APa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600" y="-276"/>
+        </scene>
         <!--Menu-->
         <scene sceneID="dA1-O5-bwl">
             <objects>
@@ -33,7 +67,6 @@
                         <segue destination="6kk-l5-YGP" kind="show" identifier="ToEtcIcon" id="ZEh-cp-sQv"/>
                         <segue destination="VN9-m1-xAo" kind="show" identifier="ToPriceIcon" id="LdW-sA-bYg"/>
                         <segue destination="A64-ic-Th5" kind="show" identifier="ToHomeButton" id="meP-Ob-ZiH"/>
-                        <segue destination="tjK-cZ-BA8" kind="show" identifier="ToFilterButton" id="tHS-ci-Fud"/>
                         <segue destination="d3p-c4-Dsn" kind="show" identifier="ToSearchButton" id="Kqy-LU-wS7"/>
                         <segue destination="FX4-nd-7hK" kind="show" identifier="ToProfileButton" id="hpr-rK-7ej"/>
                         <segue destination="AE3-Zy-axt" kind="show" identifier="ToCakeIcon" id="0Hp-JA-jHP"/>
@@ -46,6 +79,7 @@
                         <segue destination="Pe4-mm-3A8" kind="show" identifier="ToShareButton" id="FQu-L5-u9u"/>
                         <segue destination="BX0-pa-i78" kind="show" identifier="ToVenusLabel" id="t48-1L-WuY"/>
                         <segue destination="9ca-dq-2YX" kind="show" identifier="ToJoinButton" id="Axn-VO-z9V"/>
+                        <segue destination="RQ6-Tw-vKU" kind="show" identifier="ToFilterButton" id="Bpu-bs-5wo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -119,40 +153,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hER-aR-e4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-288" y="396"/>
-        </scene>
-        <!--Filter Button View Controller-->
-        <scene sceneID="OQS-wa-2kw">
-            <objects>
-                <viewController id="tjK-cZ-BA8" customClass="FilterButtonViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ClM-uJ-Vid"/>
-                        <viewControllerLayoutGuide type="bottom" id="sEs-3L-Fht"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Llr-UX-krA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-wQ-C06">
-                                <rect key="frame" x="261" y="268" width="78" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="78" id="GD5-zT-NrU"/>
-                                    <constraint firstAttribute="height" constant="63" id="OV0-SU-ioz"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="QAd-wQ-C06" secondAttribute="centerY" id="NWj-Qw-bpc"/>
-                            <constraint firstAttribute="centerX" secondItem="QAd-wQ-C06" secondAttribute="centerX" id="ngl-mS-Huc"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="QAd-wQ-C06" id="uCz-5I-yAg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qas-KX-37L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1600" y="-276"/>
         </scene>
         <!--Search Button View Controller-->
         <scene sceneID="54O-Af-S7t">
@@ -406,7 +406,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4h-NQ-m0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1600" y="417"/>
+            <point key="canvasLocation" x="-2287" y="417"/>
         </scene>
         <!--Car Icon-->
         <scene sceneID="8GS-ib-JWU">

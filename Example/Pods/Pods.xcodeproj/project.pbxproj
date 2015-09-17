@@ -283,6 +283,7 @@
 		B1C17EA65D4B828396C2C04EB6354251 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0861BC6D437EDB0E04760360CE194933 /* Match.swift */; };
 		B2A89134BD3E6889FF57D4D958F8DA0B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA12BDDDF4D850925A95AFB5CCF141 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B32DA96C87DDFC5005B744CFC6D6E031 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96897EB6322EBC82963A7EA913DAB968 /* Expression.swift */; };
+		B42410041BAAB57F000E44D0 /* AssetsTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42410021BAAB577000E44D0 /* AssetsTabBar.swift */; };
 		B5D943EE50DA19347BCBE568BD73F170 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C01113D586564A136E61D66389B4C99F /* UITextView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6C831E026AD1C72D23D31D4CD4C5231 /* NSUserDefaults+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC728CDA267BDF13E82851B72C6F360 /* NSUserDefaults+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7AF7A9680BD8DC6DE3C4A2D4D9944EE /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 976C8FE5B791B1C8A94A04EE390DE55C /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -831,6 +832,7 @@
 		B3EBF594A13CCB5F72E2F90A5CA89D7A /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = "ReactiveCocoa/Objective-C/RACCompoundDisposable.m"; sourceTree = "<group>"; };
 		B400573E26422EFA864D0C6D3CA083B7 /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
 		B41A12BDBFBD98480D71CF2B14A08B74 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveCocoa/Objective-C/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
+		B42410021BAAB577000E44D0 /* AssetsTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsTabBar.swift; sourceTree = "<group>"; };
 		B4BC8D7C00689CFAE0D2448FD4A6A1E1 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B598F04685C7B33F95004886BA63A4C8 /* XAssets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XAssets-dummy.m"; sourceTree = "<group>"; };
 		B6EAA2322B0B9DA437D57D0AB25AB7A1 /* Pods-XAssets_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XAssets_Tests.modulemap"; sourceTree = "<group>"; };
@@ -1695,6 +1697,7 @@
 				39CDE2FCF69076F86EDCE3418C319C30 /* AssetsFactory.swift */,
 				8E450EA68F5E25783A861A43EA5DB648 /* AssetsKit.swift */,
 				A77838C9E3B86CFA2F20758411FDD209 /* AssetsKit+extension.swift */,
+				B42410021BAAB577000E44D0 /* AssetsTabBar.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -2490,6 +2493,7 @@
 				7B8E1A9A2180558EAF98C84EBCC6239F /* AssetsFactory.swift in Sources */,
 				05F8C258690F5A2EDA86C3382D8BF943 /* AssetsKit+extension.swift in Sources */,
 				7700022785D2508B2A04D5DCBCE29002 /* AssetsKit.swift in Sources */,
+				B42410041BAAB57F000E44D0 /* AssetsTabBar.swift in Sources */,
 				83C3A75286FA3C7C6A7F18B5881943D5 /* XAssets-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

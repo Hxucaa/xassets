@@ -40,6 +40,8 @@ public final class MenuItems {
         ("Share Button", "ToShareButton"),
         ("Venus Label", "ToVenusLabel"),
         ("Mars Label", "ToMarsLabel"),
-        ("Join Button", "ToJoinButton")
+        ("Join Button", "ToJoinButton"),
+        ("Treat Icon", "ToTreatIcon"),
+        ("WTG Icon", "ToWTGIcon")
     ]
 }

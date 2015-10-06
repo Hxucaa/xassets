@@ -6,6 +6,74 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Treat Icon View Controller-->
+        <scene sceneID="Ixp-Qi-c6L">
+            <objects>
+                <viewController id="6hq-4w-An7" customClass="TreatIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Vg-aK-G7z"/>
+                        <viewControllerLayoutGuide type="bottom" id="TBJ-ms-aGZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b2N-Wz-FuF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Yu-o9-xei">
+                                <rect key="frame" x="261" y="268" width="78" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="F3X-6f-5Uc"/>
+                                    <constraint firstAttribute="width" constant="78" id="JOj-rg-Kfp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="0Yu-o9-xei" secondAttribute="centerY" id="LtF-DY-mp2"/>
+                            <constraint firstAttribute="centerX" secondItem="0Yu-o9-xei" secondAttribute="centerX" id="Xnv-4O-oOK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0Yu-o9-xei" id="68I-ZN-D2h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYc-AZ-qiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600" y="-917"/>
+        </scene>
+        <!--Icon View Controller-->
+        <scene sceneID="QOg-m5-9wu">
+            <objects>
+                <viewController id="tKw-fp-RQ3" customClass="WTGIconViewController" customModule="XAssets_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xIS-0U-MR4"/>
+                        <viewControllerLayoutGuide type="bottom" id="YoY-Rc-b2Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KWz-4M-KYS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="keQ-qX-A2r">
+                                <rect key="frame" x="261" y="268" width="78" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="if2-xk-xTB"/>
+                                    <constraint firstAttribute="width" constant="78" id="ty9-eF-ygl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="keQ-qX-A2r" secondAttribute="centerY" id="5e8-VQ-qGz"/>
+                            <constraint firstAttribute="centerX" secondItem="keQ-qX-A2r" secondAttribute="centerX" id="uW8-ld-et7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="keQ-qX-A2r" id="LbH-P0-zge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoP-Jt-4KG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-944" y="-917"/>
+        </scene>
         <!--Filter Button View Controller-->
         <scene sceneID="9oc-Uq-Jkw">
             <objects>
@@ -80,6 +148,8 @@
                         <segue destination="BX0-pa-i78" kind="show" identifier="ToVenusLabel" id="t48-1L-WuY"/>
                         <segue destination="9ca-dq-2YX" kind="show" identifier="ToJoinButton" id="Axn-VO-z9V"/>
                         <segue destination="RQ6-Tw-vKU" kind="show" identifier="ToFilterButton" id="Bpu-bs-5wo"/>
+                        <segue destination="6hq-4w-An7" kind="show" identifier="ToTreatIcon" id="Uve-uQ-8Vj"/>
+                        <segue destination="tKw-fp-RQ3" kind="show" identifier="ToWTGIcon" id="BOJ-OI-vhJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-75-6iC" userLabel="First Responder" sceneMemberID="firstResponder"/>

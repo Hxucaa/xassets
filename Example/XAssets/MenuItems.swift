@@ -42,6 +42,7 @@ public final class MenuItems {
         ("Mars Label", "ToMarsLabel"),
         ("Join Button", "ToJoinButton"),
         ("Treat Icon", "ToTreatIcon"),
-        ("WTG Icon", "ToWTGIcon")
+        ("WTG Icon", "ToWTGIcon"),
+        ("Add New Photo Button", "ToAddNewPhotoButton")
     ]
 }

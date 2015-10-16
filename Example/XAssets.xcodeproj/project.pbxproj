@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		B329EC461BD12F900018C5B0 /* AddNewPhotoButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329EC451BD12F8F0018C5B0 /* AddNewPhotoButtonViewController.swift */; };
 		B33AFA381BC3E5F8005D3DD4 /* TreatIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AFA351BC3E5F8005D3DD4 /* TreatIconViewController.swift */; };
 		B33AFA391BC3E5F8005D3DD4 /* WTGIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AFA371BC3E5F8005D3DD4 /* WTGIconViewController.swift */; };
 		B37020591BA4089A003BF34B /* JoinButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37020581BA4089A003BF34B /* JoinButtonViewController.swift */; };
@@ -63,6 +64,7 @@
 		6B6141AAF07C072511700F94 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XAssets_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BE606CA7121D9F2D3BB968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B329EC451BD12F8F0018C5B0 /* AddNewPhotoButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPhotoButtonViewController.swift; sourceTree = "<group>"; };
 		B33AFA351BC3E5F8005D3DD4 /* TreatIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatIconViewController.swift; sourceTree = "<group>"; };
 		B33AFA371BC3E5F8005D3DD4 /* WTGIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGIconViewController.swift; sourceTree = "<group>"; };
 		B37020581BA4089A003BF34B /* JoinButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinButtonViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		607FACD21AFB9204008FA782 /* Example for XAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B329EC441BD12F5D0018C5B0 /* Add New Photo Button */,
 				B33AFA341BC3E5F8005D3DD4 /* Treat Icon */,
 				B33AFA361BC3E5F8005D3DD4 /* WTG Icon */,
 				B37020571BA4089A003BF34B /* Join Button */,
@@ -214,6 +217,14 @@
 				4F0608BE0CE9007B6B4C2B1B /* Pods-XAssets_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B329EC441BD12F5D0018C5B0 /* Add New Photo Button */ = {
+			isa = PBXGroup;
+			children = (
+				B329EC451BD12F8F0018C5B0 /* AddNewPhotoButtonViewController.swift */,
+			);
+			path = "Add New Photo Button";
 			sourceTree = "<group>";
 		};
 		B33AFA341BC3E5F8005D3DD4 /* Treat Icon */ = {
@@ -577,6 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B329EC461BD12F900018C5B0 /* AddNewPhotoButtonViewController.swift in Sources */,
 				B3A54EBD1BA039500076C7FF /* ProfileButtonViewController.swift in Sources */,
 				B3A54EC01BA039500076C7FF /* VenusLabelViewController.swift in Sources */,
 				B3A54EB71BA039500076C7FF /* FlameIconViewController.swift in Sources */,

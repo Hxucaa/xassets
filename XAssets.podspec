@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        Assets repo for iOS app.
                        DESC
-  s.homepage         = "https://bitbucket.org/zenchat/xassets"
+  s.homepage         = "https://zenchatapp.com/stash/scm/zen/xassets.git"
   s.license          = 'MIT'
   s.author           = { "Lance Zhu" => "lance.zhu@zenchatapp.com" }
-  s.source           = { :git => "git@bitbucket.org:zenchat/xassets.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://zenchatapp.com/stash/scm/zen/xassets.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

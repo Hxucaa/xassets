@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4829512017AE0469FE4F3C79 /* Pods_XAssets_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAA7EE3F24C68F34E8D30E /* Pods_XAssets_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4829512017AE0469FE4F3C79 /* Pods_XAssets_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAA7EE3F24C68F34E8D30E /* Pods_XAssets_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -37,7 +37,7 @@
 		B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */; };
 		B4D7338C1B996AD800B599B9 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */; };
 		B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */; };
-		F256F599FBA6BE212FE35FF2 /* Pods_XAssets_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F256F599FBA6BE212FE35FF2 /* Pods_XAssets_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720F0EC1463EE4B69959DC2E /* Pods_XAssets_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -438,7 +438,9 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -674,6 +676,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -742,6 +745,7 @@
 				INFOPLIST_FILE = XAssets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -754,6 +758,7 @@
 				INFOPLIST_FILE = XAssets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -773,6 +778,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XAssets_Example.app/XAssets_Example";
 			};
@@ -789,6 +795,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XAssets_Example.app/XAssets_Example";
 			};

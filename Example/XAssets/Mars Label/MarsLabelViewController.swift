@@ -18,7 +18,7 @@ class MarsLabelViewController: UIViewController {
         super.viewDidAppear(animated)
         
         imageView.rac_image <~ AssetFactory.getImage(Asset.MarsLabel(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, textInput: "123"))
-            |> map { Optional<UIImage>($0) }
+            .map { Optional<UIImage>($0) }
     }
     
     override func didReceiveMemoryWarning() {

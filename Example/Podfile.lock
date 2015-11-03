@@ -1,38 +1,29 @@
 PODS:
-  - Box (1.2.2)
-  - FBSnapshotTestCase (1.8.1)
-  - Nimble (0.4.2)
-  - Nimble-Snapshots (0.4.0):
-    - FBSnapshotTestCase (~> 1.7)
-    - Nimble (~> 0.4)
-    - Quick (~> 0.3)
-  - Quick (0.3.1)
-  - ReactiveCocoa (3.0.0):
-    - ReactiveCocoa/UI (= 3.0.0)
-    - Result (~> 0.4.1)
-  - ReactiveCocoa/Core (3.0.0):
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+  - ReactiveCocoa (4.0.2-alpha-3):
+    - ReactiveCocoa/UI (= 4.0.2-alpha-3)
+    - Result (~> 0.6.0-beta.6)
+  - ReactiveCocoa/Core (4.0.2-alpha-3):
     - ReactiveCocoa/no-arc
-    - Result (~> 0.4.1)
-  - ReactiveCocoa/no-arc (3.0.0):
-    - Result (~> 0.4.1)
-  - ReactiveCocoa/UI (3.0.0):
+    - Result (~> 0.6.0-beta.6)
+  - ReactiveCocoa/no-arc (4.0.2-alpha-3):
+    - Result (~> 0.6.0-beta.6)
+  - ReactiveCocoa/UI (4.0.2-alpha-3):
     - ReactiveCocoa/Core
-    - Result (~> 0.4.1)
-  - Result (0.4.4):
-    - Box (~> 1.2)
+    - Result (~> 0.6.0-beta.6)
+  - Result (0.6.0-beta.6)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
-  - XAssets (0.3.4):
-    - ReactiveCocoa (~> 3.0.0)
+  - XAssets (0.5.0):
+    - ReactiveCocoa (= 4.0.2-alpha-3)
     - SDWebImage (~> 3.7.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
-  - Nimble
-  - Nimble-Snapshots
-  - Quick (~> 0.3.1)
-  - ReactiveCocoa (~> 3.0.0)
+  - Nimble (~> 3.0.0)
+  - Quick (~> 0.8.0)
+  - ReactiveCocoa (= 4.0.2-alpha-3)
   - SDWebImage (~> 3.7.0)
   - XAssets (from `../`)
 
@@ -41,14 +32,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Box: a92e8aa4c099e6bc0733829665caf9e668ef53b8
-  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
-  Nimble-Snapshots: 216ae8c0ea3f4105be1606749fe15d8b2138af40
-  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
-  ReactiveCocoa: 5c4710e2f00f69f39a7f135d1f3ab48f8dace034
-  Result: b44f6bc8762bbffaf2c5df58f2c7d12c3496ced8
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  ReactiveCocoa: 441c518a69d0f6202a1886d77b66d8f79e1f4a81
+  Result: dc390d0b58f9ec43fcd536f1ebdd130803cc6cbc
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
-  XAssets: dc58a7ce0fe336a3c703c0e3e82985343cac6570
+  XAssets: 7a2d08ef3fa98d1604fb1a657e8e71410f10e288
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

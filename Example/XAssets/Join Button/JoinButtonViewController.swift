@@ -18,7 +18,7 @@ class JoinButtonViewController: UIViewController {
         super.viewDidAppear(animated)
         
         imageView.rac_image <~ AssetFactory.getImage(Asset.JoinButton(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, ifAA: false, ifGo: false, ifPay: false, ifUnTapped: true))
-            |> map { Optional<UIImage>($0) }
+            .map { Optional<UIImage>($0) }
     }
     
     override func didReceiveMemoryWarning() {

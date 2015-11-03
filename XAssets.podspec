@@ -9,15 +9,15 @@
 
 Pod::Spec.new do |s|
   s.name             = "XAssets"
-  s.version          = "0.3.9"
+  s.version          = "0.5.1"
   s.summary          = "Assets for iOS."
   s.description      = <<-DESC
                        Assets repo for iOS app.
                        DESC
-  s.homepage         = "https://zenchatapp.com/stash/scm/zen/xassets.git"
+  s.homepage         = "https://dev.lai.io/diffusion/IA/"
   s.license          = 'MIT'
-  s.author           = { "Lance Zhu" => "lance.zhu@zenchatapp.com" }
-  s.source           = { :git => "https://zenchatapp.com/stash/scm/zen/xassets.git", :tag => s.version.to_s }
+  s.author           = { "Lance Zhu" => "lzhu@lai.io" }
+  s.source           = { :git => "git@dev.lai.io:2345/diffusion/IA/ios-assets.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -30,5 +30,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'SDWebImage', '~> 3.7.0'
-  s.dependency 'ReactiveCocoa', '~> 3.0.0'
+  s.dependency 'ReactiveCocoa', '= 4.0.2-alpha-3'
 end

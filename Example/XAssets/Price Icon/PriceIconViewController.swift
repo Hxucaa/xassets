@@ -18,7 +18,7 @@ class PriceIconViewController: UIViewController {
         super.viewDidAppear(animated)      
         
         imageView.rac_image <~ AssetFactory.getImage(Asset.PriceIcon(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, pressed: false, shadow: false))
-            |> map { Optional<UIImage>($0) }
+            .map { Optional<UIImage>($0) }
     }
     
     override func didReceiveMemoryWarning() {

@@ -4,15 +4,13 @@ use_frameworks!
 
 target 'XAssets_Example', :exclusive => true do
     pod "XAssets", :path => "../"
-    pod 'ReactiveCocoa', '~> 3.0.0'
+    pod 'ReactiveCocoa', '= 4.0.2-alpha-3'
     pod 'SDWebImage', '~> 3.7.0'
 end
 
 target 'XAssets_Tests', :exclusive => true do
   pod "XAssets", :path => "../"
 
-  pod 'Quick', '~> 0.3.1'
-  pod 'Nimble'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
+  pod 'Quick', '~> 0.8.0'
+  pod 'Nimble', '~> 3.0.0'
 end

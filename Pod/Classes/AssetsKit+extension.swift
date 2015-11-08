@@ -460,7 +460,7 @@ extension AssetsKit {
                 let scaledX: CGFloat = (sizeToFit ?? drawingSize).width / drawingSize.width
                 let scaledY: CGFloat = (sizeToFit ?? drawingSize).height / drawingSize.height
                 // change this function to the appropriate drawing function
-                AssetsKit.drawTreatIcon(scaleX: scaledX, scaleY: scaledY, ifPressed: false)
+                AssetsKit.drawTreatIcon(scaleX: scaledX, scaleY: scaledY, ifPressed: pressed!)
             },
             
             sizeToFit: sizeToFit,
@@ -481,7 +481,7 @@ extension AssetsKit {
                 let scaledX: CGFloat = (sizeToFit ?? drawingSize).width / drawingSize.width
                 let scaledY: CGFloat = (sizeToFit ?? drawingSize).height / drawingSize.height
                 // change this function to the appropriate drawing function
-                AssetsKit.drawWTGIcon(scaleX: scaledX, scaleY: scaledY, ifPressed: false)
+                AssetsKit.drawWTGIcon(scaleX: scaledX, scaleY: scaledY, ifPressed: pressed!)
             },
             
             sizeToFit: sizeToFit,

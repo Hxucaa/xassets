@@ -1,29 +1,29 @@
 PODS:
   - Nimble (3.0.0)
   - Quick (0.8.0)
-  - ReactiveCocoa (4.0.2-alpha-3):
-    - ReactiveCocoa/UI (= 4.0.2-alpha-3)
-    - Result (~> 0.6.0-beta.6)
-  - ReactiveCocoa/Core (4.0.2-alpha-3):
+  - ReactiveCocoa (4.0.0-RC.1):
+    - ReactiveCocoa/UI (= 4.0.0-RC.1)
+    - Result (~> 1.0)
+  - ReactiveCocoa/Core (4.0.0-RC.1):
     - ReactiveCocoa/no-arc
-    - Result (~> 0.6.0-beta.6)
-  - ReactiveCocoa/no-arc (4.0.2-alpha-3):
-    - Result (~> 0.6.0-beta.6)
-  - ReactiveCocoa/UI (4.0.2-alpha-3):
+    - Result (~> 1.0)
+  - ReactiveCocoa/no-arc (4.0.0-RC.1):
+    - Result (~> 1.0)
+  - ReactiveCocoa/UI (4.0.0-RC.1):
     - ReactiveCocoa/Core
-    - Result (~> 0.6.0-beta.6)
-  - Result (0.6.0-beta.6)
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
-  - XAssets (0.5.0):
-    - ReactiveCocoa (= 4.0.2-alpha-3)
+    - Result (~> 1.0)
+  - Result (1.0.1)
+  - SDWebImage (3.7.4):
+    - SDWebImage/Core (= 3.7.4)
+  - SDWebImage/Core (3.7.4)
+  - XAssets (0.6.0):
+    - ReactiveCocoa (= 4.0.0-RC.1)
     - SDWebImage (~> 3.7.0)
 
 DEPENDENCIES:
   - Nimble (~> 3.0.0)
   - Quick (~> 0.8.0)
-  - ReactiveCocoa (= 4.0.2-alpha-3)
+  - ReactiveCocoa (= 4.0.0-RC.1)
   - SDWebImage (~> 3.7.0)
   - XAssets (from `../`)
 
@@ -34,9 +34,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  ReactiveCocoa: 441c518a69d0f6202a1886d77b66d8f79e1f4a81
-  Result: dc390d0b58f9ec43fcd536f1ebdd130803cc6cbc
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
-  XAssets: 7a2d08ef3fa98d1604fb1a657e8e71410f10e288
+  ReactiveCocoa: 2b0f654beb7642b82cfd3fdb845205ae9889422c
+  Result: caef80340451e1f07492fa1e89117f83613bce24
+  SDWebImage: 247edd7dd80dd6124197b0d6a17846fe9d1df968
+  XAssets: ec9b7a0419f20decc914d16055875bf975e1e292
 
 COCOAPODS: 0.39.0

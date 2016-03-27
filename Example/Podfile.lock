@@ -16,14 +16,14 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
-  - XAssets (0.6.1):
-    - ReactiveCocoa (~> 4.0.0)
+  - XAssets (0.6.2):
+    - ReactiveCocoa (= 4.0.0)
     - SDWebImage (~> 3.7.0)
 
 DEPENDENCIES:
   - Nimble (~> 3.1.0)
   - Quick (~> 0.9.0)
-  - ReactiveCocoa (~> 4.0.0)
+  - ReactiveCocoa (= 4.0.0)
   - SDWebImage (~> 3.7.0)
   - XAssets (from `../`)
 
@@ -37,6 +37,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 69be555be30674b07a86b60a91b855063841acc0
   Result: caef80340451e1f07492fa1e89117f83613bce24
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  XAssets: aba08953190c0ea3c6652c49d2fefa8bd98c632c
+  XAssets: c82fe9137881050cb53980b0a736b020ea7db2f3
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 1eb7fd861458450bca04d92c67a9f2872d95cdca
+
+COCOAPODS: 1.0.0.beta.6

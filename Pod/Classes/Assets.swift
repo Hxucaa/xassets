@@ -32,7 +32,7 @@ public enum Asset {
     case JoinButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, ifAA: Bool?, ifGo: Bool?, ifPay: Bool?, ifUnTapped: Bool?)
     
     /// Retrieve the drawing in `UIImage` for the `Asset`.
-    internal func image() -> UIImage {
+    func image() -> UIImage {
         
         switch(self){
         case let .VenusLabel(size, backgroundColor, opaque, imageContextScale, textInput):
@@ -79,7 +79,7 @@ public enum Asset {
     }
     
     /// Retrieve the cache key for the `Asset`.
-    internal func cacheKey() -> String {
+    func cacheKey() -> String {
         
         switch(self){
         case let .VenusLabel(size, backgroundColor, opaque, imageContextScale, textInput):
@@ -125,7 +125,7 @@ public enum Asset {
         }
     }
     
-    internal func drawingSize() -> CGSize {
+    func drawingSize() -> CGSize {
         switch(self) {
         case .VenusLabel:
             return CGSizeMake(58, 17)

@@ -6,14 +6,14 @@ use_frameworks!
 target 'XAssets_Example' do
     pod "XAssets", :path => "../"
     
-    pod 'ReactiveCocoa', '= 4.0.0'
+    pod 'ReactiveCocoa', '~> 4.1.0'
     pod 'SDWebImage', '~> 3.7.0'
     
     target 'XAssets_Tests' do
         inherit! :search_paths
         
-        pod 'Quick', '~> 0.9.0'
-        pod 'Nimble', '~> 3.1.0'
+        pod 'Quick', '~> 0.9.1'
+        pod 'Nimble', '~> 3.2.0'
     end
 end
 

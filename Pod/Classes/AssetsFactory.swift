@@ -9,6 +9,7 @@
 import Foundation
 import SDWebImage
 import ReactiveCocoa
+import Result
 
 private let CacheNamespace = "org.xassets.XAssets.ImageCache"
 

@@ -72,7 +72,7 @@ extension AssetsKit {
         return image
     }
     
-    internal class func x_imageOfJoinButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, ifAA: Bool? = false, ifGo: Bool? = false, ifPay: Bool? = false, ifNotTapped: Bool? = false) -> UIImage {
+    class func x_imageOfJoinButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, ifAA: Bool? = false, ifGo: Bool? = false, ifPay: Bool? = false, ifNotTapped: Bool? = false) -> UIImage {
         
         return self.drawingJoinButton(
             draw: {
@@ -96,7 +96,7 @@ extension AssetsKit {
     }
     
     
-    internal class func x_imageOfVenusLabel(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, textInput: String? = "") -> UIImage {
+    class func x_imageOfVenusLabel(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, textInput: String? = "") -> UIImage {
         
         return self.drawingLabel(
             draw: {
@@ -116,7 +116,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfMarsLabel(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, textInput: String? = "") -> UIImage {
+    class func x_imageOfMarsLabel(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, textInput: String? = "") -> UIImage {
         
         return self.drawingLabel(
             draw: {
@@ -136,7 +136,7 @@ extension AssetsKit {
         )
     }
 
-    internal class func x_imageOfPriceIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfPriceIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -157,7 +157,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfAddNewPhotoButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfAddNewPhotoButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -178,7 +178,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfCarIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfCarIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -199,7 +199,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfShareButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfShareButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -220,7 +220,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfFilterButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfFilterButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -241,7 +241,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfSearchButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfSearchButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -262,7 +262,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfProfileButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfProfileButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -283,7 +283,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfChatButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfChatButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -304,7 +304,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfNearbyButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfNearbyButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -325,7 +325,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfHomeButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfHomeButton(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -347,7 +347,7 @@ extension AssetsKit {
     }
     
     
-    internal class func x_imageOfCakeIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfCakeIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -368,7 +368,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfFemaleIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfFemaleIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -389,7 +389,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfMaleIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfMaleIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -410,7 +410,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfFlameIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfFlameIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -431,7 +431,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfEtcIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfEtcIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -452,7 +452,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfTreatIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfTreatIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {
@@ -473,7 +473,7 @@ extension AssetsKit {
         )
     }
     
-    internal class func x_imageOfWTGIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
+    class func x_imageOfWTGIcon(sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, pressed: Bool? = false, shadow: Bool? = false) -> UIImage {
         
         return self.drawing(
             draw: {

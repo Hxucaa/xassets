@@ -30,5 +30,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'SDWebImage', '~> 3.7.0'
-  s.dependency 'ReactiveCocoa', '= 4.0.0'
+  s.dependency 'ReactiveCocoa', '~> 4.1.0'
 end

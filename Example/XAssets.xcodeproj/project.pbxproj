@@ -34,7 +34,6 @@
 		B3A54EC01BA039500076C7FF /* VenusLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A54EB01BA039500076C7FF /* VenusLabelViewController.swift */; };
 		B44D2CD91B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */; };
 		B44D2CDB1B3CBA2B008E14DA /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */; };
-		B4D7338C1B996AD800B599B9 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */; };
 		B4FA1FB01B7152C8003BD3BC /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */; };
 		C87912DD5E5202FD044D69A2 /* Pods_XAssets_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2292C07C497DE5646AC5CD5B /* Pods_XAssets_Tests.framework */; };
 		D43F8CFB502C5A941C186E06 /* Pods_XAssets_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D4B49C8BC7CA5955ED4B41 /* Pods_XAssets_Example.framework */; };
@@ -90,7 +89,6 @@
 		B3A54EB01BA039500076C7FF /* VenusLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusLabelViewController.swift; sourceTree = "<group>"; };
 		B44D2CD81B3CA6AF008E14DA /* NotoSansCJKsc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKsc-Bold.otf"; sourceTree = "<group>"; };
 		B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
 		C3C2433053AC905DE0B151A8 /* XAssets.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XAssets.podspec; path = ../XAssets.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,7 +167,6 @@
 				B3A54EAD1BA039500076C7FF /* Share Button */,
 				B3A54EAF1BA039500076C7FF /* Venus Label */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				B4D7338B1B996AD800B599B9 /* UIImageView+extension.swift */,
 				B44D2CDA1B3CBA2B008E14DA /* MenuTableViewController.swift */,
 				B4FA1FAF1B7152C8003BD3BC /* MenuItems.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -395,12 +392,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "XAssets_Example" */;
 			buildPhases = (
-				919328B3DB1106289BD326BC /* 📦 Check Pods Manifest.lock */,
+				919328B3DB1106289BD326BC /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				B330E0CD89108B6F2450E495 /* 📦 Embed Pods Frameworks */,
-				2026A03317BB3662245892B3 /* 📦 Copy Pods Resources */,
+				B330E0CD89108B6F2450E495 /* [CP] Embed Pods Frameworks */,
+				2026A03317BB3662245892B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,12 +412,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "XAssets_Tests" */;
 			buildPhases = (
-				FFA64D73F1C40EC71B8C1FD7 /* 📦 Check Pods Manifest.lock */,
+				FFA64D73F1C40EC71B8C1FD7 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				8CB93ED633BD1E6D1FEDB7B2 /* 📦 Embed Pods Frameworks */,
-				4E20B2686BE9EDDCCD9E6614 /* 📦 Copy Pods Resources */,
+				8CB93ED633BD1E6D1FEDB7B2 /* [CP] Embed Pods Frameworks */,
+				4E20B2686BE9EDDCCD9E6614 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -493,14 +490,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2026A03317BB3662245892B3 /* 📦 Copy Pods Resources */ = {
+		2026A03317BB3662245892B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,14 +505,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XAssets_Example/Pods-XAssets_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E20B2686BE9EDDCCD9E6614 /* 📦 Copy Pods Resources */ = {
+		4E20B2686BE9EDDCCD9E6614 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,14 +520,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XAssets_Tests/Pods-XAssets_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CB93ED633BD1E6D1FEDB7B2 /* 📦 Embed Pods Frameworks */ = {
+		8CB93ED633BD1E6D1FEDB7B2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,14 +535,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XAssets_Tests/Pods-XAssets_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		919328B3DB1106289BD326BC /* 📦 Check Pods Manifest.lock */ = {
+		919328B3DB1106289BD326BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,14 +550,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B330E0CD89108B6F2450E495 /* 📦 Embed Pods Frameworks */ = {
+		B330E0CD89108B6F2450E495 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,14 +565,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XAssets_Example/Pods-XAssets_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FFA64D73F1C40EC71B8C1FD7 /* 📦 Check Pods Manifest.lock */ = {
+		FFA64D73F1C40EC71B8C1FD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,7 +610,6 @@
 				B3A54EBB1BA039500076C7FF /* NearbyButtonViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				B3A54EB61BA039500076C7FF /* FilterButtonViewController.swift in Sources */,
-				B4D7338C1B996AD800B599B9 /* UIImageView+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

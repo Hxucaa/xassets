@@ -3,7 +3,7 @@
 //  Pods
 //
 //  Created by Lance Zhu on 2015-08-24.
-//  Copyright (c) 2015 ZenChat. All rights reserved.
+//  Copyright (c) 2016 Lance Zhu. All rights reserved.
 //
 
 import Foundation
@@ -32,7 +32,7 @@ public enum Asset {
     case JoinButton(size: CGSize?, backgroundColor: UIColor?, opaque: Bool?, imageContextScale: CGFloat?, ifAA: Bool?, ifGo: Bool?, ifPay: Bool?, ifUnTapped: Bool?)
     
     /// Retrieve the drawing in `UIImage` for the `Asset`.
-    func image() -> UIImage {
+    public var image: UIImage {
         
         switch(self){
         case let .VenusLabel(size, backgroundColor, opaque, imageContextScale, textInput):
@@ -75,53 +75,6 @@ public enum Asset {
             return AssetsKit.x_imageOfJoinButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, ifAA: ifAA, ifGo: ifGo, ifPay: ifPay, ifNotTapped: ifNotTapped)
         case let .AddNewPhotoButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
             return AssetsKit.x_imageOfAddNewPhotoButton(size, drawingSize: drawingSize(), backgroundColor: backgroundColor, opaque: opaque, imageContextScale: imageContextScale, pressed: pressed, shadow: shadow)
-        }
-    }
-    
-    /// Retrieve the cache key for the `Asset`.
-    func cacheKey() -> String {
-        
-        switch(self){
-        case let .VenusLabel(size, backgroundColor, opaque, imageContextScale, textInput):
-            return "VenusLabel|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(textInput)"
-        case let .MarsLabel(size, backgroundColor, opaque, imageContextScale, textInput):
-            return "MarsLabel|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(textInput)"
-        case let .ShareButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "ShareButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .FilterButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "FilterButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .SearchButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "SearchButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .ProfileButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "ProfileButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .ChatButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "ChatButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .NearbyButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "NearbyButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .HomeButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "HomeButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .PriceIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "PriceIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .CakeIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "CakeIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .FemaleIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "FemaleIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .MaleIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "MaleIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .FlameIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "FlameIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .CarIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "CarIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .EtcIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "EtcIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .TreatIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "TreatIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .WTGIcon(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "WTGIcon|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .AddNewPhotoButton(size, backgroundColor, opaque, imageContextScale, pressed, shadow):
-            return "AddNewPhotoButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(pressed)|\(shadow)"
-        case let .JoinButton(size, backgroundColor, opaque, imageContextScale, ifAA, ifGo, ifPay, ifNotTapped):
-            return "JoinButton|\(size)|\(backgroundColor)|\(opaque)|\(imageContextScale)|\(ifAA)|\(ifGo)|\(ifPay)|\(ifNotTapped)"
         }
     }
     

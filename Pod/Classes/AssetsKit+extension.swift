@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension AssetsKit {
+public extension AssetsKit {
     
     
     private class func drawingLabel(draw draw: Void -> Void, sizeToFit: CGSize?, drawingSize: CGSize, backgroundColor: UIColor? = nil, opaque: Bool? = true, imageContextScale: CGFloat? = 0, textInput: String? = nil) -> UIImage {

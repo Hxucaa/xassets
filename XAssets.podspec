@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/Hxucaa/xassets.git"
   s.license          = 'MIT'
-  s.author           = { "Lance Zhu" => "lzhu@lai.io" }
+  s.author           = { "Lance Zhu" => "lancezhu77@gmail.com" }
   s.source           = { :git => "https://github.com/Hxucaa/xassets.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
@@ -29,6 +29,4 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'SDWebImage', '~> 3.7.0'
-  s.dependency 'ReactiveCocoa', '~> 4.1.0'
 end

@@ -2,13 +2,13 @@
 //  PriceTagBackgroundViewController.swift
 //  XAssets
 //
-//  Created by Connor Wang on 8/11/15.
-//  Copyright (c) 2015 ZenChat Interactive Inc. All rights reserved.
+//  Created by Lance Zhu on 8/11/15.
+//  Copyright (c) 2016 Lance Zhu. All rights reserved.
 //
 
 import UIKit
 import XAssets
-import ReactiveCocoa
+
 
 class MarsLabelViewController: UIViewController {
     
@@ -17,8 +17,7 @@ class MarsLabelViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        imageView.rac_image <~ AssetFactory.getImage(Asset.MarsLabel(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, textInput: "123"))
-            .map { Optional<UIImage>($0) }
+        imageView.image = Asset.MarsLabel(size: imageView.frame.size, backgroundColor: nil, opaque: nil, imageContextScale: nil, textInput: "123").image
     }
     
     override func didReceiveMemoryWarning() {
